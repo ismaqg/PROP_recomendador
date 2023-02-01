@@ -1,0 +1,27 @@
+var classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager =
+[
+    [ "ChangeScene", "classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager.html#a87db5dc99d8d01c41cf51e55667a55b9", null ],
+    [ "ChangeSceneToEditProfile", "classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager.html#aaf1d72fb0ea73b8aad42f56700306a6b", null ],
+    [ "ChangeSceneToFavList", "classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager.html#a420473c3d4ecb67036e8afc4615136eb", null ],
+    [ "ChangeSceneToForgotPass", "classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager.html#a7386e14b23d2d2c27954e1eeb873398a", null ],
+    [ "ChangeSceneToGetStarted", "classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager.html#aab7378ce2d4a02f2f77983445491ece6", null ],
+    [ "ChangeSceneToHome", "classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager.html#a6ac5602be7bbcfb4d9b2e348401234a7", null ],
+    [ "ChangeSceneToItemInfo", "classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager.html#adcc2bcdd50ca8396e02b74661ed028fa", null ],
+    [ "ChangeSceneToLogIn", "classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager.html#a98e77f3164b5acc5763eb6d78ae92b4f", null ],
+    [ "ChangeSceneToPast", "classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager.html#a6513a979022003c22171737c0acd01d2", null ],
+    [ "ChangeSceneToRecommendList", "classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager.html#a3d05c99b9594600a1cc4e75b1007af59", null ],
+    [ "ChangeSceneToRecommendMe", "classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager.html#affefec7c25078ce8c12d9437292e214b", null ],
+    [ "ChangeSceneToSignUp", "classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager.html#a6d82b72c2bed84adc80524c87f483198", null ],
+    [ "Close", "classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager.html#a6e9aeeb86f63ffa9a0678c278b82b178", null ],
+    [ "GetInstance", "classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager.html#a4785228e4cdb0422c2bf78832758d9c0", null ],
+    [ "Logout", "classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager.html#a691d5ab2e167d227e2eae2bac4799ca8", null ],
+    [ "main", "classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager.html#a01be661103744d2c11499722ae34022e", null ],
+    [ "Maximize", "classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager.html#a00544774576644bb10174d121a0a1de3", null ],
+    [ "Minimize", "classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager.html#aa4bd95b53c1342ac72f66450684bb83a", null ],
+    [ "start", "classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager.html#a692494559f639e3e3104a9ddee1d9305", null ],
+    [ "first", "classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager.html#a76814b7aa05e654e0af400deb7874b53", null ],
+    [ "instance", "classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager.html#ab0d21eeae8fd29a333d3968dba0327e1", null ],
+    [ "itemStack", "classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager.html#a415c7991f6c7156e25682981fe5fa09a", null ],
+    [ "sceneStack", "classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager.html#ada1d476c16edd2f7c56e0c0e26fa7d4b", null ],
+    [ "stg", "classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager.html#ab94eb2fcbb5f502f9779a817a24bd58b", null ]
+];

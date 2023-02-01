@@ -1,0 +1,28 @@
+var classfxsrc_1_1propyecto_1_1data_1_1_data_rating =
+[
+    [ "DataRating", "classfxsrc_1_1propyecto_1_1data_1_1_data_rating.html#aec9f671014e8dc138bfae378d05a9e25", null ],
+    [ "AddRating", "classfxsrc_1_1propyecto_1_1data_1_1_data_rating.html#aad6c545230ab65e08bee3af7cd9c27fd", null ],
+    [ "ClearData", "classfxsrc_1_1propyecto_1_1data_1_1_data_rating.html#aaf2e485a333c949a1912dd9350a3cbb3", null ],
+    [ "DeleteRating", "classfxsrc_1_1propyecto_1_1data_1_1_data_rating.html#aed0cddb9899ecf947670fdf2aee8ebae", null ],
+    [ "DeleteRatingsOfUser", "classfxsrc_1_1propyecto_1_1data_1_1_data_rating.html#a42189c0c19d7d28e1b0c5af909b605ed", null ],
+    [ "GetAllRatings", "classfxsrc_1_1propyecto_1_1data_1_1_data_rating.html#a18d61f51309ace5861e59d166307f452", null ],
+    [ "GetAllRatingsMap", "classfxsrc_1_1propyecto_1_1data_1_1_data_rating.html#ad91b8053dce5706afa216a34b23dfa67", null ],
+    [ "GetAllRatingsUsersMap", "classfxsrc_1_1propyecto_1_1data_1_1_data_rating.html#a50e2f620c645ff50e87368ccb64a089f", null ],
+    [ "GetAllUsersID", "classfxsrc_1_1propyecto_1_1data_1_1_data_rating.html#ab879774d71614df42243c13240347fd2", null ],
+    [ "GetItemRatings", "classfxsrc_1_1propyecto_1_1data_1_1_data_rating.html#ab4ac1092d028d07c2670e55c4b7ca339", null ],
+    [ "GetMaxRating", "classfxsrc_1_1propyecto_1_1data_1_1_data_rating.html#a9ba66d999e6a13fec5b5b224250683a9", null ],
+    [ "GetNextLine", "classfxsrc_1_1propyecto_1_1data_1_1_data_rating.html#a2d00fb0a12ee93d34dcb6d359e020844", null ],
+    [ "GetRatingValueByID", "classfxsrc_1_1propyecto_1_1data_1_1_data_rating.html#a748a9b242a7c0ed7ea5940566085e2ad", null ],
+    [ "GetUserRatings", "classfxsrc_1_1propyecto_1_1data_1_1_data_rating.html#ad3a3b473a71e0886dd8787f030e915fa", null ],
+    [ "HasNextLine", "classfxsrc_1_1propyecto_1_1data_1_1_data_rating.html#af85b8e50cf60f3acbad999c6fef77039", null ],
+    [ "Init", "classfxsrc_1_1propyecto_1_1data_1_1_data_rating.html#a964cf11fca860356fa0c9690a40a0ba9", null ],
+    [ "LoadCSV", "classfxsrc_1_1propyecto_1_1data_1_1_data_rating.html#a7005a0d9c1f6f98d0908dc7c98a57e6e", null ],
+    [ "ModifyItemRating", "classfxsrc_1_1propyecto_1_1data_1_1_data_rating.html#a4adda86b437f342ec9eca7d4096734a1", null ],
+    [ "ParseAndAddData", "classfxsrc_1_1propyecto_1_1data_1_1_data_rating.html#a122f0ddcf95a96a7d12e9679c970d531", null ],
+    [ "allRatingsItem", "classfxsrc_1_1propyecto_1_1data_1_1_data_rating.html#af39f8ca96580933fe0e4f9ef39e4ce74", null ],
+    [ "allRatingsUser", "classfxsrc_1_1propyecto_1_1data_1_1_data_rating.html#ac81214fd27bda2fdd0c175dbeda4ee71", null ],
+    [ "atNames", "classfxsrc_1_1propyecto_1_1data_1_1_data_rating.html#a710bf1e0d36694139a41d0db834cd898", null ],
+    [ "maxRating", "classfxsrc_1_1propyecto_1_1data_1_1_data_rating.html#ac33258905a79cbafcc707d63ce63582e", null ],
+    [ "ratings", "classfxsrc_1_1propyecto_1_1data_1_1_data_rating.html#a87b5cbcc90facaf3a0ebb2c128a460e8", null ],
+    [ "ratingsMap", "classfxsrc_1_1propyecto_1_1data_1_1_data_rating.html#a90a573ee2ae30dbdf1d3e52e410aecb6", null ]
+];

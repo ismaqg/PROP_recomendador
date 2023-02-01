@@ -1,0 +1,25 @@
+var namespacefxsrc_1_1propyecto_1_1domain =
+[
+    [ "AlgorithmTester", "classfxsrc_1_1propyecto_1_1domain_1_1_algorithm_tester.html", "classfxsrc_1_1propyecto_1_1domain_1_1_algorithm_tester" ],
+    [ "AttValDoesNotExistException", "classfxsrc_1_1propyecto_1_1domain_1_1_att_val_does_not_exist_exception.html", "classfxsrc_1_1propyecto_1_1domain_1_1_att_val_does_not_exist_exception" ],
+    [ "BadCredentialsException", "classfxsrc_1_1propyecto_1_1domain_1_1_bad_credentials_exception.html", "classfxsrc_1_1propyecto_1_1domain_1_1_bad_credentials_exception" ],
+    [ "CollaborativeFiltering", "classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering.html", "classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering" ],
+    [ "ContentBasedFiltering", "classfxsrc_1_1propyecto_1_1domain_1_1_content_based_filtering.html", "classfxsrc_1_1propyecto_1_1domain_1_1_content_based_filtering" ],
+    [ "DataManager", "classfxsrc_1_1propyecto_1_1domain_1_1_data_manager.html", "classfxsrc_1_1propyecto_1_1domain_1_1_data_manager" ],
+    [ "ExistingActiveUserException", "classfxsrc_1_1propyecto_1_1domain_1_1_existing_active_user_exception.html", "classfxsrc_1_1propyecto_1_1domain_1_1_existing_active_user_exception" ],
+    [ "ExistingUsernameException", "classfxsrc_1_1propyecto_1_1domain_1_1_existing_username_exception.html", "classfxsrc_1_1propyecto_1_1domain_1_1_existing_username_exception" ],
+    [ "HybridApproachFiltering", "classfxsrc_1_1propyecto_1_1domain_1_1_hybrid_approach_filtering.html", "classfxsrc_1_1propyecto_1_1domain_1_1_hybrid_approach_filtering" ],
+    [ "Item", "classfxsrc_1_1propyecto_1_1domain_1_1_item.html", "classfxsrc_1_1propyecto_1_1domain_1_1_item" ],
+    [ "ItemAttribute", "classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute.html", "classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute" ],
+    [ "ItemDoesNotExistException", "classfxsrc_1_1propyecto_1_1domain_1_1_item_does_not_exist_exception.html", "classfxsrc_1_1propyecto_1_1domain_1_1_item_does_not_exist_exception" ],
+    [ "NoExistingActiveUserException", "classfxsrc_1_1propyecto_1_1domain_1_1_no_existing_active_user_exception.html", "classfxsrc_1_1propyecto_1_1domain_1_1_no_existing_active_user_exception" ],
+    [ "NoExistingUserIDException", "classfxsrc_1_1propyecto_1_1domain_1_1_no_existing_user_i_d_exception.html", "classfxsrc_1_1propyecto_1_1domain_1_1_no_existing_user_i_d_exception" ],
+    [ "ParserCSV", "classfxsrc_1_1propyecto_1_1domain_1_1_parser_c_s_v.html", "classfxsrc_1_1propyecto_1_1domain_1_1_parser_c_s_v" ],
+    [ "Rating", "classfxsrc_1_1propyecto_1_1domain_1_1_rating.html", "classfxsrc_1_1propyecto_1_1domain_1_1_rating" ],
+    [ "RatingDoesNotExistException", "classfxsrc_1_1propyecto_1_1domain_1_1_rating_does_not_exist_exception.html", "classfxsrc_1_1propyecto_1_1domain_1_1_rating_does_not_exist_exception" ],
+    [ "Recommender", "classfxsrc_1_1propyecto_1_1domain_1_1_recommender.html", "classfxsrc_1_1propyecto_1_1domain_1_1_recommender" ],
+    [ "SceneManager", "classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager.html", "classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager" ],
+    [ "User", "classfxsrc_1_1propyecto_1_1domain_1_1_user.html", "classfxsrc_1_1propyecto_1_1domain_1_1_user" ],
+    [ "UserActual", "classfxsrc_1_1propyecto_1_1domain_1_1_user_actual.html", "classfxsrc_1_1propyecto_1_1domain_1_1_user_actual" ],
+    [ "UserManager", "classfxsrc_1_1propyecto_1_1domain_1_1_user_manager.html", "classfxsrc_1_1propyecto_1_1domain_1_1_user_manager" ]
+];

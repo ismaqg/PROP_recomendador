@@ -1,0 +1,162 @@
+\hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_recommender}{}\doxysection{fxsrc.\+propyecto.\+domain.\+Recommender Class Reference}
+\label{classfxsrc_1_1propyecto_1_1domain_1_1_recommender}\index{fxsrc.propyecto.domain.Recommender@{fxsrc.propyecto.domain.Recommender}}
+
+
+Clase abstracta padre de nuestros 3 recomendadores.  
+
+
+Inheritance diagram for fxsrc.\+propyecto.\+domain.\+Recommender\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.257015cm]{classfxsrc_1_1propyecto_1_1domain_1_1_recommender}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_recommender_a0d700ffe0a83a137e46a49b4fc9d9ab8}{Compute\+D\+CG}} (int user\+ID, Array\+List$<$ Integer $>$ predicted)
+\begin{DoxyCompactList}\small\item\em Computa el D\+CG de la predicción hecha sobre los items de unknown del usuario. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_recommender_aebf9164de78aee0a55c322f622feb13b}{Compute\+I\+D\+CG}} (int user\+ID, Array\+List$<$ Integer $>$ predicted)
+\begin{DoxyCompactList}\small\item\em Computa el I\+D\+CG para un usuario con los mejores Q elementos de unknown. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_recommender_a2b7c8b85744a4552e0cbb2a9b7796439}{Compute\+N\+D\+CG}} (float D\+CG, float I\+D\+CG)
+\begin{DoxyCompactList}\small\item\em Computa el N\+D\+CG, comprendido entre 0 y 1. Cuanto más cercano a 1, mejor predicción. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Integer \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_recommender_a46b206a88721b9b7072fa65511ec56bc}{Get\+Index\+Given\+Item\+ID}} (Array\+List$<$ Integer $>$ predicted, int item\+ID)
+\begin{DoxyCompactList}\small\item\em Retorna el índice de un vector de items\+ID en el que se encuentra un rating con el item\+ID especificado, o M\+A\+X\+\_\+\+V\+A\+L\+UE si no está \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static double \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_recommender_aa6a9fc1777e8743dbdabacd3240b53bf}{Log2}} (int N)
+\begin{DoxyCompactList}\small\item\em Computa el log 2 de un entero. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase abstracta padre de nuestros 3 recomendadores. 
+
+Ofrece operaciones de cálculos de calidad de recomendación utilizando Discounted Cumulative Gain. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_recommender_a0d700ffe0a83a137e46a49b4fc9d9ab8}\label{classfxsrc_1_1propyecto_1_1domain_1_1_recommender_a0d700ffe0a83a137e46a49b4fc9d9ab8}} 
+\index{fxsrc.propyecto.domain.Recommender@{fxsrc.propyecto.domain.Recommender}!ComputeDCG@{ComputeDCG}}
+\index{ComputeDCG@{ComputeDCG}!fxsrc.propyecto.domain.Recommender@{fxsrc.propyecto.domain.Recommender}}
+\doxysubsubsection{\texorpdfstring{ComputeDCG()}{ComputeDCG()}}
+{\footnotesize\ttfamily float fxsrc.\+propyecto.\+domain.\+Recommender.\+Compute\+D\+CG (\begin{DoxyParamCaption}\item[{int}]{user\+ID,  }\item[{Array\+List$<$ Integer $>$}]{predicted }\end{DoxyParamCaption})}
+
+
+
+Computa el D\+CG de la predicción hecha sobre los items de unknown del usuario. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape user\+ID} representa el ID de un usuario presente en el file de U\+N\+K\+N\+O\+WN del sistema y {\itshape predicted} son los ID de las predicciones de los items presentes en U\+N\+K\+N\+O\+WN que más le van a gustar ya {\bfseries{ordenados}} 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em user\+ID} & es el ID del usuario para el que se va a computar \\
+\hline
+{\em predicted} & vector de items\+ID de los items predichos que le gustarán \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Retorna el D\+CG. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_recommender_aebf9164de78aee0a55c322f622feb13b}\label{classfxsrc_1_1propyecto_1_1domain_1_1_recommender_aebf9164de78aee0a55c322f622feb13b}} 
+\index{fxsrc.propyecto.domain.Recommender@{fxsrc.propyecto.domain.Recommender}!ComputeIDCG@{ComputeIDCG}}
+\index{ComputeIDCG@{ComputeIDCG}!fxsrc.propyecto.domain.Recommender@{fxsrc.propyecto.domain.Recommender}}
+\doxysubsubsection{\texorpdfstring{ComputeIDCG()}{ComputeIDCG()}}
+{\footnotesize\ttfamily float fxsrc.\+propyecto.\+domain.\+Recommender.\+Compute\+I\+D\+CG (\begin{DoxyParamCaption}\item[{int}]{user\+ID,  }\item[{Array\+List$<$ Integer $>$}]{predicted }\end{DoxyParamCaption})}
+
+
+
+Computa el I\+D\+CG para un usuario con los mejores Q elementos de unknown. 
+
+Para ello se ordenan los items de unknown en funcion del rating de unknown que tienen de forma decreciente. En caso de mismo rating, ordeno primero aquel que yo recomiende antes (es decir, aquel con indice menor en el vector predicted)
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape user\+ID} representa el ID de un usuario presente en el file de U\+N\+K\+N\+O\+WN del sistema y {\itshape predicted} son los ID de las predicciones de los items presentes en U\+N\+K\+N\+O\+WN que más le van a gustar ya {\bfseries{ordenados}} 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em user\+ID} & es el ID del usuario para el que se va a computar \\
+\hline
+{\em predicted} & vector de items\+ID de los items predichos que le gustarán \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Retorna el I\+D\+CG. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_recommender_a2b7c8b85744a4552e0cbb2a9b7796439}\label{classfxsrc_1_1propyecto_1_1domain_1_1_recommender_a2b7c8b85744a4552e0cbb2a9b7796439}} 
+\index{fxsrc.propyecto.domain.Recommender@{fxsrc.propyecto.domain.Recommender}!ComputeNDCG@{ComputeNDCG}}
+\index{ComputeNDCG@{ComputeNDCG}!fxsrc.propyecto.domain.Recommender@{fxsrc.propyecto.domain.Recommender}}
+\doxysubsubsection{\texorpdfstring{ComputeNDCG()}{ComputeNDCG()}}
+{\footnotesize\ttfamily float fxsrc.\+propyecto.\+domain.\+Recommender.\+Compute\+N\+D\+CG (\begin{DoxyParamCaption}\item[{float}]{D\+CG,  }\item[{float}]{I\+D\+CG }\end{DoxyParamCaption})}
+
+
+
+Computa el N\+D\+CG, comprendido entre 0 y 1. Cuanto más cercano a 1, mejor predicción. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape D\+CG} y {\itshape I\+D\+CG} deben haber salido de utilizar previamente los métodos Compute\+I\+D\+CG y Compute\+D\+CG sobre un mismo usuario. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em D\+CG} & es el valor de D\+CG que ha retornado la funcion Compute\+D\+CG para un cierto usuario X \\
+\hline
+{\em I\+D\+CG} & es el valor de D\+CG que ha retornado la funcion Compute\+D\+CG para un cierto usuario X \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Retorna el N\+D\+CG. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_recommender_a46b206a88721b9b7072fa65511ec56bc}\label{classfxsrc_1_1propyecto_1_1domain_1_1_recommender_a46b206a88721b9b7072fa65511ec56bc}} 
+\index{fxsrc.propyecto.domain.Recommender@{fxsrc.propyecto.domain.Recommender}!GetIndexGivenItemID@{GetIndexGivenItemID}}
+\index{GetIndexGivenItemID@{GetIndexGivenItemID}!fxsrc.propyecto.domain.Recommender@{fxsrc.propyecto.domain.Recommender}}
+\doxysubsubsection{\texorpdfstring{GetIndexGivenItemID()}{GetIndexGivenItemID()}}
+{\footnotesize\ttfamily Integer fxsrc.\+propyecto.\+domain.\+Recommender.\+Get\+Index\+Given\+Item\+ID (\begin{DoxyParamCaption}\item[{Array\+List$<$ Integer $>$}]{predicted,  }\item[{int}]{item\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Retorna el índice de un vector de items\+ID en el que se encuentra un rating con el item\+ID especificado, o M\+A\+X\+\_\+\+V\+A\+L\+UE si no está 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em predicted} & vector de items\+ID en el que se va a buscar \\
+\hline
+{\em item\+ID} & es el item\+ID que se quiere buscar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Retorna el índice en el que está un rating con ese item\+ID. Si item\+ID no está presente, retorna M\+A\+X\+\_\+\+V\+A\+L\+UE 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_recommender_aa6a9fc1777e8743dbdabacd3240b53bf}\label{classfxsrc_1_1propyecto_1_1domain_1_1_recommender_aa6a9fc1777e8743dbdabacd3240b53bf}} 
+\index{fxsrc.propyecto.domain.Recommender@{fxsrc.propyecto.domain.Recommender}!Log2@{Log2}}
+\index{Log2@{Log2}!fxsrc.propyecto.domain.Recommender@{fxsrc.propyecto.domain.Recommender}}
+\doxysubsubsection{\texorpdfstring{Log2()}{Log2()}}
+{\footnotesize\ttfamily static double fxsrc.\+propyecto.\+domain.\+Recommender.\+Log2 (\begin{DoxyParamCaption}\item[{int}]{N }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Computa el log 2 de un entero. 
+
+Se basa en que log2(\+N) = log10(\+N) / log10(2). Java no trae nativamente la funcion log2 en la clase Math
+
+\begin{DoxyPrecond}{Precondition}
+N $>$ 0 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em N} & el entero del cual queremos hacer log2 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Retorna log2(2). 
+\end{DoxyPostcond}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/fxsrc/propyecto/domain/\mbox{\hyperlink{_recommender_8java}{Recommender.\+java}}\end{DoxyCompactItemize}

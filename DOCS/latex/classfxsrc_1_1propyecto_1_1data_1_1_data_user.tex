@@ -1,0 +1,496 @@
+\hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_user}{}\doxysection{fxsrc.\+propyecto.\+data.\+Data\+User Class Reference}
+\label{classfxsrc_1_1propyecto_1_1data_1_1_data_user}\index{fxsrc.propyecto.data.DataUser@{fxsrc.propyecto.data.DataUser}}
+
+
+Clase que contiene los datos de todos los Usuarios del sistema.  
+
+
+Inheritance diagram for fxsrc.\+propyecto.\+data.\+Data\+User\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classfxsrc_1_1propyecto_1_1data_1_1_data_user}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_user_a132d800e2387b1c57374dc23d348853f}{Data\+User}} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_user}{Data\+User}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_user_a1db523964ed2e73c1a5e5a2677acf2c3}{Init}} ()
+\begin{DoxyCompactList}\small\item\em Función para inicializar {\itshape items}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_user_aca5a1d759a0cfd8095ef453665ea578e}{Clear\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Función para inicializar los conjuntos de datos. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user_actual}{User\+Actual}} \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_user_a6d09c101e034cc1e1688d1880970796b}{Get\+User}} (String \mbox{\hyperlink{_parser_c_s_vtest_8txt_a79bfea1206658219a4a93ce989e178cb}{username}})
+\begin{DoxyCompactList}\small\item\em Función que devuelve el User con username = {\itshape username}. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_user_a8f14699a08b06e1ca82891b97bd7699e}{User\+Exists}} (String \mbox{\hyperlink{_parser_c_s_vtest_8txt_a79bfea1206658219a4a93ce989e178cb}{username}})
+\begin{DoxyCompactList}\small\item\em Función que devuelve si existe el user con username = {\itshape username} o no. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_user_ad40fa501eb667111f0d383ed30d8b77d}{Set\+New\+Password}} (String \mbox{\hyperlink{_parser_c_s_vtest_8txt_a79bfea1206658219a4a93ce989e178cb}{username}}, String new\+Password)
+\begin{DoxyCompactList}\small\item\em Función que cambia la password del user con username = {\itshape username} a {\itshape new\+Password}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_user_a5a36c1cd987f19e490442e66d0fbe032}{Set\+New\+Email}} (String \mbox{\hyperlink{_parser_c_s_vtest_8txt_a79bfea1206658219a4a93ce989e178cb}{username}}, String new\+Email)
+\begin{DoxyCompactList}\small\item\em Función que cambia el email del user con username = {\itshape username} a {\itshape new\+Email}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_user_abbc9c462cb46c42511b88c07ef7b3133}{Set\+New\+Username}} (String \mbox{\hyperlink{_parser_c_s_vtest_8txt_a79bfea1206658219a4a93ce989e178cb}{username}}, String new\+Username)
+\begin{DoxyCompactList}\small\item\em Función que cambia el username del user con username = {\itshape username} a {\itshape new\+Password}. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_user_af74d97b4e2c29a517db6e6552e86dae0}{Check\+Credentials}} (String \mbox{\hyperlink{_parser_c_s_vtest_8txt_a79bfea1206658219a4a93ce989e178cb}{username}}, String \mbox{\hyperlink{_parser_c_s_vtest_8txt_a9ff4cce1cbfa9b84152b1936f0f52db8}{password}})
+\begin{DoxyCompactList}\small\item\em Función que comprueba si existe un User con username = {\itshape username} y password = {\itshape password}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_user_a7e10993abc5c2d83e385edc0a6398fee}{Get\+Free\+ID}} ()
+\begin{DoxyCompactList}\small\item\em Función que devuelve la primera ID disponible para un nuevo User. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_user_a7710fd08d8689ca3cc3e495cc80533c1}{Add\+User}} (\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user_actual}{User\+Actual}} user)
+\begin{DoxyCompactList}\small\item\em Función que Añade un nuevo usuario a los conjuntos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_user_ad96dbf6eb1727104f3da1be0e1f839c5}{Parse\+And\+Add\+Data}} (String \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_ac0986d4f64fe86583523fd175b58cbf8}{attributes\+Names}}\mbox{[}$\,$\mbox{]}, String line\+Read)
+\begin{DoxyCompactList}\small\item\em Parsea una linea C\+SV a un User\+Actual y lo añade a {\itshape system\+Users}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_user_a2b07e4ee44b8d54873808a8cdb0948d1}{Print}} ()
+\begin{DoxyCompactList}\small\item\em Funcion que imprime la informacion de todos los usuarios. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_user_a7191b49cd0e560acde397f799793c502}{Set\+Ratings}} ()
+\begin{DoxyCompactList}\small\item\em Funcion que asigna todos los ratings de un usuario que obtiene de la base de datos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_user_aec90a0475eb562b2fceb9b3bea0bb76d}{Set\+New\+Security}} (String \mbox{\hyperlink{_parser_c_s_vtest_8txt_a79bfea1206658219a4a93ce989e178cb}{username}}, String new\+Security)
+\begin{DoxyCompactList}\small\item\em Función que cambia la respuesta de la pregunta de seguridad del user con username = {\itshape username} a {\itshape new\+Security}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_user_a28a6ecd5563836012c3638347f321e1b}{Delete\+User}} (String get\+Username)
+\begin{DoxyCompactList}\small\item\em Función que elimina el usuario con username = {\itshape get\+Username}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_user_ac579cf84e9e7d24cc3670765526e5170}{Has\+Next\+Line}} ()
+\begin{DoxyCompactList}\small\item\em Funcion que devuelve si hay una línea más por guardar. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_user_a29a99a2eed840b340e8fbc8041ceee0d}{Get\+Next\+Line}} ()
+\begin{DoxyCompactList}\small\item\em Funcion que devuelve la siguiente línea a guardar. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Hash\+Map$<$ String, \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user_actual}{User\+Actual}} $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_user_aed3a7832d5cb97261df0350e5001e771}{system\+Users}}
+\begin{DoxyCompactList}\small\item\em Hash\+Map de los usuarios con su username como key. \end{DoxyCompactList}\item 
+Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user_actual}{User\+Actual}} $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_user_a2cbcff010aa165170b5089e8d17de017}{users\+Array}}
+\begin{DoxyCompactList}\small\item\em Conjunto de los usuarios para recorridos secuenciales. \end{DoxyCompactList}\item 
+Hash\+Map$<$ Integer, \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user_actual}{User\+Actual}} $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_user_a25640b3979829c480675c1cfc0fa6930}{users\+Ids}}
+\begin{DoxyCompactList}\small\item\em Hash\+Map de los usuarios con su id como key. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Clase que contiene los datos de todos los Usuarios del sistema. 
+
+Ofrece operaciones para que el Data\+Manager pueda añadir Usuarios nuevos a partir de un String que sería la representación del Usuario a añadir en formato C\+SV. También ofrece operaciones para que el Data\+Manager pida todos los Usuarios, un Usuario en concreto a partir del nombre, o incluso un Usuario a partir de su ID. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_user_a132d800e2387b1c57374dc23d348853f}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_user_a132d800e2387b1c57374dc23d348853f}} 
+\index{fxsrc.propyecto.data.DataUser@{fxsrc.propyecto.data.DataUser}!DataUser@{DataUser}}
+\index{DataUser@{DataUser}!fxsrc.propyecto.data.DataUser@{fxsrc.propyecto.data.DataUser}}
+\doxysubsubsection{\texorpdfstring{DataUser()}{DataUser()}}
+{\footnotesize\ttfamily fxsrc.\+propyecto.\+data.\+Data\+User.\+Data\+User (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor por defecto de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_user}{Data\+User}}. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Se crea una instancia de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_user}{Data\+User}} y se llama a la constructora por defecto de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data}{Data}} 
+\end{DoxyPostcond}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_user_a7710fd08d8689ca3cc3e495cc80533c1}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_user_a7710fd08d8689ca3cc3e495cc80533c1}} 
+\index{fxsrc.propyecto.data.DataUser@{fxsrc.propyecto.data.DataUser}!AddUser@{AddUser}}
+\index{AddUser@{AddUser}!fxsrc.propyecto.data.DataUser@{fxsrc.propyecto.data.DataUser}}
+\doxysubsubsection{\texorpdfstring{AddUser()}{AddUser()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+data.\+Data\+User.\+Add\+User (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user_actual}{User\+Actual}}}]{user }\end{DoxyParamCaption})}
+
+
+
+Función que Añade un nuevo usuario a los conjuntos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em User\+Actual} & user Corresponde al User\+Actual a añadir a los conjuntos \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\itshape system\+User} no es null. 
+
+{\itshape users\+Array} no es null. 
+
+{\itshape users\+Ids} no es null. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Añade un nuevo usuario los conjuntos 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_user_af74d97b4e2c29a517db6e6552e86dae0}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_user_af74d97b4e2c29a517db6e6552e86dae0}} 
+\index{fxsrc.propyecto.data.DataUser@{fxsrc.propyecto.data.DataUser}!CheckCredentials@{CheckCredentials}}
+\index{CheckCredentials@{CheckCredentials}!fxsrc.propyecto.data.DataUser@{fxsrc.propyecto.data.DataUser}}
+\doxysubsubsection{\texorpdfstring{CheckCredentials()}{CheckCredentials()}}
+{\footnotesize\ttfamily boolean fxsrc.\+propyecto.\+data.\+Data\+User.\+Check\+Credentials (\begin{DoxyParamCaption}\item[{String}]{username,  }\item[{String}]{password }\end{DoxyParamCaption})}
+
+
+
+Función que comprueba si existe un User con username = {\itshape username} y password = {\itshape password}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em String} & username Corresponde al username del User\+Actual a checkear \\
+\hline
+{\em String} & password Corresponde a la password del User\+Actual a checkear \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\itshape system\+User} no es null. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve si existe un User con username = {\itshape username} y password = {\itshape password} o no 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_user_aca5a1d759a0cfd8095ef453665ea578e}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_user_aca5a1d759a0cfd8095ef453665ea578e}} 
+\index{fxsrc.propyecto.data.DataUser@{fxsrc.propyecto.data.DataUser}!ClearData@{ClearData}}
+\index{ClearData@{ClearData}!fxsrc.propyecto.data.DataUser@{fxsrc.propyecto.data.DataUser}}
+\doxysubsubsection{\texorpdfstring{ClearData()}{ClearData()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+data.\+Data\+User.\+Clear\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Función para inicializar los conjuntos de datos. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape system\+User} no es null. 
+
+{\itshape users\+Ids} no es null. 
+
+{\itshape users\+Array} no es null. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Se resetea los conjuntos de datos 
+\end{DoxyPostcond}
+
+
+Reimplemented from \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_ad20bbf20a9c11034e72cbb8128aa9c69}{fxsrc.\+propyecto.\+data.\+Data}}.
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_user_a28a6ecd5563836012c3638347f321e1b}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_user_a28a6ecd5563836012c3638347f321e1b}} 
+\index{fxsrc.propyecto.data.DataUser@{fxsrc.propyecto.data.DataUser}!DeleteUser@{DeleteUser}}
+\index{DeleteUser@{DeleteUser}!fxsrc.propyecto.data.DataUser@{fxsrc.propyecto.data.DataUser}}
+\doxysubsubsection{\texorpdfstring{DeleteUser()}{DeleteUser()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+data.\+Data\+User.\+Delete\+User (\begin{DoxyParamCaption}\item[{String}]{get\+Username }\end{DoxyParamCaption})}
+
+
+
+Función que elimina el usuario con username = {\itshape get\+Username}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em String} & username Corresponde al username del usuario a eliminar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\itshape system\+User} no es null. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Elimina el usuario con username = {\itshape get\+Username} 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_user_a7e10993abc5c2d83e385edc0a6398fee}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_user_a7e10993abc5c2d83e385edc0a6398fee}} 
+\index{fxsrc.propyecto.data.DataUser@{fxsrc.propyecto.data.DataUser}!GetFreeID@{GetFreeID}}
+\index{GetFreeID@{GetFreeID}!fxsrc.propyecto.data.DataUser@{fxsrc.propyecto.data.DataUser}}
+\doxysubsubsection{\texorpdfstring{GetFreeID()}{GetFreeID()}}
+{\footnotesize\ttfamily int fxsrc.\+propyecto.\+data.\+Data\+User.\+Get\+Free\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Función que devuelve la primera ID disponible para un nuevo User. 
+
+\begin{DoxyPrecond}{Precondition}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve la primera ID disponible para un nuevo User 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_user_a29a99a2eed840b340e8fbc8041ceee0d}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_user_a29a99a2eed840b340e8fbc8041ceee0d}} 
+\index{fxsrc.propyecto.data.DataUser@{fxsrc.propyecto.data.DataUser}!GetNextLine@{GetNextLine}}
+\index{GetNextLine@{GetNextLine}!fxsrc.propyecto.data.DataUser@{fxsrc.propyecto.data.DataUser}}
+\doxysubsubsection{\texorpdfstring{GetNextLine()}{GetNextLine()}}
+{\footnotesize\ttfamily String fxsrc.\+propyecto.\+data.\+Data\+User.\+Get\+Next\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Funcion que devuelve la siguiente línea a guardar. 
+
+\begin{DoxyPrecond}{Precondition}
+users\+Array no es null 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve la siguiente línea a guardar 
+\end{DoxyPostcond}
+
+
+Reimplemented from \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_a7bcf3576477253620b38f660afd3f45c}{fxsrc.\+propyecto.\+data.\+Data}}.
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_user_a6d09c101e034cc1e1688d1880970796b}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_user_a6d09c101e034cc1e1688d1880970796b}} 
+\index{fxsrc.propyecto.data.DataUser@{fxsrc.propyecto.data.DataUser}!GetUser@{GetUser}}
+\index{GetUser@{GetUser}!fxsrc.propyecto.data.DataUser@{fxsrc.propyecto.data.DataUser}}
+\doxysubsubsection{\texorpdfstring{GetUser()}{GetUser()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user_actual}{User\+Actual}} fxsrc.\+propyecto.\+data.\+Data\+User.\+Get\+User (\begin{DoxyParamCaption}\item[{String}]{username }\end{DoxyParamCaption})}
+
+
+
+Función que devuelve el User con username = {\itshape username}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em String} & username Corresponde al username del usuario deseado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\itshape system\+User} no es null. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve el User con username = {\itshape username} 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_user_ac579cf84e9e7d24cc3670765526e5170}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_user_ac579cf84e9e7d24cc3670765526e5170}} 
+\index{fxsrc.propyecto.data.DataUser@{fxsrc.propyecto.data.DataUser}!HasNextLine@{HasNextLine}}
+\index{HasNextLine@{HasNextLine}!fxsrc.propyecto.data.DataUser@{fxsrc.propyecto.data.DataUser}}
+\doxysubsubsection{\texorpdfstring{HasNextLine()}{HasNextLine()}}
+{\footnotesize\ttfamily boolean fxsrc.\+propyecto.\+data.\+Data\+User.\+Has\+Next\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Funcion que devuelve si hay una línea más por guardar. 
+
+\begin{DoxyPrecond}{Precondition}
+system\+Users no es null 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve si hay alguna línea más por guardar 
+\end{DoxyPostcond}
+
+
+Reimplemented from \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_a4c4350fd83ac34db15e28cf1094d397b}{fxsrc.\+propyecto.\+data.\+Data}}.
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_user_a1db523964ed2e73c1a5e5a2677acf2c3}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_user_a1db523964ed2e73c1a5e5a2677acf2c3}} 
+\index{fxsrc.propyecto.data.DataUser@{fxsrc.propyecto.data.DataUser}!Init@{Init}}
+\index{Init@{Init}!fxsrc.propyecto.data.DataUser@{fxsrc.propyecto.data.DataUser}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+data.\+Data\+User.\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Función para inicializar {\itshape items}. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Se incializa el array {\itshape items} a un array vacío, 
+\end{DoxyPostcond}
+
+
+Reimplemented from \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_a86f95d7c813244f9a1992fe4d7c8be99}{fxsrc.\+propyecto.\+data.\+Data}}.
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_user_ad96dbf6eb1727104f3da1be0e1f839c5}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_user_ad96dbf6eb1727104f3da1be0e1f839c5}} 
+\index{fxsrc.propyecto.data.DataUser@{fxsrc.propyecto.data.DataUser}!ParseAndAddData@{ParseAndAddData}}
+\index{ParseAndAddData@{ParseAndAddData}!fxsrc.propyecto.data.DataUser@{fxsrc.propyecto.data.DataUser}}
+\doxysubsubsection{\texorpdfstring{ParseAndAddData()}{ParseAndAddData()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+data.\+Data\+User.\+Parse\+And\+Add\+Data (\begin{DoxyParamCaption}\item[{String}]{attributes\+Names\mbox{[}$\,$\mbox{]},  }\item[{String}]{line\+Read }\end{DoxyParamCaption})}
+
+
+
+Parsea una linea C\+SV a un User\+Actual y lo añade a {\itshape system\+Users}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em String\mbox{[}$\,$\mbox{]}} & attributes\+Names Corresponde al nombre de los atributos \\
+\hline
+{\em String} & line\+Read Corresponde a la linea C\+SV que hace referencia al Item deseado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\itshape attributes\+Names} tiene el tamaño exacto de parametros que tenga el Item y {\itshape line\+Read} no es vacío. 
+
+Ningun conjunto es null 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Se parsean los atributos de Item y finalmente se añade a {\itshape items}. 
+\end{DoxyPostcond}
+
+
+Reimplemented from \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_aea413941c012cb7942abe5620f37634d}{fxsrc.\+propyecto.\+data.\+Data}}.
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_user_a2b07e4ee44b8d54873808a8cdb0948d1}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_user_a2b07e4ee44b8d54873808a8cdb0948d1}} 
+\index{fxsrc.propyecto.data.DataUser@{fxsrc.propyecto.data.DataUser}!Print@{Print}}
+\index{Print@{Print}!fxsrc.propyecto.data.DataUser@{fxsrc.propyecto.data.DataUser}}
+\doxysubsubsection{\texorpdfstring{Print()}{Print()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+data.\+Data\+User.\+Print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funcion que imprime la informacion de todos los usuarios. 
+
+\begin{DoxyPrecond}{Precondition}
+system\+Users no es null 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Se imprime la informacion de todos los usuarios 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_user_a5a36c1cd987f19e490442e66d0fbe032}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_user_a5a36c1cd987f19e490442e66d0fbe032}} 
+\index{fxsrc.propyecto.data.DataUser@{fxsrc.propyecto.data.DataUser}!SetNewEmail@{SetNewEmail}}
+\index{SetNewEmail@{SetNewEmail}!fxsrc.propyecto.data.DataUser@{fxsrc.propyecto.data.DataUser}}
+\doxysubsubsection{\texorpdfstring{SetNewEmail()}{SetNewEmail()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+data.\+Data\+User.\+Set\+New\+Email (\begin{DoxyParamCaption}\item[{String}]{username,  }\item[{String}]{new\+Email }\end{DoxyParamCaption})}
+
+
+
+Función que cambia el email del user con username = {\itshape username} a {\itshape new\+Email}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em String} & username Corresponde al username del usuario a modificar \\
+\hline
+{\em String} & new\+Email Corresponde al nuevo email del usario a modificar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\itshape system\+User} no es null. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Cambia el email del user con username = {\itshape username} a {\itshape new\+Email} y lo guarda en el C\+SV 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_user_ad40fa501eb667111f0d383ed30d8b77d}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_user_ad40fa501eb667111f0d383ed30d8b77d}} 
+\index{fxsrc.propyecto.data.DataUser@{fxsrc.propyecto.data.DataUser}!SetNewPassword@{SetNewPassword}}
+\index{SetNewPassword@{SetNewPassword}!fxsrc.propyecto.data.DataUser@{fxsrc.propyecto.data.DataUser}}
+\doxysubsubsection{\texorpdfstring{SetNewPassword()}{SetNewPassword()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+data.\+Data\+User.\+Set\+New\+Password (\begin{DoxyParamCaption}\item[{String}]{username,  }\item[{String}]{new\+Password }\end{DoxyParamCaption})}
+
+
+
+Función que cambia la password del user con username = {\itshape username} a {\itshape new\+Password}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em String} & username Corresponde al username del usuario a modificar \\
+\hline
+{\em String} & new\+Password Corresponde al nuevo password del usario a modificar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\itshape system\+User} no es null. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Cambia la password del user con username = {\itshape username} a {\itshape new\+Password} y lo guarda en el C\+SV 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_user_aec90a0475eb562b2fceb9b3bea0bb76d}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_user_aec90a0475eb562b2fceb9b3bea0bb76d}} 
+\index{fxsrc.propyecto.data.DataUser@{fxsrc.propyecto.data.DataUser}!SetNewSecurity@{SetNewSecurity}}
+\index{SetNewSecurity@{SetNewSecurity}!fxsrc.propyecto.data.DataUser@{fxsrc.propyecto.data.DataUser}}
+\doxysubsubsection{\texorpdfstring{SetNewSecurity()}{SetNewSecurity()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+data.\+Data\+User.\+Set\+New\+Security (\begin{DoxyParamCaption}\item[{String}]{username,  }\item[{String}]{new\+Security }\end{DoxyParamCaption})}
+
+
+
+Función que cambia la respuesta de la pregunta de seguridad del user con username = {\itshape username} a {\itshape new\+Security}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em String} & username Corresponde al username del usuario a modificar \\
+\hline
+{\em String} & new\+Username Corresponde al nuevo username del usario a modificar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\itshape system\+User} no es null. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+cambia la respuesta de la pregunta de seguridad del user con username = {\itshape username} a {\itshape new\+Security} y lo guarda en el C\+SV 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_user_abbc9c462cb46c42511b88c07ef7b3133}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_user_abbc9c462cb46c42511b88c07ef7b3133}} 
+\index{fxsrc.propyecto.data.DataUser@{fxsrc.propyecto.data.DataUser}!SetNewUsername@{SetNewUsername}}
+\index{SetNewUsername@{SetNewUsername}!fxsrc.propyecto.data.DataUser@{fxsrc.propyecto.data.DataUser}}
+\doxysubsubsection{\texorpdfstring{SetNewUsername()}{SetNewUsername()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+data.\+Data\+User.\+Set\+New\+Username (\begin{DoxyParamCaption}\item[{String}]{username,  }\item[{String}]{new\+Username }\end{DoxyParamCaption})}
+
+
+
+Función que cambia el username del user con username = {\itshape username} a {\itshape new\+Password}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em String} & username Corresponde al username del usuario a modificar \\
+\hline
+{\em String} & new\+Username Corresponde al nuevo username del usario a modificar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\itshape system\+User} no es null. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+cambia el username del user con username = {\itshape username} a {\itshape new\+Username} y lo guarda en el C\+SV 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_user_a7191b49cd0e560acde397f799793c502}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_user_a7191b49cd0e560acde397f799793c502}} 
+\index{fxsrc.propyecto.data.DataUser@{fxsrc.propyecto.data.DataUser}!SetRatings@{SetRatings}}
+\index{SetRatings@{SetRatings}!fxsrc.propyecto.data.DataUser@{fxsrc.propyecto.data.DataUser}}
+\doxysubsubsection{\texorpdfstring{SetRatings()}{SetRatings()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+data.\+Data\+User.\+Set\+Ratings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funcion que asigna todos los ratings de un usuario que obtiene de la base de datos. 
+
+\begin{DoxyPrecond}{Precondition}
+system\+Users no es null 
+
+Data\+Manager ya ha sido instanciado 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Se asignan todos los ratings de un usuario que obtiene de la base de datos 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_user_a8f14699a08b06e1ca82891b97bd7699e}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_user_a8f14699a08b06e1ca82891b97bd7699e}} 
+\index{fxsrc.propyecto.data.DataUser@{fxsrc.propyecto.data.DataUser}!UserExists@{UserExists}}
+\index{UserExists@{UserExists}!fxsrc.propyecto.data.DataUser@{fxsrc.propyecto.data.DataUser}}
+\doxysubsubsection{\texorpdfstring{UserExists()}{UserExists()}}
+{\footnotesize\ttfamily boolean fxsrc.\+propyecto.\+data.\+Data\+User.\+User\+Exists (\begin{DoxyParamCaption}\item[{String}]{username }\end{DoxyParamCaption})}
+
+
+
+Función que devuelve si existe el user con username = {\itshape username} o no. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em String} & username Corresponde al username del usuario a checkear \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\itshape system\+User} no es null. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve si existe el user con username = username o no 
+\end{DoxyPostcond}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_user_aed3a7832d5cb97261df0350e5001e771}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_user_aed3a7832d5cb97261df0350e5001e771}} 
+\index{fxsrc.propyecto.data.DataUser@{fxsrc.propyecto.data.DataUser}!systemUsers@{systemUsers}}
+\index{systemUsers@{systemUsers}!fxsrc.propyecto.data.DataUser@{fxsrc.propyecto.data.DataUser}}
+\doxysubsubsection{\texorpdfstring{systemUsers}{systemUsers}}
+{\footnotesize\ttfamily Hash\+Map$<$String, \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user_actual}{User\+Actual}}$>$ fxsrc.\+propyecto.\+data.\+Data\+User.\+system\+Users\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Hash\+Map de los usuarios con su username como key. 
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_user_a2cbcff010aa165170b5089e8d17de017}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_user_a2cbcff010aa165170b5089e8d17de017}} 
+\index{fxsrc.propyecto.data.DataUser@{fxsrc.propyecto.data.DataUser}!usersArray@{usersArray}}
+\index{usersArray@{usersArray}!fxsrc.propyecto.data.DataUser@{fxsrc.propyecto.data.DataUser}}
+\doxysubsubsection{\texorpdfstring{usersArray}{usersArray}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user_actual}{User\+Actual}}$>$ fxsrc.\+propyecto.\+data.\+Data\+User.\+users\+Array\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Conjunto de los usuarios para recorridos secuenciales. 
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_user_a25640b3979829c480675c1cfc0fa6930}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_user_a25640b3979829c480675c1cfc0fa6930}} 
+\index{fxsrc.propyecto.data.DataUser@{fxsrc.propyecto.data.DataUser}!usersIds@{usersIds}}
+\index{usersIds@{usersIds}!fxsrc.propyecto.data.DataUser@{fxsrc.propyecto.data.DataUser}}
+\doxysubsubsection{\texorpdfstring{usersIds}{usersIds}}
+{\footnotesize\ttfamily Hash\+Map$<$Integer, \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user_actual}{User\+Actual}}$>$ fxsrc.\+propyecto.\+data.\+Data\+User.\+users\+Ids\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Hash\+Map de los usuarios con su id como key. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/fxsrc/propyecto/data/\mbox{\hyperlink{_data_user_8java}{Data\+User.\+java}}\end{DoxyCompactItemize}

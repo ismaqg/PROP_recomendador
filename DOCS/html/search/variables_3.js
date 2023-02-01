@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['canal_1142',['Canal',['../_data_test_8txt.html#a80084f1558ab45bc09f784d6fd3c303c',1,'DataTest.txt']]],
+  ['cancelemailbutton_1143',['cancelEmailButton',['../classfxsrc_1_1propyecto_1_1presentation_1_1_edit_profile_controller.html#a885b3cbff5a00c16e7fe7687a2a9e933',1,'fxsrc::propyecto::presentation::EditProfileController']]],
+  ['cancelpasswordbutton_1144',['cancelPasswordButton',['../classfxsrc_1_1propyecto_1_1presentation_1_1_edit_profile_controller.html#a4d8aaa10dcd5c6841bea1308c2f9771c',1,'fxsrc::propyecto::presentation::EditProfileController']]],
+  ['cancelsecuritybutton_1145',['cancelSecurityButton',['../classfxsrc_1_1propyecto_1_1presentation_1_1_edit_profile_controller.html#af6df5402a86f068aa90a2a412ea89cf9',1,'fxsrc::propyecto::presentation::EditProfileController']]],
+  ['cancelusernamebutton_1146',['cancelUsernameButton',['../classfxsrc_1_1propyecto_1_1presentation_1_1_edit_profile_controller.html#a75055da40e31b06025222eea9840d884',1,'fxsrc::propyecto::presentation::EditProfileController']]],
+  ['categories_1147',['categories',['../classfxsrc_1_1propyecto_1_1domain_1_1_item.html#a06dcd3baaf7559520586900fc655c5b6',1,'fxsrc::propyecto::domain::Item']]],
+  ['centroids_1148',['centroids',['../classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm.html#ac83a9e849d7e632e58f3c4a6b28562d1',1,'fxsrc.propyecto.data.DataAlgorithm.centroids()'],['../classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering.html#a2b485c991f4f66d64b7fee5e79de7ded',1,'fxsrc.propyecto.domain.CollaborativeFiltering.centroids()']]],
+  ['cf_1149',['cf',['../classfxsrc_1_1propyecto_1_1drivers_1_1_recommender_test.html#aa24b0f93c1ca279f12866f3dd1b54203',1,'fxsrc::propyecto::drivers::RecommenderTest']]],
+  ['collab_5frecommendations_5fthreshold_1150',['COLLAB_RECOMMENDATIONS_THRESHOLD',['../classfxsrc_1_1propyecto_1_1domain_1_1_hybrid_approach_filtering.html#a15e0f8f076386b2dbf67ecfba75e7e73',1,'fxsrc::propyecto::domain::HybridApproachFiltering']]],
+  ['collaborativefiltering_1151',['collaborativeFiltering',['../classfxsrc_1_1propyecto_1_1domain_1_1_hybrid_approach_filtering.html#ac09a965a364d5d276ac52f2350f062cd',1,'fxsrc::propyecto::domain::HybridApproachFiltering']]],
+  ['com_1152',['com',['../_parser_c_s_vtest_8txt.html#ad1a783bb40ce562b90c9c81229086d86',1,'ParserCSVtest.txt']]],
+  ['comedy_1153',['Comedy',['../_parser_c_s_vtest_8txt.html#a7fd1c46510223811af99ac7156e0bbb8',1,'ParserCSVtest.txt']]],
+  ['confirmpasswordfield_1154',['confirmPasswordField',['../classfxsrc_1_1propyecto_1_1presentation_1_1_sign_up_controller.html#ad084e06cadc0493d7d442ba2bab7104d',1,'fxsrc::propyecto::presentation::SignUpController']]],
+  ['content_5fsimilarity_5fthreshold_1155',['CONTENT_SIMILARITY_THRESHOLD',['../classfxsrc_1_1propyecto_1_1domain_1_1_hybrid_approach_filtering.html#a6579da47165eaa746e1736eeca328510',1,'fxsrc::propyecto::domain::HybridApproachFiltering']]],
+  ['contentbasedfiltering_1156',['contentBasedFiltering',['../classfxsrc_1_1propyecto_1_1domain_1_1_hybrid_approach_filtering.html#a19bf02ce9f57f6cd029f1a30106013f9',1,'fxsrc::propyecto::domain::HybridApproachFiltering']]],
+  ['contentbasedk_1157',['contentBasedK',['../classfxsrc_1_1propyecto_1_1domain_1_1_hybrid_approach_filtering.html#ab7712eec87a9c985f5b680ef909fa11e',1,'fxsrc::propyecto::domain::HybridApproachFiltering']]],
+  ['currentemail_1158',['currentEmail',['../classfxsrc_1_1propyecto_1_1presentation_1_1_edit_profile_controller.html#a850ee42b779f0d37a5de7c760deccb17',1,'fxsrc::propyecto::presentation::EditProfileController']]],
+  ['currentline_1159',['currentLine',['../classfxsrc_1_1propyecto_1_1data_1_1_data.html#aa039556f9132e323d3e349647c00350f',1,'fxsrc::propyecto::data::Data']]],
+  ['currentrecommendation_1160',['currentRecommendation',['../classfxsrc_1_1propyecto_1_1presentation_1_1_recommend_me_controller.html#aaa9d9af5c82eed1ae1809deee5588eba',1,'fxsrc::propyecto::presentation::RecommendMeController']]],
+  ['currentsecurity_1161',['currentSecurity',['../classfxsrc_1_1propyecto_1_1presentation_1_1_edit_profile_controller.html#aa713ef5e003d4f5a22759f462dd15202',1,'fxsrc::propyecto::presentation::EditProfileController']]],
+  ['currentusername_1162',['currentUsername',['../classfxsrc_1_1propyecto_1_1presentation_1_1_edit_profile_controller.html#a74159964a215e5a743af40af056dfad7',1,'fxsrc::propyecto::presentation::EditProfileController']]]
+];

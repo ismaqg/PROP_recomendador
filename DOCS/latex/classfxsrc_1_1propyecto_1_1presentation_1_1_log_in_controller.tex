@@ -1,0 +1,175 @@
+\hypertarget{classfxsrc_1_1propyecto_1_1presentation_1_1_log_in_controller}{}\doxysection{fxsrc.\+propyecto.\+presentation.\+Log\+In\+Controller Class Reference}
+\label{classfxsrc_1_1propyecto_1_1presentation_1_1_log_in_controller}\index{fxsrc.propyecto.presentation.LogInController@{fxsrc.propyecto.presentation.LogInController}}
+
+
+Clase encargada del acceso de un usuario con sus credenciales.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1presentation_1_1_log_in_controller_a87d1f6052836671e1c45afec3623707b}{User\+Log\+In}} (Action\+Event e)  throws I\+O\+Exception
+\begin{DoxyCompactList}\small\item\em Gestiona el clic del botón Log\+In. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1presentation_1_1_log_in_controller_a445987b5cfb6795fdd152f056592c2b3}{User\+Sign\+Up}} (Action\+Event e)  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Gestiona el clic del botón Sign\+Up. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1presentation_1_1_log_in_controller_a5d580f9f5c64cebfca5f71c35b9baa50}{User\+Forgot\+Pass}} (Action\+Event e)  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Gestiona el clic del botón Forgot\+Pass. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1presentation_1_1_log_in_controller_a8158b906220c5458829920e48cf1e845}{Check\+Login}} ()  throws I\+O\+Exception
+\begin{DoxyCompactList}\small\item\em Gestiona la comprobación de credenciales. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Label \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1presentation_1_1_log_in_controller_a7b04056db46a85c00811a2490ebae333}{error\+Label}}
+\begin{DoxyCompactList}\small\item\em {\itshape error\+Label} es un texto de error que aparece en caso de que el usuario haga algo mal. \end{DoxyCompactList}\item 
+Text\+Field \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1presentation_1_1_log_in_controller_a1e9fb61cbd9c8efc5b47de84fda71cfd}{username\+Field}}
+\begin{DoxyCompactList}\small\item\em {\itshape username\+Field} es el campo de texto donde el usuario introduce su nombre de usuario. \end{DoxyCompactList}\item 
+Password\+Field \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1presentation_1_1_log_in_controller_afc6dd4bc156c560ae7ebd887c786387e}{password\+Field}}
+\begin{DoxyCompactList}\small\item\em {\itshape password\+Field} es el campo de contraseña donde el usuario introduce su contraseña. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase encargada del acceso de un usuario con sus credenciales. 
+
+Gestiona el acceso de usuarios mediante la base de datos controlando el fichero de escena log\+In-\/view.\+fxml 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1presentation_1_1_log_in_controller_a8158b906220c5458829920e48cf1e845}\label{classfxsrc_1_1propyecto_1_1presentation_1_1_log_in_controller_a8158b906220c5458829920e48cf1e845}} 
+\index{fxsrc.propyecto.presentation.LogInController@{fxsrc.propyecto.presentation.LogInController}!CheckLogin@{CheckLogin}}
+\index{CheckLogin@{CheckLogin}!fxsrc.propyecto.presentation.LogInController@{fxsrc.propyecto.presentation.LogInController}}
+\doxysubsubsection{\texorpdfstring{CheckLogin()}{CheckLogin()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+presentation.\+Log\+In\+Controller.\+Check\+Login (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Gestiona la comprobación de credenciales. 
+
+\begin{DoxyPrecond}{Precondition}
+Cierto. 
+\end{DoxyPrecond}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPostcond}{Postcondition}
+Se modifica el valor de error\+Label en caso de tener algún error, o se envia al usuario al Home mediante Scene\+Manager si no tiene errores. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1presentation_1_1_log_in_controller_a5d580f9f5c64cebfca5f71c35b9baa50}\label{classfxsrc_1_1propyecto_1_1presentation_1_1_log_in_controller_a5d580f9f5c64cebfca5f71c35b9baa50}} 
+\index{fxsrc.propyecto.presentation.LogInController@{fxsrc.propyecto.presentation.LogInController}!UserForgotPass@{UserForgotPass}}
+\index{UserForgotPass@{UserForgotPass}!fxsrc.propyecto.presentation.LogInController@{fxsrc.propyecto.presentation.LogInController}}
+\doxysubsubsection{\texorpdfstring{UserForgotPass()}{UserForgotPass()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+presentation.\+Log\+In\+Controller.\+User\+Forgot\+Pass (\begin{DoxyParamCaption}\item[{Action\+Event}]{e }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Gestiona el clic del botón Forgot\+Pass. 
+
+\begin{DoxyPrecond}{Precondition}
+El usuario clica el botón de Forgot\+Pass. 
+\end{DoxyPrecond}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em Action\+Event} & e Evento de clic de botón Forgot\+Pass. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Se envía al usuario a la escena de Forgot\+Pass mediante Scene\+Manager. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1presentation_1_1_log_in_controller_a87d1f6052836671e1c45afec3623707b}\label{classfxsrc_1_1propyecto_1_1presentation_1_1_log_in_controller_a87d1f6052836671e1c45afec3623707b}} 
+\index{fxsrc.propyecto.presentation.LogInController@{fxsrc.propyecto.presentation.LogInController}!UserLogIn@{UserLogIn}}
+\index{UserLogIn@{UserLogIn}!fxsrc.propyecto.presentation.LogInController@{fxsrc.propyecto.presentation.LogInController}}
+\doxysubsubsection{\texorpdfstring{UserLogIn()}{UserLogIn()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+presentation.\+Log\+In\+Controller.\+User\+Log\+In (\begin{DoxyParamCaption}\item[{Action\+Event}]{e }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Gestiona el clic del botón Log\+In. 
+
+\begin{DoxyPrecond}{Precondition}
+El usuario clica el botón de Log\+In. 
+\end{DoxyPrecond}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em Action\+Event} & e Evento de clic de botón Log\+In. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Se comprueban las credenciales introducidas por el usuario. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1presentation_1_1_log_in_controller_a445987b5cfb6795fdd152f056592c2b3}\label{classfxsrc_1_1propyecto_1_1presentation_1_1_log_in_controller_a445987b5cfb6795fdd152f056592c2b3}} 
+\index{fxsrc.propyecto.presentation.LogInController@{fxsrc.propyecto.presentation.LogInController}!UserSignUp@{UserSignUp}}
+\index{UserSignUp@{UserSignUp}!fxsrc.propyecto.presentation.LogInController@{fxsrc.propyecto.presentation.LogInController}}
+\doxysubsubsection{\texorpdfstring{UserSignUp()}{UserSignUp()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+presentation.\+Log\+In\+Controller.\+User\+Sign\+Up (\begin{DoxyParamCaption}\item[{Action\+Event}]{e }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Gestiona el clic del botón Sign\+Up. 
+
+\begin{DoxyPrecond}{Precondition}
+El usuario clica el botón de Sign\+Up. 
+\end{DoxyPrecond}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em Action\+Event} & e Evento de clic de botón Sign\+Up. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Se envía al usuario a la escena de Sign\+Up mediante Scene\+Manager. 
+\end{DoxyPostcond}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1presentation_1_1_log_in_controller_a7b04056db46a85c00811a2490ebae333}\label{classfxsrc_1_1propyecto_1_1presentation_1_1_log_in_controller_a7b04056db46a85c00811a2490ebae333}} 
+\index{fxsrc.propyecto.presentation.LogInController@{fxsrc.propyecto.presentation.LogInController}!errorLabel@{errorLabel}}
+\index{errorLabel@{errorLabel}!fxsrc.propyecto.presentation.LogInController@{fxsrc.propyecto.presentation.LogInController}}
+\doxysubsubsection{\texorpdfstring{errorLabel}{errorLabel}}
+{\footnotesize\ttfamily Label fxsrc.\+propyecto.\+presentation.\+Log\+In\+Controller.\+error\+Label\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+{\itshape error\+Label} es un texto de error que aparece en caso de que el usuario haga algo mal. 
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1presentation_1_1_log_in_controller_afc6dd4bc156c560ae7ebd887c786387e}\label{classfxsrc_1_1propyecto_1_1presentation_1_1_log_in_controller_afc6dd4bc156c560ae7ebd887c786387e}} 
+\index{fxsrc.propyecto.presentation.LogInController@{fxsrc.propyecto.presentation.LogInController}!passwordField@{passwordField}}
+\index{passwordField@{passwordField}!fxsrc.propyecto.presentation.LogInController@{fxsrc.propyecto.presentation.LogInController}}
+\doxysubsubsection{\texorpdfstring{passwordField}{passwordField}}
+{\footnotesize\ttfamily Password\+Field fxsrc.\+propyecto.\+presentation.\+Log\+In\+Controller.\+password\+Field\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+{\itshape password\+Field} es el campo de contraseña donde el usuario introduce su contraseña. 
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1presentation_1_1_log_in_controller_a1e9fb61cbd9c8efc5b47de84fda71cfd}\label{classfxsrc_1_1propyecto_1_1presentation_1_1_log_in_controller_a1e9fb61cbd9c8efc5b47de84fda71cfd}} 
+\index{fxsrc.propyecto.presentation.LogInController@{fxsrc.propyecto.presentation.LogInController}!usernameField@{usernameField}}
+\index{usernameField@{usernameField}!fxsrc.propyecto.presentation.LogInController@{fxsrc.propyecto.presentation.LogInController}}
+\doxysubsubsection{\texorpdfstring{usernameField}{usernameField}}
+{\footnotesize\ttfamily Text\+Field fxsrc.\+propyecto.\+presentation.\+Log\+In\+Controller.\+username\+Field\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+{\itshape username\+Field} es el campo de texto donde el usuario introduce su nombre de usuario. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/fxsrc/propyecto/presentation/\mbox{\hyperlink{_log_in_controller_8java}{Log\+In\+Controller.\+java}}\end{DoxyCompactItemize}

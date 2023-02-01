@@ -1,0 +1,310 @@
+\hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data}{}\doxysection{fxsrc.\+propyecto.\+data.\+Data Class Reference}
+\label{classfxsrc_1_1propyecto_1_1data_1_1_data}\index{fxsrc.propyecto.data.Data@{fxsrc.propyecto.data.Data}}
+
+
+Clase abstracta para la gestión de los datos en la Capa de Datos.  
+
+
+Inheritance diagram for fxsrc.\+propyecto.\+data.\+Data\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.272727cm]{classfxsrc_1_1propyecto_1_1data_1_1_data}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_a86f95d7c813244f9a1992fe4d7c8be99}{Init}} ()
+\begin{DoxyCompactList}\small\item\em Función abstracta para inicializar la subclase. \end{DoxyCompactList}\item 
+abstract void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_ad20bbf20a9c11034e72cbb8128aa9c69}{Clear\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Función abstracta para resetear la información de la subclase. \end{DoxyCompactList}\item 
+abstract void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_aea413941c012cb7942abe5620f37634d}{Parse\+And\+Add\+Data}} (String \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_ac0986d4f64fe86583523fd175b58cbf8}{attributes\+Names}}\mbox{[}$\,$\mbox{]}, String line\+Read)
+\begin{DoxyCompactList}\small\item\em Funión abstracta que parsea una linea C\+SV. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_ac15edc6a42ae4f80f5700f3251cd8a4c}{Load\+C\+SV}} (String path)
+\begin{DoxyCompactList}\small\item\em Lee un fichero C\+SV y trata sus campos para parsearlo y convertirlo en datos usables para el programa. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_aebbbb5a46e09dfacb9e2ef9d3fb894c2}{Read\+Next\+Line\+C\+SV}} (Scanner reader)
+\begin{DoxyCompactList}\small\item\em Para obtener la siguiente fila del C\+SV. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_a26b74aedb7c6fc9b7a5b11e9b158d069}{Store\+C\+SV}} ()
+\begin{DoxyCompactList}\small\item\em Guarda toda la información en un fichero C\+SV con el path por defecto. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_ade7cc8ee4c6f32756103e757da258888}{Store\+C\+SV}} (String path)
+\begin{DoxyCompactList}\small\item\em Guarda toda la información en un fichero C\+SV con nombre {\itshape path}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract boolean \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_a4c4350fd83ac34db15e28cf1094d397b}{Has\+Next\+Line}} ()
+\begin{DoxyCompactList}\small\item\em Funcion abstracta que devuelve si hay una línea más por guardar. \end{DoxyCompactList}\item 
+abstract String \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_a7bcf3576477253620b38f660afd3f45c}{Get\+Next\+Line}} ()
+\begin{DoxyCompactList}\small\item\em Funcion abstracta que devuelve la siguiente línea a guardar. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_aba0c4313ca2cbf5346f65ea96b847347}{file\+Path}}
+\begin{DoxyCompactList}\small\item\em Path del fichero. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_aa039556f9132e323d3e349647c00350f}{current\+Line}}
+\begin{DoxyCompactList}\small\item\em Línea actual de lectura. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_ac0986d4f64fe86583523fd175b58cbf8}{attributes\+Names}}
+\begin{DoxyCompactList}\small\item\em Nombre de los atributos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Package Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_ab3894523d994bf1af142d24da0158fe4}{Data}} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data}{Data}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase abstracta para la gestión de los datos en la Capa de Datos. 
+
+Ofrece una base para todas las clases de la capa de datos para cargar y guardar sus datos en formato C\+SV en los ficheros. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_ab3894523d994bf1af142d24da0158fe4}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_ab3894523d994bf1af142d24da0158fe4}} 
+\index{fxsrc.propyecto.data.Data@{fxsrc.propyecto.data.Data}!Data@{Data}}
+\index{Data@{Data}!fxsrc.propyecto.data.Data@{fxsrc.propyecto.data.Data}}
+\doxysubsubsection{\texorpdfstring{Data()}{Data()}}
+{\footnotesize\ttfamily fxsrc.\+propyecto.\+data.\+Data.\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [package]}}
+
+
+
+Constructor por defecto de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data}{Data}}. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Crea una instancia de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data}{Data}} y Llama a la función Init para inicializar la informacion de sus clases hijas 
+\end{DoxyPostcond}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_ad20bbf20a9c11034e72cbb8128aa9c69}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_ad20bbf20a9c11034e72cbb8128aa9c69}} 
+\index{fxsrc.propyecto.data.Data@{fxsrc.propyecto.data.Data}!ClearData@{ClearData}}
+\index{ClearData@{ClearData}!fxsrc.propyecto.data.Data@{fxsrc.propyecto.data.Data}}
+\doxysubsubsection{\texorpdfstring{ClearData()}{ClearData()}}
+{\footnotesize\ttfamily abstract void fxsrc.\+propyecto.\+data.\+Data.\+Clear\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+
+
+Función abstracta para resetear la información de la subclase. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Hay que redefinirla en las subclases 
+\end{DoxyPostcond}
+
+
+Reimplemented in \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm_af3ddb69387ff5b27db37bad8d1477cd9}{fxsrc.\+propyecto.\+data.\+Data\+Algorithm}}, \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_aaf2e485a333c949a1912dd9350a3cbb3}{fxsrc.\+propyecto.\+data.\+Data\+Rating}}, \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_item_a7507688c5535626a397ddd053aee1754}{fxsrc.\+propyecto.\+data.\+Data\+Item}}, and \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_user_aca5a1d759a0cfd8095ef453665ea578e}{fxsrc.\+propyecto.\+data.\+Data\+User}}.
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_a7bcf3576477253620b38f660afd3f45c}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_a7bcf3576477253620b38f660afd3f45c}} 
+\index{fxsrc.propyecto.data.Data@{fxsrc.propyecto.data.Data}!GetNextLine@{GetNextLine}}
+\index{GetNextLine@{GetNextLine}!fxsrc.propyecto.data.Data@{fxsrc.propyecto.data.Data}}
+\doxysubsubsection{\texorpdfstring{GetNextLine()}{GetNextLine()}}
+{\footnotesize\ttfamily abstract String fxsrc.\+propyecto.\+data.\+Data.\+Get\+Next\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+
+
+Funcion abstracta que devuelve la siguiente línea a guardar. 
+
+\begin{DoxyPrecond}{Precondition}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve la siguiente línea a guardar 
+\end{DoxyPostcond}
+
+
+Reimplemented in \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_a2d00fb0a12ee93d34dcb6d359e020844}{fxsrc.\+propyecto.\+data.\+Data\+Rating}}, \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_user_a29a99a2eed840b340e8fbc8041ceee0d}{fxsrc.\+propyecto.\+data.\+Data\+User}}, \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_item_aa6f968eb9d8210384e794af20588cafb}{fxsrc.\+propyecto.\+data.\+Data\+Item}}, and \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm_a1d5ab5161f4174936d68f4f3401443c7}{fxsrc.\+propyecto.\+data.\+Data\+Algorithm}}.
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_a4c4350fd83ac34db15e28cf1094d397b}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_a4c4350fd83ac34db15e28cf1094d397b}} 
+\index{fxsrc.propyecto.data.Data@{fxsrc.propyecto.data.Data}!HasNextLine@{HasNextLine}}
+\index{HasNextLine@{HasNextLine}!fxsrc.propyecto.data.Data@{fxsrc.propyecto.data.Data}}
+\doxysubsubsection{\texorpdfstring{HasNextLine()}{HasNextLine()}}
+{\footnotesize\ttfamily abstract boolean fxsrc.\+propyecto.\+data.\+Data.\+Has\+Next\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+
+
+Funcion abstracta que devuelve si hay una línea más por guardar. 
+
+\begin{DoxyPrecond}{Precondition}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve si hay alguna línea más por guardar 
+\end{DoxyPostcond}
+
+
+Reimplemented in \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_af85b8e50cf60f3acbad999c6fef77039}{fxsrc.\+propyecto.\+data.\+Data\+Rating}}, \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_user_ac579cf84e9e7d24cc3670765526e5170}{fxsrc.\+propyecto.\+data.\+Data\+User}}, \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_item_ae39664fa5534e784fc662d9a548fc9be}{fxsrc.\+propyecto.\+data.\+Data\+Item}}, and \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm_aeb6432420ae54ae98fc78d9fa9d0b6b2}{fxsrc.\+propyecto.\+data.\+Data\+Algorithm}}.
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_a86f95d7c813244f9a1992fe4d7c8be99}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_a86f95d7c813244f9a1992fe4d7c8be99}} 
+\index{fxsrc.propyecto.data.Data@{fxsrc.propyecto.data.Data}!Init@{Init}}
+\index{Init@{Init}!fxsrc.propyecto.data.Data@{fxsrc.propyecto.data.Data}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily abstract void fxsrc.\+propyecto.\+data.\+Data.\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+
+
+Función abstracta para inicializar la subclase. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Hay que redifinarla en las subclases 
+\end{DoxyPostcond}
+
+
+Reimplemented in \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm_aeb0e8a6e0670c53bf42f1ae83781a9ec}{fxsrc.\+propyecto.\+data.\+Data\+Algorithm}}, \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_a964cf11fca860356fa0c9690a40a0ba9}{fxsrc.\+propyecto.\+data.\+Data\+Rating}}, \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_item_ad5b75497a9386d6ad4d6c3f0106f5242}{fxsrc.\+propyecto.\+data.\+Data\+Item}}, and \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_user_a1db523964ed2e73c1a5e5a2677acf2c3}{fxsrc.\+propyecto.\+data.\+Data\+User}}.
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_ac15edc6a42ae4f80f5700f3251cd8a4c}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_ac15edc6a42ae4f80f5700f3251cd8a4c}} 
+\index{fxsrc.propyecto.data.Data@{fxsrc.propyecto.data.Data}!LoadCSV@{LoadCSV}}
+\index{LoadCSV@{LoadCSV}!fxsrc.propyecto.data.Data@{fxsrc.propyecto.data.Data}}
+\doxysubsubsection{\texorpdfstring{LoadCSV()}{LoadCSV()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+data.\+Data.\+Load\+C\+SV (\begin{DoxyParamCaption}\item[{String}]{path }\end{DoxyParamCaption})}
+
+
+
+Lee un fichero C\+SV y trata sus campos para parsearlo y convertirlo en datos usables para el programa. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em String} & path Corresponde al path del fichero que se desea leer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Carga el fichero C\+SV y los parsea a los tipos de datos que se deseen (a saber en Parse\+And\+Add\+Data) 
+\end{DoxyPostcond}
+
+
+Reimplemented in \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm_a52beb882adcb43797e05edb45efbe77a}{fxsrc.\+propyecto.\+data.\+Data\+Algorithm}}, and \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_a7005a0d9c1f6f98d0908dc7c98a57e6e}{fxsrc.\+propyecto.\+data.\+Data\+Rating}}.
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_aea413941c012cb7942abe5620f37634d}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_aea413941c012cb7942abe5620f37634d}} 
+\index{fxsrc.propyecto.data.Data@{fxsrc.propyecto.data.Data}!ParseAndAddData@{ParseAndAddData}}
+\index{ParseAndAddData@{ParseAndAddData}!fxsrc.propyecto.data.Data@{fxsrc.propyecto.data.Data}}
+\doxysubsubsection{\texorpdfstring{ParseAndAddData()}{ParseAndAddData()}}
+{\footnotesize\ttfamily abstract void fxsrc.\+propyecto.\+data.\+Data.\+Parse\+And\+Add\+Data (\begin{DoxyParamCaption}\item[{String}]{attributes\+Names\mbox{[}$\,$\mbox{]},  }\item[{String}]{line\+Read }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+
+
+Funión abstracta que parsea una linea C\+SV. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em String\mbox{[}$\,$\mbox{]}} & attributes\+Names Corresponde al nombre de los atributos \\
+\hline
+{\em String} & line\+Read Corresponde a la linea C\+SV que hace referencia a los campos del dato deseado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\itshape attributes\+Names} tiene el tamaño exacto de parametros que tenga el Item y {\itshape line\+Read} no es vacío. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Hay que redefinirla en las subclases 
+\end{DoxyPostcond}
+
+
+Reimplemented in \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm_a899c0a2b3439c6be855b59e89150c7c9}{fxsrc.\+propyecto.\+data.\+Data\+Algorithm}}, \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_user_ad96dbf6eb1727104f3da1be0e1f839c5}{fxsrc.\+propyecto.\+data.\+Data\+User}}, \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_a122f0ddcf95a96a7d12e9679c970d531}{fxsrc.\+propyecto.\+data.\+Data\+Rating}}, and \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_item_a68f644b21fa13445e91cdb7ba7d0b9d5}{fxsrc.\+propyecto.\+data.\+Data\+Item}}.
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_aebbbb5a46e09dfacb9e2ef9d3fb894c2}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_aebbbb5a46e09dfacb9e2ef9d3fb894c2}} 
+\index{fxsrc.propyecto.data.Data@{fxsrc.propyecto.data.Data}!ReadNextLineCSV@{ReadNextLineCSV}}
+\index{ReadNextLineCSV@{ReadNextLineCSV}!fxsrc.propyecto.data.Data@{fxsrc.propyecto.data.Data}}
+\doxysubsubsection{\texorpdfstring{ReadNextLineCSV()}{ReadNextLineCSV()}}
+{\footnotesize\ttfamily String fxsrc.\+propyecto.\+data.\+Data.\+Read\+Next\+Line\+C\+SV (\begin{DoxyParamCaption}\item[{Scanner}]{reader }\end{DoxyParamCaption})}
+
+
+
+Para obtener la siguiente fila del C\+SV. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Scanner} & reader Corresponde al Scanner del fichero que estamos leyendo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\itshape reader} no es null 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Lee y devuelve la siguiente fila del fichero C\+SV (no necesariamente la siguiente linea del fichero) 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_a26b74aedb7c6fc9b7a5b11e9b158d069}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_a26b74aedb7c6fc9b7a5b11e9b158d069}} 
+\index{fxsrc.propyecto.data.Data@{fxsrc.propyecto.data.Data}!StoreCSV@{StoreCSV}}
+\index{StoreCSV@{StoreCSV}!fxsrc.propyecto.data.Data@{fxsrc.propyecto.data.Data}}
+\doxysubsubsection{\texorpdfstring{StoreCSV()}{StoreCSV()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+data.\+Data.\+Store\+C\+SV (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Guarda toda la información en un fichero C\+SV con el path por defecto. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Parsea la información a C\+SV y lo guarda en el fichero C\+SV del pathh por defecto borrando el contenido que tenía antes 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_ade7cc8ee4c6f32756103e757da258888}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_ade7cc8ee4c6f32756103e757da258888}} 
+\index{fxsrc.propyecto.data.Data@{fxsrc.propyecto.data.Data}!StoreCSV@{StoreCSV}}
+\index{StoreCSV@{StoreCSV}!fxsrc.propyecto.data.Data@{fxsrc.propyecto.data.Data}}
+\doxysubsubsection{\texorpdfstring{StoreCSV()}{StoreCSV()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+data.\+Data.\+Store\+C\+SV (\begin{DoxyParamCaption}\item[{String}]{path }\end{DoxyParamCaption})}
+
+
+
+Guarda toda la información en un fichero C\+SV con nombre {\itshape path}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em String} & path Corresponde al path del fichero que se desea guardar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Parsea la información a C\+SV y lo guarda en el fichero C\+SV con nombre {\itshape path} borrando el contenido que tenía antes 
+\end{DoxyPostcond}
+
+
+Reimplemented in \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm_a6baa5c3eb6626727f73b5ce38b4109a2}{fxsrc.\+propyecto.\+data.\+Data\+Algorithm}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_ac0986d4f64fe86583523fd175b58cbf8}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_ac0986d4f64fe86583523fd175b58cbf8}} 
+\index{fxsrc.propyecto.data.Data@{fxsrc.propyecto.data.Data}!attributesNames@{attributesNames}}
+\index{attributesNames@{attributesNames}!fxsrc.propyecto.data.Data@{fxsrc.propyecto.data.Data}}
+\doxysubsubsection{\texorpdfstring{attributesNames}{attributesNames}}
+{\footnotesize\ttfamily String fxsrc.\+propyecto.\+data.\+Data.\+attributes\+Names\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Nombre de los atributos. 
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_aa039556f9132e323d3e349647c00350f}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_aa039556f9132e323d3e349647c00350f}} 
+\index{fxsrc.propyecto.data.Data@{fxsrc.propyecto.data.Data}!currentLine@{currentLine}}
+\index{currentLine@{currentLine}!fxsrc.propyecto.data.Data@{fxsrc.propyecto.data.Data}}
+\doxysubsubsection{\texorpdfstring{currentLine}{currentLine}}
+{\footnotesize\ttfamily int fxsrc.\+propyecto.\+data.\+Data.\+current\+Line\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Línea actual de lectura. 
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_aba0c4313ca2cbf5346f65ea96b847347}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_aba0c4313ca2cbf5346f65ea96b847347}} 
+\index{fxsrc.propyecto.data.Data@{fxsrc.propyecto.data.Data}!filePath@{filePath}}
+\index{filePath@{filePath}!fxsrc.propyecto.data.Data@{fxsrc.propyecto.data.Data}}
+\doxysubsubsection{\texorpdfstring{filePath}{filePath}}
+{\footnotesize\ttfamily String fxsrc.\+propyecto.\+data.\+Data.\+file\+Path\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Path del fichero. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/fxsrc/propyecto/data/\mbox{\hyperlink{_data_8java}{Data.\+java}}\end{DoxyCompactItemize}

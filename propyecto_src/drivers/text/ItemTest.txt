@@ -1,0 +1,9 @@
+43
+Genero
+Accio;Aventura;Misteri
+Año
+2019
+Idioma
+es;eng
+Adulto
+n

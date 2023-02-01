@@ -1,0 +1,1060 @@
+\hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager}{}\doxysection{fxsrc.\+propyecto.\+domain.\+Data\+Manager Class Reference}
+\label{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager}\index{fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}}
+
+
+Clase que sirve como puente entre la capa de Dominio y la capa de Datos. Se usa el patrón S\+I\+N\+G\+L\+E\+T\+ON.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a5d1a72e55cc00b0b9c6894d8207212f1}{Get\+All\+Items}} ()
+\begin{DoxyCompactList}\small\item\em Devuelve todos los \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} del sistema. \end{DoxyCompactList}\item 
+Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_ae5f380e241c8014289c59b3a058e80a4}{Get\+All\+Ratings\+DB}} ()
+\begin{DoxyCompactList}\small\item\em Devuelve todos los \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} correspondientes al ratings.\+db.\+csv. \end{DoxyCompactList}\item 
+Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a3dec03ea6df1ada1862492838d9cda69}{Get\+All\+Ratings\+Test\+Known}} ()
+\begin{DoxyCompactList}\small\item\em Devuelve todos los \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} correspondientes al ratings.\+test.\+known.\+csv. \end{DoxyCompactList}\item 
+Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a6a211b7f3f6e735d9c2ef73ab3337b5d}{Get\+All\+Ratings\+Test\+Unknown}} ()
+\begin{DoxyCompactList}\small\item\em Devuelve todos los \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} correspondientes al ratings.\+test.\+unknown.\+csv. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a4fc6fc8450d36221757d56a0dd1476c1}{Get\+Item\+By\+Array\+Position}} (int pos)
+\begin{DoxyCompactList}\small\item\em Devuelve el \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} en la posicion {\itshape i}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a006f1f9323732cf80d10b02d37e6a715}{Get\+Item\+By\+ID}} (int \mbox{\hyperlink{_parser_c_s_vtest_8txt_acf2488b95c97e0378c9bf49de3b50f28}{id}})
+\begin{DoxyCompactList}\small\item\em Devuelve el \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} con ID = {\itshape id}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a712d2496f1e02f8c39c2c0a852342071}{Get\+Item\+By\+Name\+LC}} (String name)
+\begin{DoxyCompactList}\small\item\em Devuelve el \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} con con nombre {\itshape name}. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_af384fbc5b8a8d914bcf9edbbe3ba1fa5}{Get\+Rating\+Value\+DB}} (int user\+ID, int item\+ID)
+\begin{DoxyCompactList}\small\item\em Devuelve el valor del \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} con ID de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} {\itshape user\+ID} y ID de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} {\itshape item\+ID} dentro. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_acdf27d1dbc82cebbb06381c0233f21ee}{Get\+Rating\+Value\+Test\+Known}} (int user\+ID, int item\+ID)
+\begin{DoxyCompactList}\small\item\em Devuelve el valor del \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} con ID de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} {\itshape user\+ID} y ID de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} {\itshape item\+ID}. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a8dcc7b911e08d5d5cc23d976f780c313}{Get\+Rating\+Value\+Test\+Unknown}} (int user\+ID, int item\+ID)
+\begin{DoxyCompactList}\small\item\em Devuelve el valor del \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} con ID de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} {\itshape user\+ID} y ID de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} {\itshape item\+ID}. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a4b32804c17b02684a94c35ae4945fc52}{Get\+Security}} (String \mbox{\hyperlink{_parser_c_s_vtest_8txt_a79bfea1206658219a4a93ce989e178cb}{username}})
+\begin{DoxyCompactList}\small\item\em Devuelve el valor de Security con ID de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} {\itshape user\+ID} y ID de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} {\itshape item\+ID}. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a13e9d0bc728e40eeb1544f2748f10f30}{Check\+Credentials}} (String \mbox{\hyperlink{_parser_c_s_vtest_8txt_a79bfea1206658219a4a93ce989e178cb}{username}}, String \mbox{\hyperlink{_parser_c_s_vtest_8txt_a9ff4cce1cbfa9b84152b1936f0f52db8}{password}})
+\begin{DoxyCompactList}\small\item\em Comprueba si existe un \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} con username y password. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user_actual}{User\+Actual}} \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a9e497954668d319230be87a7366ec65c}{Sign\+In}} (String \mbox{\hyperlink{_parser_c_s_vtest_8txt_a79bfea1206658219a4a93ce989e178cb}{username}})
+\begin{DoxyCompactList}\small\item\em Loggea al usuario con nombre {\itshape username}. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a1b3bc3e0477c180d99c30923f4611d26}{User\+Exists}} (String \mbox{\hyperlink{_parser_c_s_vtest_8txt_a79bfea1206658219a4a93ce989e178cb}{username}})
+\begin{DoxyCompactList}\small\item\em Comprueba si existe un \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} con username. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user_actual}{User\+Actual}} \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a87d89bf52e5520c937f40f5be18d1334}{Sign\+Up}} (String \mbox{\hyperlink{_parser_c_s_vtest_8txt_a79bfea1206658219a4a93ce989e178cb}{username}}, String \mbox{\hyperlink{_parser_c_s_vtest_8txt_a9ff4cce1cbfa9b84152b1936f0f52db8}{password}}, String \mbox{\hyperlink{_parser_c_s_vtest_8txt_a96ab9846fe3a911b81aaede8fc65d035}{email}}, String \mbox{\hyperlink{_parser_c_s_vtest_8txt_a27ce9e5f00afe62161f35ffe761d04ca}{security}})
+\begin{DoxyCompactList}\small\item\em Crea un \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} con toda la información pasada por parámetro. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a6591ee09ca5bedb3266b8e2f07af549c}{Delete\+Account}} (String get\+Username)
+\begin{DoxyCompactList}\small\item\em Elimina el \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} con nombre {\itshape username}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_addbe429438c9462af2f292344a7b38d7}{Set\+New\+Password}} (String get\+Username, String new\+Password)
+\begin{DoxyCompactList}\small\item\em Se modifica la contraseña del \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} pasado por parámetro. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_add70186bcdc42ea28f0e80ad52686322}{Set\+New\+Username}} (String get\+Username, String new\+Username)
+\begin{DoxyCompactList}\small\item\em Se modifica el nombre del \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} pasado por parámetro. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a47cdd80a1ceda56de05f653832e434a2}{Set\+New\+Email}} (String get\+Username, String new\+Email)
+\begin{DoxyCompactList}\small\item\em Se modifica el email del \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} pasado por parámetro. \end{DoxyCompactList}\item 
+Array\+List$<$ Integer $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a2d9f2339e18042b20c76103d377b5945}{Get\+All\+Users\+ID}} ()
+\begin{DoxyCompactList}\small\item\em Devuelve las I\+Ds de todos los \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} del sistema. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a43e5d70dbf872eb85f243bb721c2eb3b}{Set\+New\+Security}} (String get\+Username, String new\+Security)
+\begin{DoxyCompactList}\small\item\em Se modifica la respuesta de seguridad del \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} pasado por parámetro. \end{DoxyCompactList}\item 
+Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a4a790be38d4e5f230fd9d133b5bf6469}{Get\+User\+Unknown\+Ratings}} (int user\+ID)
+\begin{DoxyCompactList}\small\item\em Devuelve todos los \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} que ha hecho un user con user\+ID = user\+ID dentro del conjunto ratings\+Test\+Unknown. \end{DoxyCompactList}\item 
+Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a677b982ab9b473163d310f68a9de77da}{Get\+Ratings\+Value\+DB}} (int user\+ID)
+\begin{DoxyCompactList}\small\item\em Devuelve todos los \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} que ha hecho un user con user\+ID = user\+ID dentro del conjunto ratings\+DB. \end{DoxyCompactList}\item 
+Hash\+Map$<$ Integer, Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} $>$ $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_ab985ec1f8394dcf9c97672dfdcdcb07d}{Get\+All\+Ratings\+Users\+Map\+DB}} ()
+\begin{DoxyCompactList}\small\item\em Devuelve todos los \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} dentro del conjunto {\itshape ratings\+DB} clasificados por usuario. \end{DoxyCompactList}\item 
+Array\+List$<$ Array\+List$<$ Integer $>$ $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_aeda277bc3e9b111be00a87b79f77a5a1}{Get\+K\+Means}} (int k, int dataset)
+\begin{DoxyCompactList}\small\item\em Devuelve la informacion almacenada para el algoritmo K\+Means. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_ac607c116053e2e6b7ad84a24159b4cd0}{Set\+K\+Means}} (int k, int dataset, Array\+List$<$ Array\+List$<$ Integer $>$$>$ kgroups, Array\+List$<$ Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} $>$$>$ centroids)
+\begin{DoxyCompactList}\small\item\em Asigna la informacion almacenada para el algoritmo K\+Means. \end{DoxyCompactList}\item 
+Array\+List$<$ Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} $>$ $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_ae53c3b7df8d9aafc0fbadff18ce6d9f1}{Get\+Centroids}} ()
+\begin{DoxyCompactList}\small\item\em Devuelve la informacion de los Centroids almacenada para algoritmo K\+Means. \end{DoxyCompactList}\item 
+Array\+List$<$ String $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_aabb6f6b0513cbea24ab9008f66becf69}{Get\+All\+Items\+Names}} ()
+\begin{DoxyCompactList}\small\item\em Devuelve los nombres de todos los \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a1d1786c142362184c05b2af3d3b1acba}{Get\+Item\+By\+Name}} (String name)
+\begin{DoxyCompactList}\small\item\em Devuelve el \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} con nombre = {\itshape name}. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a7a98d0067db32903a2f35d94392e74dd}{Get\+Max\+Rating}} ()
+\begin{DoxyCompactList}\small\item\em Devuelve el maximo valor sobre el que los ratings se están puntuando (5,10,100) \end{DoxyCompactList}\item 
+Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a2b37614afcb1715724e2007e20bcdc57}{Get\+Top\+Rated\+Items}} (int top)
+\begin{DoxyCompactList}\small\item\em Devuelve los {\itshape top} Items mejor puntuados. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a12347e4c7f648c2af2bbbaec9fc26a0a}{Add\+New\+Rating}} (\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} r)
+\begin{DoxyCompactList}\small\item\em Añade un nuevo \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} al conjunto. \end{DoxyCompactList}\item 
+Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a1bc2405e9c8f256cf6aa7641556dc473}{Get\+User\+Ratings}} (int user\+ID)
+\begin{DoxyCompactList}\small\item\em Función que devuelve todos los \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} de un usuario. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a0964e688b8775de8e3628f6cdaf91953}{Store\+Users\+Info}} ()
+\begin{DoxyCompactList}\small\item\em Función que alamacena la información de los usuarios. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a97566d00c375cc0487700806a8002248}{Modify\+Item\+Rating}} (\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} r)
+\begin{DoxyCompactList}\small\item\em Función que modifica un \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_aa59d1a5b673789e209a99ecd54ffc9fc}{Delete\+Rated\+Item}} (int user\+ID, int item\+ID)
+\begin{DoxyCompactList}\small\item\em Función que elimina un \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager}{Data\+Manager}} \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a71c21d0bf791f6d993f20456d3b4dbf3}{Get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em Devuelve la instancia de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager}{Data\+Manager}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a95cf3fb340776d7c43f8470ffa6aede5}{Data\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager}{Data\+Manager}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a0aca9ca376b3f377912d8d9be55c7d73}{Load\+Items}} (String path)
+\begin{DoxyCompactList}\small\item\em Se cargan los \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} del fichero pasado por parámetro. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_ab0378debc98df6562b57f8a84c0189f5}{Load\+Rating}} (String path, \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_rating}{Data\+Rating}} \mbox{\hyperlink{_parser_c_s_vtest_8txt_aa0808e9548eabbb0fa1da5cf29be232f}{rating}})
+\begin{DoxyCompactList}\small\item\em Se cargan los \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} del fichero pasado por parámetro. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a5fb0a0475e48b8d9df22d64ca6670529}{Load\+Users}} (String path)
+\begin{DoxyCompactList}\small\item\em Función que carga la información de los usuarios. \end{DoxyCompactList}\item 
+Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a3a82cc22f4f72422804e6641c9a4e56c}{Get\+Rating\+Value}} (int user\+ID, \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_rating}{Data\+Rating}} dr)
+\begin{DoxyCompactList}\small\item\em Devuelve todos los \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} dentro del conjunto de Data\+Rating pasado por parámetro. \end{DoxyCompactList}\item 
+Hash\+Map$<$ Integer, Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} $>$ $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_ab86944ce6e26186f7704c245192dc98f}{Get\+All\+Ratings\+Users\+Map}} (\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_rating}{Data\+Rating}} dr)
+\begin{DoxyCompactList}\small\item\em Devuelve todos los \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} dentro del conjunto {\itshape dr} clasificados por usuario. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_item}{Data\+Item}} \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a5d5fe7e6bf090346e0a827eb9254d736}{items}}
+\begin{DoxyCompactList}\small\item\em {\itshape items} Corresponde a la clase Data\+Item de la capa de datos \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_rating}{Data\+Rating}} \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_aef0318b68577b534952617c14298d1f5}{ratings\+DB}}
+\begin{DoxyCompactList}\small\item\em {\itshape ratings\+DB} Corresponde a la clase Data\+Rating de la capa de datos que hace referencia al conjunto de datos ratings.\+db.\+csv \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_rating}{Data\+Rating}} \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_afc99f1f1666521867466bf08d8a84c22}{ratings\+Test\+Known}}
+\begin{DoxyCompactList}\small\item\em {\itshape ratings\+Test\+Known} Corresponde a la clase Data\+Rating de la capa de datos que hace referencia al conjunto de datos ratings.\+test.\+known.\+csv \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_rating}{Data\+Rating}} \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a3f8278f6daeaed0103d7c56352e329a5}{ratings\+Test\+Unknown}}
+\begin{DoxyCompactList}\small\item\em {\itshape ratings\+Test\+Unknown} Corresponde a la clase Data\+Rating de la capa de datos que hace referencia al conjunto de datos ratings.\+test.\+unknown.\+csv \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_user}{Data\+User}} \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_addeeaeaade7ed0e6c6d84045e8931556}{users}}
+\begin{DoxyCompactList}\small\item\em {\itshape users} Corresponde a la clase Data\+User de la capa de datos que hace referencia al conjunto de datos users.\+csv \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm}{Data\+Algorithm}} \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a5d0fb041a4a585cc20ad0dbad15ec61e}{algorithm\+Data}}
+\begin{DoxyCompactList}\small\item\em {\itshape algorithm\+Data} Corresponde a la clase Data\+Algorithm de la capa de datos que hace referencia al conjunto de datos kmeans.\+csv \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager}{Data\+Manager}} \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a0bd16303bb0be2e23a72b4adb11e4b1e}{instance}}
+\begin{DoxyCompactList}\small\item\em {\itshape \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager}{Data\+Manager}}} Corresponde a la instancia del singleton \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager}{Data\+Manager}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase que sirve como puente entre la capa de Dominio y la capa de Datos. Se usa el patrón S\+I\+N\+G\+L\+E\+T\+ON. 
+
+Ofrece varias funciones para acceder a los datos de la capa de datos y en general sirve para controlar los datos 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a95cf3fb340776d7c43f8470ffa6aede5}\label{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a95cf3fb340776d7c43f8470ffa6aede5}} 
+\index{fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}!DataManager@{DataManager}}
+\index{DataManager@{DataManager}!fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}}
+\doxysubsubsection{\texorpdfstring{DataManager()}{DataManager()}}
+{\footnotesize\ttfamily fxsrc.\+propyecto.\+domain.\+Data\+Manager.\+Data\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Constructor por defecto de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager}{Data\+Manager}}. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Se crea LA instancia de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager}{Data\+Manager}} y se cargan todos los datos 
+\end{DoxyPostcond}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a12347e4c7f648c2af2bbbaec9fc26a0a}\label{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a12347e4c7f648c2af2bbbaec9fc26a0a}} 
+\index{fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}!AddNewRating@{AddNewRating}}
+\index{AddNewRating@{AddNewRating}!fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}}
+\doxysubsubsection{\texorpdfstring{AddNewRating()}{AddNewRating()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+domain.\+Data\+Manager.\+Add\+New\+Rating (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}}}]{r }\end{DoxyParamCaption})}
+
+
+
+Añade un nuevo \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} al conjunto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}}} & r Corresponde al rating a añadir \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Añade un nuevo \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} al conjunto 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a13e9d0bc728e40eeb1544f2748f10f30}\label{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a13e9d0bc728e40eeb1544f2748f10f30}} 
+\index{fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}!CheckCredentials@{CheckCredentials}}
+\index{CheckCredentials@{CheckCredentials}!fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}}
+\doxysubsubsection{\texorpdfstring{CheckCredentials()}{CheckCredentials()}}
+{\footnotesize\ttfamily boolean fxsrc.\+propyecto.\+domain.\+Data\+Manager.\+Check\+Credentials (\begin{DoxyParamCaption}\item[{String}]{username,  }\item[{String}]{password }\end{DoxyParamCaption})}
+
+
+
+Comprueba si existe un \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} con username y password. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em String} & username Corresponde al nombre del \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} \\
+\hline
+{\em String} & password Corresponde a la contraseña del \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve si existe o no un \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} con el username y password pasados por parámetro 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a6591ee09ca5bedb3266b8e2f07af549c}\label{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a6591ee09ca5bedb3266b8e2f07af549c}} 
+\index{fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}!DeleteAccount@{DeleteAccount}}
+\index{DeleteAccount@{DeleteAccount}!fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}}
+\doxysubsubsection{\texorpdfstring{DeleteAccount()}{DeleteAccount()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+domain.\+Data\+Manager.\+Delete\+Account (\begin{DoxyParamCaption}\item[{String}]{get\+Username }\end{DoxyParamCaption})}
+
+
+
+Elimina el \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} con nombre {\itshape username}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em String} & username Corresponde al nombre del \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+Existe \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} con username = {\itshape username} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Se elimina el \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} con nombre {\itshape username} 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_aa59d1a5b673789e209a99ecd54ffc9fc}\label{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_aa59d1a5b673789e209a99ecd54ffc9fc}} 
+\index{fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}!DeleteRatedItem@{DeleteRatedItem}}
+\index{DeleteRatedItem@{DeleteRatedItem}!fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}}
+\doxysubsubsection{\texorpdfstring{DeleteRatedItem()}{DeleteRatedItem()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+domain.\+Data\+Manager.\+Delete\+Rated\+Item (\begin{DoxyParamCaption}\item[{int}]{user\+ID,  }\item[{int}]{item\+ID }\end{DoxyParamCaption})}
+
+
+
+Función que elimina un \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}}} & r Corresponde al rating a eliminar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+ratings\+DB no es null 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Elimina un \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a5d1a72e55cc00b0b9c6894d8207212f1}\label{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a5d1a72e55cc00b0b9c6894d8207212f1}} 
+\index{fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}!GetAllItems@{GetAllItems}}
+\index{GetAllItems@{GetAllItems}!fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}}
+\doxysubsubsection{\texorpdfstring{GetAllItems()}{GetAllItems()}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}}$>$ fxsrc.\+propyecto.\+domain.\+Data\+Manager.\+Get\+All\+Items (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Devuelve todos los \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} del sistema. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve todos los \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} del sistema 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_aabb6f6b0513cbea24ab9008f66becf69}\label{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_aabb6f6b0513cbea24ab9008f66becf69}} 
+\index{fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}!GetAllItemsNames@{GetAllItemsNames}}
+\index{GetAllItemsNames@{GetAllItemsNames}!fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}}
+\doxysubsubsection{\texorpdfstring{GetAllItemsNames()}{GetAllItemsNames()}}
+{\footnotesize\ttfamily Array\+List$<$String$>$ fxsrc.\+propyecto.\+domain.\+Data\+Manager.\+Get\+All\+Items\+Names (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Devuelve los nombres de todos los \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}}. 
+
+\begin{DoxyPrecond}{Precondition}
+items no es null 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve el \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} con nombre = {\itshape name}. Devuelve null si no lo encuentra 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_ae5f380e241c8014289c59b3a058e80a4}\label{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_ae5f380e241c8014289c59b3a058e80a4}} 
+\index{fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}!GetAllRatingsDB@{GetAllRatingsDB}}
+\index{GetAllRatingsDB@{GetAllRatingsDB}!fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}}
+\doxysubsubsection{\texorpdfstring{GetAllRatingsDB()}{GetAllRatingsDB()}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}}$>$ fxsrc.\+propyecto.\+domain.\+Data\+Manager.\+Get\+All\+Ratings\+DB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Devuelve todos los \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} correspondientes al ratings.\+db.\+csv. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve todos los \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} correspondientes al ratings.\+db.\+csv 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a3dec03ea6df1ada1862492838d9cda69}\label{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a3dec03ea6df1ada1862492838d9cda69}} 
+\index{fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}!GetAllRatingsTestKnown@{GetAllRatingsTestKnown}}
+\index{GetAllRatingsTestKnown@{GetAllRatingsTestKnown}!fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}}
+\doxysubsubsection{\texorpdfstring{GetAllRatingsTestKnown()}{GetAllRatingsTestKnown()}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}}$>$ fxsrc.\+propyecto.\+domain.\+Data\+Manager.\+Get\+All\+Ratings\+Test\+Known (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Devuelve todos los \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} correspondientes al ratings.\+test.\+known.\+csv. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve todos los \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} correspondientes al ratings.\+test.\+known.\+csv 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a6a211b7f3f6e735d9c2ef73ab3337b5d}\label{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a6a211b7f3f6e735d9c2ef73ab3337b5d}} 
+\index{fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}!GetAllRatingsTestUnknown@{GetAllRatingsTestUnknown}}
+\index{GetAllRatingsTestUnknown@{GetAllRatingsTestUnknown}!fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}}
+\doxysubsubsection{\texorpdfstring{GetAllRatingsTestUnknown()}{GetAllRatingsTestUnknown()}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}}$>$ fxsrc.\+propyecto.\+domain.\+Data\+Manager.\+Get\+All\+Ratings\+Test\+Unknown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Devuelve todos los \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} correspondientes al ratings.\+test.\+unknown.\+csv. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve todos los \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} correspondientes al ratings.\+test.\+unknown.\+csv 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_ab86944ce6e26186f7704c245192dc98f}\label{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_ab86944ce6e26186f7704c245192dc98f}} 
+\index{fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}!GetAllRatingsUsersMap@{GetAllRatingsUsersMap}}
+\index{GetAllRatingsUsersMap@{GetAllRatingsUsersMap}!fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}}
+\doxysubsubsection{\texorpdfstring{GetAllRatingsUsersMap()}{GetAllRatingsUsersMap()}}
+{\footnotesize\ttfamily Hash\+Map$<$Integer, Array\+List$<$\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}}$>$ $>$ fxsrc.\+propyecto.\+domain.\+Data\+Manager.\+Get\+All\+Ratings\+Users\+Map (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_rating}{Data\+Rating}}}]{dr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Devuelve todos los \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} dentro del conjunto {\itshape dr} clasificados por usuario. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve todos los \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} dentro del conjunto {\itshape dr} clasificados por usuario 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_ab985ec1f8394dcf9c97672dfdcdcb07d}\label{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_ab985ec1f8394dcf9c97672dfdcdcb07d}} 
+\index{fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}!GetAllRatingsUsersMapDB@{GetAllRatingsUsersMapDB}}
+\index{GetAllRatingsUsersMapDB@{GetAllRatingsUsersMapDB}!fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}}
+\doxysubsubsection{\texorpdfstring{GetAllRatingsUsersMapDB()}{GetAllRatingsUsersMapDB()}}
+{\footnotesize\ttfamily Hash\+Map$<$Integer, Array\+List$<$\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}}$>$ $>$ fxsrc.\+propyecto.\+domain.\+Data\+Manager.\+Get\+All\+Ratings\+Users\+Map\+DB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Devuelve todos los \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} dentro del conjunto {\itshape ratings\+DB} clasificados por usuario. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve todos los \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} dentro del conjunto {\itshape ratings\+DB} clasificados por usuario 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a2d9f2339e18042b20c76103d377b5945}\label{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a2d9f2339e18042b20c76103d377b5945}} 
+\index{fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}!GetAllUsersID@{GetAllUsersID}}
+\index{GetAllUsersID@{GetAllUsersID}!fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}}
+\doxysubsubsection{\texorpdfstring{GetAllUsersID()}{GetAllUsersID()}}
+{\footnotesize\ttfamily Array\+List$<$Integer$>$ fxsrc.\+propyecto.\+domain.\+Data\+Manager.\+Get\+All\+Users\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Devuelve las I\+Ds de todos los \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} del sistema. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve las I\+Ds de todos los \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} del sistema 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_ae53c3b7df8d9aafc0fbadff18ce6d9f1}\label{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_ae53c3b7df8d9aafc0fbadff18ce6d9f1}} 
+\index{fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}!GetCentroids@{GetCentroids}}
+\index{GetCentroids@{GetCentroids}!fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}}
+\doxysubsubsection{\texorpdfstring{GetCentroids()}{GetCentroids()}}
+{\footnotesize\ttfamily Array\+List$<$Array\+List$<$\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}}$>$ $>$ fxsrc.\+propyecto.\+domain.\+Data\+Manager.\+Get\+Centroids (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Devuelve la informacion de los Centroids almacenada para algoritmo K\+Means. 
+
+\begin{DoxyPrecond}{Precondition}
+Previamente se ha comprobado que el K\+Means que se está cargando es el correcto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve la informacion de los Centroids almacenada para algoritmo K\+Means 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a71c21d0bf791f6d993f20456d3b4dbf3}\label{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a71c21d0bf791f6d993f20456d3b4dbf3}} 
+\index{fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}!GetInstance@{GetInstance}}
+\index{GetInstance@{GetInstance}!fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}}
+\doxysubsubsection{\texorpdfstring{GetInstance()}{GetInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager}{Data\+Manager}} fxsrc.\+propyecto.\+domain.\+Data\+Manager.\+Get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Devuelve la instancia de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager}{Data\+Manager}}. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Si no existe la instancia de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager}{Data\+Manager}}, la crea y luego la devuelve, sino solo la devuelve 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a4fc6fc8450d36221757d56a0dd1476c1}\label{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a4fc6fc8450d36221757d56a0dd1476c1}} 
+\index{fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}!GetItemByArrayPosition@{GetItemByArrayPosition}}
+\index{GetItemByArrayPosition@{GetItemByArrayPosition}!fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}}
+\doxysubsubsection{\texorpdfstring{GetItemByArrayPosition()}{GetItemByArrayPosition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} fxsrc.\+propyecto.\+domain.\+Data\+Manager.\+Get\+Item\+By\+Array\+Position (\begin{DoxyParamCaption}\item[{int}]{pos }\end{DoxyParamCaption})}
+
+
+
+Devuelve el \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} en la posicion {\itshape i}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & pos Corresponde a la posición del \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} deseado dentro del array {\itshape items} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve el \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} en la posición {\itshape i} 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a006f1f9323732cf80d10b02d37e6a715}\label{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a006f1f9323732cf80d10b02d37e6a715}} 
+\index{fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}!GetItemByID@{GetItemByID}}
+\index{GetItemByID@{GetItemByID}!fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}}
+\doxysubsubsection{\texorpdfstring{GetItemByID()}{GetItemByID()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} fxsrc.\+propyecto.\+domain.\+Data\+Manager.\+Get\+Item\+By\+ID (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Devuelve el \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} con ID = {\itshape id}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & id Corresponde al ID del \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} deseado {\itshape items} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve el \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} con ID = {\itshape id} 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a1d1786c142362184c05b2af3d3b1acba}\label{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a1d1786c142362184c05b2af3d3b1acba}} 
+\index{fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}!GetItemByName@{GetItemByName}}
+\index{GetItemByName@{GetItemByName}!fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}}
+\doxysubsubsection{\texorpdfstring{GetItemByName()}{GetItemByName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} fxsrc.\+propyecto.\+domain.\+Data\+Manager.\+Get\+Item\+By\+Name (\begin{DoxyParamCaption}\item[{String}]{name }\end{DoxyParamCaption})}
+
+
+
+Devuelve el \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} con nombre = {\itshape name}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em String} & name Corresponde al nombre del \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} deseado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve el \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} con nombre = {\itshape name}. Devuelve null si no lo encuentra 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a712d2496f1e02f8c39c2c0a852342071}\label{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a712d2496f1e02f8c39c2c0a852342071}} 
+\index{fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}!GetItemByNameLC@{GetItemByNameLC}}
+\index{GetItemByNameLC@{GetItemByNameLC}!fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}}
+\doxysubsubsection{\texorpdfstring{GetItemByNameLC()}{GetItemByNameLC()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} fxsrc.\+propyecto.\+domain.\+Data\+Manager.\+Get\+Item\+By\+Name\+LC (\begin{DoxyParamCaption}\item[{String}]{name }\end{DoxyParamCaption})}
+
+
+
+Devuelve el \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} con con nombre {\itshape name}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em String} & name Corresponde al nombre del \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} deseado {\itshape items} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\itshape items} no es null 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve el \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} con con nombre {\itshape name} (no es case sensitive) 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_aeda277bc3e9b111be00a87b79f77a5a1}\label{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_aeda277bc3e9b111be00a87b79f77a5a1}} 
+\index{fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}!GetKMeans@{GetKMeans}}
+\index{GetKMeans@{GetKMeans}!fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}}
+\doxysubsubsection{\texorpdfstring{GetKMeans()}{GetKMeans()}}
+{\footnotesize\ttfamily Array\+List$<$Array\+List$<$Integer$>$ $>$ fxsrc.\+propyecto.\+domain.\+Data\+Manager.\+Get\+K\+Means (\begin{DoxyParamCaption}\item[{int}]{k,  }\item[{int}]{dataset }\end{DoxyParamCaption})}
+
+
+
+Devuelve la informacion almacenada para el algoritmo K\+Means. 
+
+\begin{DoxyPrecond}{Precondition}
+int k Corresponde a la k que se quiere usar para el K\+Means 
+
+int dataset Corresponde al dataset que se quiere usar para el K\+Means 
+
+{\itshape algorithm\+Data} no es null 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve la informacion almacenada para el algoritmo K\+Means si es el que corresponde a los parametros 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a7a98d0067db32903a2f35d94392e74dd}\label{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a7a98d0067db32903a2f35d94392e74dd}} 
+\index{fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}!GetMaxRating@{GetMaxRating}}
+\index{GetMaxRating@{GetMaxRating}!fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}}
+\doxysubsubsection{\texorpdfstring{GetMaxRating()}{GetMaxRating()}}
+{\footnotesize\ttfamily float fxsrc.\+propyecto.\+domain.\+Data\+Manager.\+Get\+Max\+Rating (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Devuelve el maximo valor sobre el que los ratings se están puntuando (5,10,100) 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve el maximo valor sobre el que los ratings se están puntuando (5,10,100) 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a677b982ab9b473163d310f68a9de77da}\label{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a677b982ab9b473163d310f68a9de77da}} 
+\index{fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}!GetRatingsValueDB@{GetRatingsValueDB}}
+\index{GetRatingsValueDB@{GetRatingsValueDB}!fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}}
+\doxysubsubsection{\texorpdfstring{GetRatingsValueDB()}{GetRatingsValueDB()}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}}$>$ fxsrc.\+propyecto.\+domain.\+Data\+Manager.\+Get\+Ratings\+Value\+DB (\begin{DoxyParamCaption}\item[{int}]{user\+ID }\end{DoxyParamCaption})}
+
+
+
+Devuelve todos los \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} que ha hecho un user con user\+ID = user\+ID dentro del conjunto ratings\+DB. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve todos los \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} que ha hecho un user con user\+ID = user\+ID dentro del conjunto {\itshape ratings\+DB} 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a3a82cc22f4f72422804e6641c9a4e56c}\label{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a3a82cc22f4f72422804e6641c9a4e56c}} 
+\index{fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}!GetRatingValue@{GetRatingValue}}
+\index{GetRatingValue@{GetRatingValue}!fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}}
+\doxysubsubsection{\texorpdfstring{GetRatingValue()}{GetRatingValue()}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}}$>$ fxsrc.\+propyecto.\+domain.\+Data\+Manager.\+Get\+Rating\+Value (\begin{DoxyParamCaption}\item[{int}]{user\+ID,  }\item[{\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_rating}{Data\+Rating}}}]{dr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Devuelve todos los \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} dentro del conjunto de Data\+Rating pasado por parámetro. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve todos los \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} dentro del conjunto de Data\+Rating pasado por parámetro 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_af384fbc5b8a8d914bcf9edbbe3ba1fa5}\label{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_af384fbc5b8a8d914bcf9edbbe3ba1fa5}} 
+\index{fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}!GetRatingValueDB@{GetRatingValueDB}}
+\index{GetRatingValueDB@{GetRatingValueDB}!fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}}
+\doxysubsubsection{\texorpdfstring{GetRatingValueDB()}{GetRatingValueDB()}}
+{\footnotesize\ttfamily float fxsrc.\+propyecto.\+domain.\+Data\+Manager.\+Get\+Rating\+Value\+DB (\begin{DoxyParamCaption}\item[{int}]{user\+ID,  }\item[{int}]{item\+ID }\end{DoxyParamCaption})}
+
+
+
+Devuelve el valor del \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} con ID de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} {\itshape user\+ID} y ID de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} {\itshape item\+ID} dentro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & user\+ID Corresponde a la ID del \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} que ha hecho la valoración \\
+\hline
+{\em int} & item\+ID Corresponde a la ID del \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} que ha sido valorado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve el valor del \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} con ID de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} {\itshape user\+ID} y ID de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} {\itshape item\+ID} dentro de DB 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_acdf27d1dbc82cebbb06381c0233f21ee}\label{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_acdf27d1dbc82cebbb06381c0233f21ee}} 
+\index{fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}!GetRatingValueTestKnown@{GetRatingValueTestKnown}}
+\index{GetRatingValueTestKnown@{GetRatingValueTestKnown}!fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}}
+\doxysubsubsection{\texorpdfstring{GetRatingValueTestKnown()}{GetRatingValueTestKnown()}}
+{\footnotesize\ttfamily float fxsrc.\+propyecto.\+domain.\+Data\+Manager.\+Get\+Rating\+Value\+Test\+Known (\begin{DoxyParamCaption}\item[{int}]{user\+ID,  }\item[{int}]{item\+ID }\end{DoxyParamCaption})}
+
+
+
+Devuelve el valor del \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} con ID de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} {\itshape user\+ID} y ID de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} {\itshape item\+ID}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & user\+ID Corresponde a la ID del \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} que ha hecho la valoración \\
+\hline
+{\em int} & item\+ID Corresponde a la ID del \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} que ha sido valorado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve el valor del \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} con ID de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} {\itshape user\+ID} y ID de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} {\itshape item\+ID} dentro de Known 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a8dcc7b911e08d5d5cc23d976f780c313}\label{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a8dcc7b911e08d5d5cc23d976f780c313}} 
+\index{fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}!GetRatingValueTestUnknown@{GetRatingValueTestUnknown}}
+\index{GetRatingValueTestUnknown@{GetRatingValueTestUnknown}!fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}}
+\doxysubsubsection{\texorpdfstring{GetRatingValueTestUnknown()}{GetRatingValueTestUnknown()}}
+{\footnotesize\ttfamily float fxsrc.\+propyecto.\+domain.\+Data\+Manager.\+Get\+Rating\+Value\+Test\+Unknown (\begin{DoxyParamCaption}\item[{int}]{user\+ID,  }\item[{int}]{item\+ID }\end{DoxyParamCaption})}
+
+
+
+Devuelve el valor del \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} con ID de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} {\itshape user\+ID} y ID de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} {\itshape item\+ID}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & user\+ID Corresponde a la ID del \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} que ha hecho la valoración \\
+\hline
+{\em int} & item\+ID Corresponde a la ID del \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} que ha sido valorado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve el valor del \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} con ID de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} {\itshape user\+ID} y ID de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} {\itshape item\+ID} dentro de Unknown 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a4b32804c17b02684a94c35ae4945fc52}\label{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a4b32804c17b02684a94c35ae4945fc52}} 
+\index{fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}!GetSecurity@{GetSecurity}}
+\index{GetSecurity@{GetSecurity}!fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}}
+\doxysubsubsection{\texorpdfstring{GetSecurity()}{GetSecurity()}}
+{\footnotesize\ttfamily String fxsrc.\+propyecto.\+domain.\+Data\+Manager.\+Get\+Security (\begin{DoxyParamCaption}\item[{String}]{username }\end{DoxyParamCaption})}
+
+
+
+Devuelve el valor de Security con ID de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} {\itshape user\+ID} y ID de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} {\itshape item\+ID}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em String} & username Corresponde al nombre del \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve la respuesta de seguridad del usuario pasado por parámetro 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a2b37614afcb1715724e2007e20bcdc57}\label{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a2b37614afcb1715724e2007e20bcdc57}} 
+\index{fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}!GetTopRatedItems@{GetTopRatedItems}}
+\index{GetTopRatedItems@{GetTopRatedItems}!fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}}
+\doxysubsubsection{\texorpdfstring{GetTopRatedItems()}{GetTopRatedItems()}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}}$>$ fxsrc.\+propyecto.\+domain.\+Data\+Manager.\+Get\+Top\+Rated\+Items (\begin{DoxyParamCaption}\item[{int}]{top }\end{DoxyParamCaption})}
+
+
+
+Devuelve los {\itshape top} Items mejor puntuados. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & top Corresponde a la cantidad de Items deseados \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve los {\itshape top} Items mejor puntuados 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a1bc2405e9c8f256cf6aa7641556dc473}\label{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a1bc2405e9c8f256cf6aa7641556dc473}} 
+\index{fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}!GetUserRatings@{GetUserRatings}}
+\index{GetUserRatings@{GetUserRatings}!fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}}
+\doxysubsubsection{\texorpdfstring{GetUserRatings()}{GetUserRatings()}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}}$>$ fxsrc.\+propyecto.\+domain.\+Data\+Manager.\+Get\+User\+Ratings (\begin{DoxyParamCaption}\item[{int}]{user\+ID }\end{DoxyParamCaption})}
+
+
+
+Función que devuelve todos los \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} de un usuario. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & user\+ID corresponde la ID del usuario del cual queremmos obtener todos sus rating \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve todos los \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} de un usuario 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a4a790be38d4e5f230fd9d133b5bf6469}\label{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a4a790be38d4e5f230fd9d133b5bf6469}} 
+\index{fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}!GetUserUnknownRatings@{GetUserUnknownRatings}}
+\index{GetUserUnknownRatings@{GetUserUnknownRatings}!fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}}
+\doxysubsubsection{\texorpdfstring{GetUserUnknownRatings()}{GetUserUnknownRatings()}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}}$>$ fxsrc.\+propyecto.\+domain.\+Data\+Manager.\+Get\+User\+Unknown\+Ratings (\begin{DoxyParamCaption}\item[{int}]{user\+ID }\end{DoxyParamCaption})}
+
+
+
+Devuelve todos los \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} que ha hecho un user con user\+ID = user\+ID dentro del conjunto ratings\+Test\+Unknown. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve todos los \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} que ha hecho un user con user\+ID = user\+ID dentro del conjunto {\itshape ratings\+Test\+Unknown} 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a0aca9ca376b3f377912d8d9be55c7d73}\label{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a0aca9ca376b3f377912d8d9be55c7d73}} 
+\index{fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}!LoadItems@{LoadItems}}
+\index{LoadItems@{LoadItems}!fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}}
+\doxysubsubsection{\texorpdfstring{LoadItems()}{LoadItems()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+domain.\+Data\+Manager.\+Load\+Items (\begin{DoxyParamCaption}\item[{String}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Se cargan los \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} del fichero pasado por parámetro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em String} & path Corresponde al path del fichero que queremos cargar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Se llama a la carga de C\+SV de {\itshape items} 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_ab0378debc98df6562b57f8a84c0189f5}\label{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_ab0378debc98df6562b57f8a84c0189f5}} 
+\index{fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}!LoadRating@{LoadRating}}
+\index{LoadRating@{LoadRating}!fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}}
+\doxysubsubsection{\texorpdfstring{LoadRating()}{LoadRating()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+domain.\+Data\+Manager.\+Load\+Rating (\begin{DoxyParamCaption}\item[{String}]{path,  }\item[{\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_rating}{Data\+Rating}}}]{rating }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Se cargan los \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} del fichero pasado por parámetro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em String} & path Corresponde al path del fichero que queremos cargar \\
+\hline
+{\em Data\+Rating} & rating Corresponde al Data\+Rating donde queremos cargar los datos del fichero pasado por parámetro \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Se llama a la carga de C\+SV del Data\+Rating pasado por parámetro 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a5fb0a0475e48b8d9df22d64ca6670529}\label{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a5fb0a0475e48b8d9df22d64ca6670529}} 
+\index{fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}!LoadUsers@{LoadUsers}}
+\index{LoadUsers@{LoadUsers}!fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}}
+\doxysubsubsection{\texorpdfstring{LoadUsers()}{LoadUsers()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+domain.\+Data\+Manager.\+Load\+Users (\begin{DoxyParamCaption}\item[{String}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Función que carga la información de los usuarios. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em String} & path Corresponde al path del archivo a cargar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\itshape users} no es null 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Carga la información de los usuarios 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a97566d00c375cc0487700806a8002248}\label{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a97566d00c375cc0487700806a8002248}} 
+\index{fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}!ModifyItemRating@{ModifyItemRating}}
+\index{ModifyItemRating@{ModifyItemRating}!fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}}
+\doxysubsubsection{\texorpdfstring{ModifyItemRating()}{ModifyItemRating()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+domain.\+Data\+Manager.\+Modify\+Item\+Rating (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}}}]{r }\end{DoxyParamCaption})}
+
+
+
+Función que modifica un \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}}} & r Corresponde al rating a modificar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+ratings\+DB no es null 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Modifica un \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_ac607c116053e2e6b7ad84a24159b4cd0}\label{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_ac607c116053e2e6b7ad84a24159b4cd0}} 
+\index{fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}!SetKMeans@{SetKMeans}}
+\index{SetKMeans@{SetKMeans}!fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}}
+\doxysubsubsection{\texorpdfstring{SetKMeans()}{SetKMeans()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+domain.\+Data\+Manager.\+Set\+K\+Means (\begin{DoxyParamCaption}\item[{int}]{k,  }\item[{int}]{dataset,  }\item[{Array\+List$<$ Array\+List$<$ Integer $>$$>$}]{kgroups,  }\item[{Array\+List$<$ Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} $>$$>$}]{centroids }\end{DoxyParamCaption})}
+
+
+
+Asigna la informacion almacenada para el algoritmo K\+Means. 
+
+\begin{DoxyPrecond}{Precondition}
+int k Corresponde a la k que se quiere usar para el K\+Means 
+
+int dataset Corresponde al dataset que se quiere usar para el K\+Means 
+
+Array\+List$<$Array\+List$<$\+Integer$>$$>$ kgroups Corresponde a la información de los grupos del kmeans 
+
+Array\+List$<$Array\+List$<$\+Rating$>$$>$ centroids Corresponde a los centroides 
+
+{\itshape algorithm\+Data} no es null 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Asigna la informacion almacenada para el algoritmo K\+Means si es el que corresponde a los parametros 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a47cdd80a1ceda56de05f653832e434a2}\label{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a47cdd80a1ceda56de05f653832e434a2}} 
+\index{fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}!SetNewEmail@{SetNewEmail}}
+\index{SetNewEmail@{SetNewEmail}!fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}}
+\doxysubsubsection{\texorpdfstring{SetNewEmail()}{SetNewEmail()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+domain.\+Data\+Manager.\+Set\+New\+Email (\begin{DoxyParamCaption}\item[{String}]{get\+Username,  }\item[{String}]{new\+Email }\end{DoxyParamCaption})}
+
+
+
+Se modifica el email del \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} pasado por parámetro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em String} & getusername Corresponde al nombre del \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} \\
+\hline
+{\em String} & new\+Email Corresponde al nuevo email del \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+Existe \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} con username = {\itshape username} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Se modifica el email del \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} por el nuevo pasado por parámetro 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_addbe429438c9462af2f292344a7b38d7}\label{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_addbe429438c9462af2f292344a7b38d7}} 
+\index{fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}!SetNewPassword@{SetNewPassword}}
+\index{SetNewPassword@{SetNewPassword}!fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}}
+\doxysubsubsection{\texorpdfstring{SetNewPassword()}{SetNewPassword()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+domain.\+Data\+Manager.\+Set\+New\+Password (\begin{DoxyParamCaption}\item[{String}]{get\+Username,  }\item[{String}]{new\+Password }\end{DoxyParamCaption})}
+
+
+
+Se modifica la contraseña del \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} pasado por parámetro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em String} & get\+Username Corresponde al nombre del \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} \\
+\hline
+{\em String} & password Corresponde a la nueva contraseña del \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+Existe \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} con username = {\itshape username} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Se modifica la contraseña del \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} por la nueva pasada por parámetro 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a43e5d70dbf872eb85f243bb721c2eb3b}\label{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a43e5d70dbf872eb85f243bb721c2eb3b}} 
+\index{fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}!SetNewSecurity@{SetNewSecurity}}
+\index{SetNewSecurity@{SetNewSecurity}!fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}}
+\doxysubsubsection{\texorpdfstring{SetNewSecurity()}{SetNewSecurity()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+domain.\+Data\+Manager.\+Set\+New\+Security (\begin{DoxyParamCaption}\item[{String}]{get\+Username,  }\item[{String}]{new\+Security }\end{DoxyParamCaption})}
+
+
+
+Se modifica la respuesta de seguridad del \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} pasado por parámetro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em String} & getusername Corresponde al nombre del \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} \\
+\hline
+{\em String} & new\+Security Corresponde a la nueva respuesta de seguridad \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+Existe \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} con username = {\itshape username} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Se modifica la respuesta de seguridad del \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} por el nuevo pasado por parámetro 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_add70186bcdc42ea28f0e80ad52686322}\label{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_add70186bcdc42ea28f0e80ad52686322}} 
+\index{fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}!SetNewUsername@{SetNewUsername}}
+\index{SetNewUsername@{SetNewUsername}!fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}}
+\doxysubsubsection{\texorpdfstring{SetNewUsername()}{SetNewUsername()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+domain.\+Data\+Manager.\+Set\+New\+Username (\begin{DoxyParamCaption}\item[{String}]{get\+Username,  }\item[{String}]{new\+Username }\end{DoxyParamCaption})}
+
+
+
+Se modifica el nombre del \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} pasado por parámetro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em String} & getusername Corresponde al nombre (original) del \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} \\
+\hline
+{\em String} & new\+Username Corresponde al nuevo nombre del \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+Existe \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} con username = {\itshape username} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Se modifica el nombre del \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} por el nuevo pasado por parámetro 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a9e497954668d319230be87a7366ec65c}\label{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a9e497954668d319230be87a7366ec65c}} 
+\index{fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}!SignIn@{SignIn}}
+\index{SignIn@{SignIn}!fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}}
+\doxysubsubsection{\texorpdfstring{SignIn()}{SignIn()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user_actual}{User\+Actual}} fxsrc.\+propyecto.\+domain.\+Data\+Manager.\+Sign\+In (\begin{DoxyParamCaption}\item[{String}]{username }\end{DoxyParamCaption})}
+
+
+
+Loggea al usuario con nombre {\itshape username}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em String} & username Corresponde al nombre del \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} \\
+\hline
+{\em boolean} & remember\+Me Corresponde a si se desea iniciar sesion automaticamente al inciar la aplicacion \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+Existe \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} con username = {\itshape username} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve el \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user_actual}{User\+Actual}} con los datos del \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} con nombre username 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a87d89bf52e5520c937f40f5be18d1334}\label{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a87d89bf52e5520c937f40f5be18d1334}} 
+\index{fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}!SignUp@{SignUp}}
+\index{SignUp@{SignUp}!fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}}
+\doxysubsubsection{\texorpdfstring{SignUp()}{SignUp()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user_actual}{User\+Actual}} fxsrc.\+propyecto.\+domain.\+Data\+Manager.\+Sign\+Up (\begin{DoxyParamCaption}\item[{String}]{username,  }\item[{String}]{password,  }\item[{String}]{email,  }\item[{String}]{security }\end{DoxyParamCaption})}
+
+
+
+Crea un \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} con toda la información pasada por parámetro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em String} & username Corresponde al nombre del \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} \\
+\hline
+{\em String} & password Corresponde a la contraseña del \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} \\
+\hline
+{\em boolean} & remember\+Me Corresponde a si se desea iniciar sesion automaticamente al inciar la aplicacion \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+No existe \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} con username = {\itshape username} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Crea un \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} con toda la información pasada por parámetro 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a0964e688b8775de8e3628f6cdaf91953}\label{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a0964e688b8775de8e3628f6cdaf91953}} 
+\index{fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}!StoreUsersInfo@{StoreUsersInfo}}
+\index{StoreUsersInfo@{StoreUsersInfo}!fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}}
+\doxysubsubsection{\texorpdfstring{StoreUsersInfo()}{StoreUsersInfo()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+domain.\+Data\+Manager.\+Store\+Users\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Función que alamacena la información de los usuarios. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape users} no es null 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Almacena la información de los usuarios en C\+SV (util para cuando se modifica la información del user actual) 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a1b3bc3e0477c180d99c30923f4611d26}\label{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a1b3bc3e0477c180d99c30923f4611d26}} 
+\index{fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}!UserExists@{UserExists}}
+\index{UserExists@{UserExists}!fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}}
+\doxysubsubsection{\texorpdfstring{UserExists()}{UserExists()}}
+{\footnotesize\ttfamily boolean fxsrc.\+propyecto.\+domain.\+Data\+Manager.\+User\+Exists (\begin{DoxyParamCaption}\item[{String}]{username }\end{DoxyParamCaption})}
+
+
+
+Comprueba si existe un \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} con username. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em String} & username Corresponde al nombre del \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve si existe o no un \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} con el username pasado por parámetro 
+\end{DoxyPostcond}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a5d0fb041a4a585cc20ad0dbad15ec61e}\label{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a5d0fb041a4a585cc20ad0dbad15ec61e}} 
+\index{fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}!algorithmData@{algorithmData}}
+\index{algorithmData@{algorithmData}!fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}}
+\doxysubsubsection{\texorpdfstring{algorithmData}{algorithmData}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm}{Data\+Algorithm}} fxsrc.\+propyecto.\+domain.\+Data\+Manager.\+algorithm\+Data\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+{\itshape algorithm\+Data} Corresponde a la clase Data\+Algorithm de la capa de datos que hace referencia al conjunto de datos kmeans.\+csv 
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a0bd16303bb0be2e23a72b4adb11e4b1e}\label{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a0bd16303bb0be2e23a72b4adb11e4b1e}} 
+\index{fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}!instance@{instance}}
+\index{instance@{instance}!fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}}
+\doxysubsubsection{\texorpdfstring{instance}{instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager}{Data\+Manager}} fxsrc.\+propyecto.\+domain.\+Data\+Manager.\+instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+{\itshape \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager}{Data\+Manager}}} Corresponde a la instancia del singleton \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager}{Data\+Manager}} 
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a5d5fe7e6bf090346e0a827eb9254d736}\label{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a5d5fe7e6bf090346e0a827eb9254d736}} 
+\index{fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}!items@{items}}
+\index{items@{items}!fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}}
+\doxysubsubsection{\texorpdfstring{items}{items}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_item}{Data\+Item}} fxsrc.\+propyecto.\+domain.\+Data\+Manager.\+items\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+{\itshape items} Corresponde a la clase Data\+Item de la capa de datos 
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_aef0318b68577b534952617c14298d1f5}\label{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_aef0318b68577b534952617c14298d1f5}} 
+\index{fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}!ratingsDB@{ratingsDB}}
+\index{ratingsDB@{ratingsDB}!fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}}
+\doxysubsubsection{\texorpdfstring{ratingsDB}{ratingsDB}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_rating}{Data\+Rating}} fxsrc.\+propyecto.\+domain.\+Data\+Manager.\+ratings\+DB\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+{\itshape ratings\+DB} Corresponde a la clase Data\+Rating de la capa de datos que hace referencia al conjunto de datos ratings.\+db.\+csv 
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_afc99f1f1666521867466bf08d8a84c22}\label{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_afc99f1f1666521867466bf08d8a84c22}} 
+\index{fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}!ratingsTestKnown@{ratingsTestKnown}}
+\index{ratingsTestKnown@{ratingsTestKnown}!fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}}
+\doxysubsubsection{\texorpdfstring{ratingsTestKnown}{ratingsTestKnown}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_rating}{Data\+Rating}} fxsrc.\+propyecto.\+domain.\+Data\+Manager.\+ratings\+Test\+Known\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+{\itshape ratings\+Test\+Known} Corresponde a la clase Data\+Rating de la capa de datos que hace referencia al conjunto de datos ratings.\+test.\+known.\+csv 
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a3f8278f6daeaed0103d7c56352e329a5}\label{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a3f8278f6daeaed0103d7c56352e329a5}} 
+\index{fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}!ratingsTestUnknown@{ratingsTestUnknown}}
+\index{ratingsTestUnknown@{ratingsTestUnknown}!fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}}
+\doxysubsubsection{\texorpdfstring{ratingsTestUnknown}{ratingsTestUnknown}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_rating}{Data\+Rating}} fxsrc.\+propyecto.\+domain.\+Data\+Manager.\+ratings\+Test\+Unknown\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+{\itshape ratings\+Test\+Unknown} Corresponde a la clase Data\+Rating de la capa de datos que hace referencia al conjunto de datos ratings.\+test.\+unknown.\+csv 
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_addeeaeaade7ed0e6c6d84045e8931556}\label{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_addeeaeaade7ed0e6c6d84045e8931556}} 
+\index{fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}!users@{users}}
+\index{users@{users}!fxsrc.propyecto.domain.DataManager@{fxsrc.propyecto.domain.DataManager}}
+\doxysubsubsection{\texorpdfstring{users}{users}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_user}{Data\+User}} fxsrc.\+propyecto.\+domain.\+Data\+Manager.\+users\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+{\itshape users} Corresponde a la clase Data\+User de la capa de datos que hace referencia al conjunto de datos users.\+csv 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/fxsrc/propyecto/domain/\mbox{\hyperlink{_data_manager_8java}{Data\+Manager.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,558 @@
+\hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_rating}{}\doxysection{fxsrc.\+propyecto.\+data.\+Data\+Rating Class Reference}
+\label{classfxsrc_1_1propyecto_1_1data_1_1_data_rating}\index{fxsrc.propyecto.data.DataRating@{fxsrc.propyecto.data.DataRating}}
+
+
+Clase que contiene los datos de todos los Rating del sistema.  
+
+
+Inheritance diagram for fxsrc.\+propyecto.\+data.\+Data\+Rating\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classfxsrc_1_1propyecto_1_1data_1_1_data_rating}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_aec9f671014e8dc138bfae378d05a9e25}{Data\+Rating}} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_rating}{Data\+Rating}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_a7005a0d9c1f6f98d0908dc7c98a57e6e}{Load\+C\+SV}} (String path)
+\begin{DoxyCompactList}\small\item\em Llamada a la carga de C\+SV de la clase data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_a964cf11fca860356fa0c9690a40a0ba9}{Init}} ()
+\begin{DoxyCompactList}\small\item\em Función para inicializar {\itshape ratings}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_aaf2e485a333c949a1912dd9350a3cbb3}{Clear\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Función para inicializar el {\itshape ratings}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_a122f0ddcf95a96a7d12e9679c970d531}{Parse\+And\+Add\+Data}} (String \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_ac0986d4f64fe86583523fd175b58cbf8}{attributes\+Names}}\mbox{[}$\,$\mbox{]}, String line\+Read)
+\begin{DoxyCompactList}\small\item\em Parsea una linea C\+SV a un Rating y lo añade a {\itshape ratings}. \end{DoxyCompactList}\item 
+Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_a18d61f51309ace5861e59d166307f452}{Get\+All\+Ratings}} ()
+\begin{DoxyCompactList}\small\item\em Devuelve todos los Rating dentro de {\itshape ratings}. \end{DoxyCompactList}\item 
+Hash\+Map$<$ Integer, Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} $>$ $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_a50e2f620c645ff50e87368ccb64a089f}{Get\+All\+Ratings\+Users\+Map}} ()
+\begin{DoxyCompactList}\small\item\em Devuelve todos los Rating agrupados por usuario. \end{DoxyCompactList}\item 
+Hash\+Map$<$ Pair$<$ Integer, Integer $>$, Float $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_ad91b8053dce5706afa216a34b23dfa67}{Get\+All\+Ratings\+Map}} ()
+\begin{DoxyCompactList}\small\item\em Devuelve todos los Ratings. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_a748a9b242a7c0ed7ea5940566085e2ad}{Get\+Rating\+Value\+By\+ID}} (int user\+ID, int item\+ID)  throws Rating\+Does\+Not\+Exist\+Exception 
+\begin{DoxyCompactList}\small\item\em Devuelve el valor de Rating con id de usuario {\itshape user\+ID} y id de item \textbackslash{}item\+ID. \end{DoxyCompactList}\item 
+Array\+List$<$ Integer $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_ab879774d71614df42243c13240347fd2}{Get\+All\+Users\+ID}} ()
+\begin{DoxyCompactList}\small\item\em Devuelve todos los Rating guardados en {\itshape ratings}. \end{DoxyCompactList}\item 
+Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_ad3a3b473a71e0886dd8787f030e915fa}{Get\+User\+Ratings}} (int user\+ID)  throws No\+Existing\+User\+I\+D\+Exception
+\begin{DoxyCompactList}\small\item\em Devuelve el valor de todos los Rating que el usuario con id {\itshape user\+ID} ha realizado. \end{DoxyCompactList}\item 
+Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_ab4ac1092d028d07c2670e55c4b7ca339}{Get\+Item\+Ratings}} (int item\+ID)  throws Item\+Does\+Not\+Exist\+Exception
+\begin{DoxyCompactList}\small\item\em Devuelve el valor de todos los Rating que tiene el item con id {\itshape item\+ID}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_aad6c545230ab65e08bee3af7cd9c27fd}{Add\+Rating}} (\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} temp\+Rating)
+\begin{DoxyCompactList}\small\item\em Funcion que añade un Rating a las diferentes listas. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_a4adda86b437f342ec9eca7d4096734a1}{Modify\+Item\+Rating}} (\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} r)
+\begin{DoxyCompactList}\small\item\em Funcion que modifica un Rating en las diferentes listas. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_aed0cddb9899ecf947670fdf2aee8ebae}{Delete\+Rating}} (int user\+ID, int item\+ID)
+\begin{DoxyCompactList}\small\item\em Funcion que elimina un Rating de las diferentes listas. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_a42189c0c19d7d28e1b0c5af909b605ed}{Delete\+Ratings\+Of\+User}} (int user\+ID)
+\begin{DoxyCompactList}\small\item\em Funcion que elimina todos los Rating de un usuario en las diferentes listas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static float \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_a9ba66d999e6a13fec5b5b224250683a9}{Get\+Max\+Rating}} ()
+\begin{DoxyCompactList}\small\item\em Devuelve el valor sobre que están los ratings puntuados (5,10,100) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_af85b8e50cf60f3acbad999c6fef77039}{Has\+Next\+Line}} ()
+\begin{DoxyCompactList}\small\item\em Devuelve el valor sobre que están los ratings puntuados (5,10,100) \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_a2d00fb0a12ee93d34dcb6d359e020844}{Get\+Next\+Line}} ()
+\begin{DoxyCompactList}\small\item\em Funcion que devuelve la siguiente línea a guardar. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static float \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_ac33258905a79cbafcc707d63ce63582e}{max\+Rating}}
+\begin{DoxyCompactList}\small\item\em rating maximo (5, 10, 100) sobre el que se están puntuando los items \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+String\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_a710bf1e0d36694139a41d0db834cd898}{at\+Names}}
+\begin{DoxyCompactList}\small\item\em Son los nombres de las columnas leidas en C\+SV. \end{DoxyCompactList}\item 
+Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_a87b5cbcc90facaf3a0ebb2c128a460e8}{ratings}}
+\begin{DoxyCompactList}\small\item\em {\itshape ratings} es un array de Rating donde se guardan todos los Rating del sistema. \end{DoxyCompactList}\item 
+Hash\+Map$<$ Pair$<$ Integer, Integer $>$, Float $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_a90a573ee2ae30dbdf1d3e52e410aecb6}{ratings\+Map}}
+\begin{DoxyCompactList}\small\item\em Hash\+Map de los Rating del sistema (para buscar un valor concreto) \end{DoxyCompactList}\item 
+Hash\+Map$<$ Integer, Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} $>$ $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_ac81214fd27bda2fdd0c175dbeda4ee71}{all\+Ratings\+User}}
+\begin{DoxyCompactList}\small\item\em Hash\+Map de los Rating del sistema agrupados por usuario (para buscar todos los rating de un User) \end{DoxyCompactList}\item 
+Hash\+Map$<$ Integer, Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} $>$ $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_af39f8ca96580933fe0e4f9ef39e4ce74}{all\+Ratings\+Item}}
+\begin{DoxyCompactList}\small\item\em Hash\+Map de los Rating del sistema agrupados por item (para buscar todos los rating de un Item) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Clase que contiene los datos de todos los Rating del sistema. 
+
+Ofrece operaciones para que el Data\+Manager pueda añadir Rating nuevos a partir de un String que sería la representación del Rating a añadir en formato C\+SV. También ofrece operaciones para que el Data\+Manager pida todos los Rating, un Rating en concreto a partir de la posición del Array (útil para bucles) o incluso un Rating a partir de sus I\+Ds. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_aec9f671014e8dc138bfae378d05a9e25}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_aec9f671014e8dc138bfae378d05a9e25}} 
+\index{fxsrc.propyecto.data.DataRating@{fxsrc.propyecto.data.DataRating}!DataRating@{DataRating}}
+\index{DataRating@{DataRating}!fxsrc.propyecto.data.DataRating@{fxsrc.propyecto.data.DataRating}}
+\doxysubsubsection{\texorpdfstring{DataRating()}{DataRating()}}
+{\footnotesize\ttfamily fxsrc.\+propyecto.\+data.\+Data\+Rating.\+Data\+Rating (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor por defecto de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_rating}{Data\+Rating}}. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Se crea una instancia de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_rating}{Data\+Rating}} y se llama a la constructora por defecto de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data}{Data}} 
+\end{DoxyPostcond}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_aad6c545230ab65e08bee3af7cd9c27fd}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_aad6c545230ab65e08bee3af7cd9c27fd}} 
+\index{fxsrc.propyecto.data.DataRating@{fxsrc.propyecto.data.DataRating}!AddRating@{AddRating}}
+\index{AddRating@{AddRating}!fxsrc.propyecto.data.DataRating@{fxsrc.propyecto.data.DataRating}}
+\doxysubsubsection{\texorpdfstring{AddRating()}{AddRating()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+data.\+Data\+Rating.\+Add\+Rating (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}}}]{temp\+Rating }\end{DoxyParamCaption})}
+
+
+
+Funcion que añade un Rating a las diferentes listas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Rating} & temp\+Rating corresponde al Rating a añadir \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+ratings, ratings\+Map, all\+Ratings\+Item y all\+Ratings\+User no son null 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Añade {\itshape temp\+Rating} a todas las listas de almacenamiento 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_aaf2e485a333c949a1912dd9350a3cbb3}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_aaf2e485a333c949a1912dd9350a3cbb3}} 
+\index{fxsrc.propyecto.data.DataRating@{fxsrc.propyecto.data.DataRating}!ClearData@{ClearData}}
+\index{ClearData@{ClearData}!fxsrc.propyecto.data.DataRating@{fxsrc.propyecto.data.DataRating}}
+\doxysubsubsection{\texorpdfstring{ClearData()}{ClearData()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+data.\+Data\+Rating.\+Clear\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Función para inicializar el {\itshape ratings}. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape ratings} no es null. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Se resetea el array {\itshape ratings}. 
+\end{DoxyPostcond}
+
+
+Reimplemented from \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_ad20bbf20a9c11034e72cbb8128aa9c69}{fxsrc.\+propyecto.\+data.\+Data}}.
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_aed0cddb9899ecf947670fdf2aee8ebae}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_aed0cddb9899ecf947670fdf2aee8ebae}} 
+\index{fxsrc.propyecto.data.DataRating@{fxsrc.propyecto.data.DataRating}!DeleteRating@{DeleteRating}}
+\index{DeleteRating@{DeleteRating}!fxsrc.propyecto.data.DataRating@{fxsrc.propyecto.data.DataRating}}
+\doxysubsubsection{\texorpdfstring{DeleteRating()}{DeleteRating()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+data.\+Data\+Rating.\+Delete\+Rating (\begin{DoxyParamCaption}\item[{int}]{user\+ID,  }\item[{int}]{item\+ID }\end{DoxyParamCaption})}
+
+
+
+Funcion que elimina un Rating de las diferentes listas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & user\+ID Corresponde al ID del usuario del Rating a eliminar \\
+\hline
+{\em int} & item\+ID Corresponde al ID del item del Rating a eliminar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+ratings, ratings\+Map, all\+Ratings\+Item y all\+Ratings\+User no son null 
+
+{\itshape user\+ID} corresponde a la ID de un usuario existente 
+
+{\itshape item\+ID} corresponde a la ID de un Item existente 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Elimina {\itshape temp\+Rating} de todas las listas de almacenamiento 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_a42189c0c19d7d28e1b0c5af909b605ed}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_a42189c0c19d7d28e1b0c5af909b605ed}} 
+\index{fxsrc.propyecto.data.DataRating@{fxsrc.propyecto.data.DataRating}!DeleteRatingsOfUser@{DeleteRatingsOfUser}}
+\index{DeleteRatingsOfUser@{DeleteRatingsOfUser}!fxsrc.propyecto.data.DataRating@{fxsrc.propyecto.data.DataRating}}
+\doxysubsubsection{\texorpdfstring{DeleteRatingsOfUser()}{DeleteRatingsOfUser()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+data.\+Data\+Rating.\+Delete\+Ratings\+Of\+User (\begin{DoxyParamCaption}\item[{int}]{user\+ID }\end{DoxyParamCaption})}
+
+
+
+Funcion que elimina todos los Rating de un usuario en las diferentes listas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & user\+ID Corresponde al ID del usuario que queremos eliminar todos sus Rating \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+ratings, ratings\+Map, all\+Ratings\+Item y all\+Ratings\+User no son null 
+
+{\itshape user\+ID} corresponde a la ID de un usuario existente 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Elimina {\itshape temp\+Rating} de todas las listas de almacenamiento 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_a18d61f51309ace5861e59d166307f452}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_a18d61f51309ace5861e59d166307f452}} 
+\index{fxsrc.propyecto.data.DataRating@{fxsrc.propyecto.data.DataRating}!GetAllRatings@{GetAllRatings}}
+\index{GetAllRatings@{GetAllRatings}!fxsrc.propyecto.data.DataRating@{fxsrc.propyecto.data.DataRating}}
+\doxysubsubsection{\texorpdfstring{GetAllRatings()}{GetAllRatings()}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}}$>$ fxsrc.\+propyecto.\+data.\+Data\+Rating.\+Get\+All\+Ratings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Devuelve todos los Rating dentro de {\itshape ratings}. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve todos los Rating dentro de {\itshape ratigns}. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_ad91b8053dce5706afa216a34b23dfa67}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_ad91b8053dce5706afa216a34b23dfa67}} 
+\index{fxsrc.propyecto.data.DataRating@{fxsrc.propyecto.data.DataRating}!GetAllRatingsMap@{GetAllRatingsMap}}
+\index{GetAllRatingsMap@{GetAllRatingsMap}!fxsrc.propyecto.data.DataRating@{fxsrc.propyecto.data.DataRating}}
+\doxysubsubsection{\texorpdfstring{GetAllRatingsMap()}{GetAllRatingsMap()}}
+{\footnotesize\ttfamily Hash\+Map$<$Pair$<$Integer, Integer$>$, Float$>$ fxsrc.\+propyecto.\+data.\+Data\+Rating.\+Get\+All\+Ratings\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Devuelve todos los Ratings. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve todos los Ratings 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_a50e2f620c645ff50e87368ccb64a089f}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_a50e2f620c645ff50e87368ccb64a089f}} 
+\index{fxsrc.propyecto.data.DataRating@{fxsrc.propyecto.data.DataRating}!GetAllRatingsUsersMap@{GetAllRatingsUsersMap}}
+\index{GetAllRatingsUsersMap@{GetAllRatingsUsersMap}!fxsrc.propyecto.data.DataRating@{fxsrc.propyecto.data.DataRating}}
+\doxysubsubsection{\texorpdfstring{GetAllRatingsUsersMap()}{GetAllRatingsUsersMap()}}
+{\footnotesize\ttfamily Hash\+Map$<$Integer, Array\+List$<$\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}}$>$ $>$ fxsrc.\+propyecto.\+data.\+Data\+Rating.\+Get\+All\+Ratings\+Users\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Devuelve todos los Rating agrupados por usuario. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve todos los Rating agrupados por usuario 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_ab879774d71614df42243c13240347fd2}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_ab879774d71614df42243c13240347fd2}} 
+\index{fxsrc.propyecto.data.DataRating@{fxsrc.propyecto.data.DataRating}!GetAllUsersID@{GetAllUsersID}}
+\index{GetAllUsersID@{GetAllUsersID}!fxsrc.propyecto.data.DataRating@{fxsrc.propyecto.data.DataRating}}
+\doxysubsubsection{\texorpdfstring{GetAllUsersID()}{GetAllUsersID()}}
+{\footnotesize\ttfamily Array\+List$<$Integer$>$ fxsrc.\+propyecto.\+data.\+Data\+Rating.\+Get\+All\+Users\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Devuelve todos los Rating guardados en {\itshape ratings}. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve todos los Rating guardados en {\itshape ratings} 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_ab4ac1092d028d07c2670e55c4b7ca339}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_ab4ac1092d028d07c2670e55c4b7ca339}} 
+\index{fxsrc.propyecto.data.DataRating@{fxsrc.propyecto.data.DataRating}!GetItemRatings@{GetItemRatings}}
+\index{GetItemRatings@{GetItemRatings}!fxsrc.propyecto.data.DataRating@{fxsrc.propyecto.data.DataRating}}
+\doxysubsubsection{\texorpdfstring{GetItemRatings()}{GetItemRatings()}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}}$>$ fxsrc.\+propyecto.\+data.\+Data\+Rating.\+Get\+Item\+Ratings (\begin{DoxyParamCaption}\item[{int}]{item\+ID }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item_does_not_exist_exception}{Item\+Does\+Not\+Exist\+Exception}}}
+
+
+
+Devuelve el valor de todos los Rating que tiene el item con id {\itshape item\+ID}. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Item\+Does\+Not\+Exist\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em int} & item\+ID Corresponde a la ID del item deseado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve el valor de todos los Rating que tiene el item con id {\itshape item\+ID} 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_a9ba66d999e6a13fec5b5b224250683a9}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_a9ba66d999e6a13fec5b5b224250683a9}} 
+\index{fxsrc.propyecto.data.DataRating@{fxsrc.propyecto.data.DataRating}!GetMaxRating@{GetMaxRating}}
+\index{GetMaxRating@{GetMaxRating}!fxsrc.propyecto.data.DataRating@{fxsrc.propyecto.data.DataRating}}
+\doxysubsubsection{\texorpdfstring{GetMaxRating()}{GetMaxRating()}}
+{\footnotesize\ttfamily static float fxsrc.\+propyecto.\+data.\+Data\+Rating.\+Get\+Max\+Rating (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Devuelve el valor sobre que están los ratings puntuados (5,10,100) 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve el valor sobre que están los ratings puntuados (5,10,100) 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_a2d00fb0a12ee93d34dcb6d359e020844}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_a2d00fb0a12ee93d34dcb6d359e020844}} 
+\index{fxsrc.propyecto.data.DataRating@{fxsrc.propyecto.data.DataRating}!GetNextLine@{GetNextLine}}
+\index{GetNextLine@{GetNextLine}!fxsrc.propyecto.data.DataRating@{fxsrc.propyecto.data.DataRating}}
+\doxysubsubsection{\texorpdfstring{GetNextLine()}{GetNextLine()}}
+{\footnotesize\ttfamily String fxsrc.\+propyecto.\+data.\+Data\+Rating.\+Get\+Next\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Funcion que devuelve la siguiente línea a guardar. 
+
+\begin{DoxyPrecond}{Precondition}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve la siguiente línea a guardar 
+\end{DoxyPostcond}
+
+
+Reimplemented from \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_a7bcf3576477253620b38f660afd3f45c}{fxsrc.\+propyecto.\+data.\+Data}}.
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_a748a9b242a7c0ed7ea5940566085e2ad}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_a748a9b242a7c0ed7ea5940566085e2ad}} 
+\index{fxsrc.propyecto.data.DataRating@{fxsrc.propyecto.data.DataRating}!GetRatingValueByID@{GetRatingValueByID}}
+\index{GetRatingValueByID@{GetRatingValueByID}!fxsrc.propyecto.data.DataRating@{fxsrc.propyecto.data.DataRating}}
+\doxysubsubsection{\texorpdfstring{GetRatingValueByID()}{GetRatingValueByID()}}
+{\footnotesize\ttfamily float fxsrc.\+propyecto.\+data.\+Data\+Rating.\+Get\+Rating\+Value\+By\+ID (\begin{DoxyParamCaption}\item[{int}]{user\+ID,  }\item[{int}]{item\+ID }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating_does_not_exist_exception}{Rating\+Does\+Not\+Exist\+Exception}}}
+
+
+
+Devuelve el valor de Rating con id de usuario {\itshape user\+ID} y id de item \textbackslash{}item\+ID. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Rating\+Does\+Not\+Exist\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em int} & user\+ID Corresponde a la ID del usuario del rating deseado \\
+\hline
+{\em int} & item\+ID Corresponde a la ID del item del rating deseado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve el valor Rating con id de usuario {\itshape user\+ID} y id de item \textbackslash{}item\+ID 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_ad3a3b473a71e0886dd8787f030e915fa}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_ad3a3b473a71e0886dd8787f030e915fa}} 
+\index{fxsrc.propyecto.data.DataRating@{fxsrc.propyecto.data.DataRating}!GetUserRatings@{GetUserRatings}}
+\index{GetUserRatings@{GetUserRatings}!fxsrc.propyecto.data.DataRating@{fxsrc.propyecto.data.DataRating}}
+\doxysubsubsection{\texorpdfstring{GetUserRatings()}{GetUserRatings()}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}}$>$ fxsrc.\+propyecto.\+data.\+Data\+Rating.\+Get\+User\+Ratings (\begin{DoxyParamCaption}\item[{int}]{user\+ID }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_no_existing_user_i_d_exception}{No\+Existing\+User\+I\+D\+Exception}}}
+
+
+
+Devuelve el valor de todos los Rating que el usuario con id {\itshape user\+ID} ha realizado. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Rating\+Does\+Not\+Exist\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em int} & user\+ID Corresponde a la ID del usuario deseado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve el valor de todos los Rating que el usuario con id {\itshape user\+ID} ha realizado 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_af85b8e50cf60f3acbad999c6fef77039}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_af85b8e50cf60f3acbad999c6fef77039}} 
+\index{fxsrc.propyecto.data.DataRating@{fxsrc.propyecto.data.DataRating}!HasNextLine@{HasNextLine}}
+\index{HasNextLine@{HasNextLine}!fxsrc.propyecto.data.DataRating@{fxsrc.propyecto.data.DataRating}}
+\doxysubsubsection{\texorpdfstring{HasNextLine()}{HasNextLine()}}
+{\footnotesize\ttfamily boolean fxsrc.\+propyecto.\+data.\+Data\+Rating.\+Has\+Next\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Devuelve el valor sobre que están los ratings puntuados (5,10,100) 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve el valor sobre que están los ratings puntuados (5,10,100) 
+\end{DoxyPostcond}
+
+
+Reimplemented from \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_a4c4350fd83ac34db15e28cf1094d397b}{fxsrc.\+propyecto.\+data.\+Data}}.
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_a964cf11fca860356fa0c9690a40a0ba9}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_a964cf11fca860356fa0c9690a40a0ba9}} 
+\index{fxsrc.propyecto.data.DataRating@{fxsrc.propyecto.data.DataRating}!Init@{Init}}
+\index{Init@{Init}!fxsrc.propyecto.data.DataRating@{fxsrc.propyecto.data.DataRating}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+data.\+Data\+Rating.\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Función para inicializar {\itshape ratings}. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Se incializa el array {\itshape ratings} a un array vacío, 
+\end{DoxyPostcond}
+
+
+Reimplemented from \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_a86f95d7c813244f9a1992fe4d7c8be99}{fxsrc.\+propyecto.\+data.\+Data}}.
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_a7005a0d9c1f6f98d0908dc7c98a57e6e}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_a7005a0d9c1f6f98d0908dc7c98a57e6e}} 
+\index{fxsrc.propyecto.data.DataRating@{fxsrc.propyecto.data.DataRating}!LoadCSV@{LoadCSV}}
+\index{LoadCSV@{LoadCSV}!fxsrc.propyecto.data.DataRating@{fxsrc.propyecto.data.DataRating}}
+\doxysubsubsection{\texorpdfstring{LoadCSV()}{LoadCSV()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+data.\+Data\+Rating.\+Load\+C\+SV (\begin{DoxyParamCaption}\item[{String}]{path }\end{DoxyParamCaption})}
+
+
+
+Llamada a la carga de C\+SV de la clase data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em String} & path Es el path del csv \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Se llama a la carga de C\+SV de la clase data y se le da valor a max\+Rating 
+\end{DoxyPostcond}
+
+
+Reimplemented from \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_ac15edc6a42ae4f80f5700f3251cd8a4c}{fxsrc.\+propyecto.\+data.\+Data}}.
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_a4adda86b437f342ec9eca7d4096734a1}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_a4adda86b437f342ec9eca7d4096734a1}} 
+\index{fxsrc.propyecto.data.DataRating@{fxsrc.propyecto.data.DataRating}!ModifyItemRating@{ModifyItemRating}}
+\index{ModifyItemRating@{ModifyItemRating}!fxsrc.propyecto.data.DataRating@{fxsrc.propyecto.data.DataRating}}
+\doxysubsubsection{\texorpdfstring{ModifyItemRating()}{ModifyItemRating()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+data.\+Data\+Rating.\+Modify\+Item\+Rating (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}}}]{r }\end{DoxyParamCaption})}
+
+
+
+Funcion que modifica un Rating en las diferentes listas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Rating} & temp\+Rating corresponde al Rating a modificar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+ratings, ratings\+Map, all\+Ratings\+Item y all\+Ratings\+User no son null 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Modifica {\itshape temp\+Rating} en todas las listas de almacenamiento 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_a122f0ddcf95a96a7d12e9679c970d531}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_a122f0ddcf95a96a7d12e9679c970d531}} 
+\index{fxsrc.propyecto.data.DataRating@{fxsrc.propyecto.data.DataRating}!ParseAndAddData@{ParseAndAddData}}
+\index{ParseAndAddData@{ParseAndAddData}!fxsrc.propyecto.data.DataRating@{fxsrc.propyecto.data.DataRating}}
+\doxysubsubsection{\texorpdfstring{ParseAndAddData()}{ParseAndAddData()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+data.\+Data\+Rating.\+Parse\+And\+Add\+Data (\begin{DoxyParamCaption}\item[{String}]{attributes\+Names\mbox{[}$\,$\mbox{]},  }\item[{String}]{line\+Read }\end{DoxyParamCaption})}
+
+
+
+Parsea una linea C\+SV a un Rating y lo añade a {\itshape ratings}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em String\mbox{[}$\,$\mbox{]}} & attributes\+Names Corresponde al nombre de los atributos \\
+\hline
+{\em String} & line\+Read Corresponde a la linea C\+SV que hace referencia al Rating deseado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\itshape attributes\+Names} tiene el tamaño exacto de parametros que tenga el Rating y {\itshape line\+Read} no es vacío. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Se parsean los atributos de Rating y finalmente se añade a {\itshape ratings}. 
+\end{DoxyPostcond}
+
+
+Reimplemented from \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_aea413941c012cb7942abe5620f37634d}{fxsrc.\+propyecto.\+data.\+Data}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_af39f8ca96580933fe0e4f9ef39e4ce74}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_af39f8ca96580933fe0e4f9ef39e4ce74}} 
+\index{fxsrc.propyecto.data.DataRating@{fxsrc.propyecto.data.DataRating}!allRatingsItem@{allRatingsItem}}
+\index{allRatingsItem@{allRatingsItem}!fxsrc.propyecto.data.DataRating@{fxsrc.propyecto.data.DataRating}}
+\doxysubsubsection{\texorpdfstring{allRatingsItem}{allRatingsItem}}
+{\footnotesize\ttfamily Hash\+Map$<$Integer, Array\+List$<$\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}}$>$ $>$ fxsrc.\+propyecto.\+data.\+Data\+Rating.\+all\+Ratings\+Item\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Hash\+Map de los Rating del sistema agrupados por item (para buscar todos los rating de un Item) 
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_ac81214fd27bda2fdd0c175dbeda4ee71}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_ac81214fd27bda2fdd0c175dbeda4ee71}} 
+\index{fxsrc.propyecto.data.DataRating@{fxsrc.propyecto.data.DataRating}!allRatingsUser@{allRatingsUser}}
+\index{allRatingsUser@{allRatingsUser}!fxsrc.propyecto.data.DataRating@{fxsrc.propyecto.data.DataRating}}
+\doxysubsubsection{\texorpdfstring{allRatingsUser}{allRatingsUser}}
+{\footnotesize\ttfamily Hash\+Map$<$Integer, Array\+List$<$\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}}$>$ $>$ fxsrc.\+propyecto.\+data.\+Data\+Rating.\+all\+Ratings\+User\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Hash\+Map de los Rating del sistema agrupados por usuario (para buscar todos los rating de un User) 
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_a710bf1e0d36694139a41d0db834cd898}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_a710bf1e0d36694139a41d0db834cd898}} 
+\index{fxsrc.propyecto.data.DataRating@{fxsrc.propyecto.data.DataRating}!atNames@{atNames}}
+\index{atNames@{atNames}!fxsrc.propyecto.data.DataRating@{fxsrc.propyecto.data.DataRating}}
+\doxysubsubsection{\texorpdfstring{atNames}{atNames}}
+{\footnotesize\ttfamily String \mbox{[}$\,$\mbox{]} fxsrc.\+propyecto.\+data.\+Data\+Rating.\+at\+Names\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Son los nombres de las columnas leidas en C\+SV. 
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_ac33258905a79cbafcc707d63ce63582e}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_ac33258905a79cbafcc707d63ce63582e}} 
+\index{fxsrc.propyecto.data.DataRating@{fxsrc.propyecto.data.DataRating}!maxRating@{maxRating}}
+\index{maxRating@{maxRating}!fxsrc.propyecto.data.DataRating@{fxsrc.propyecto.data.DataRating}}
+\doxysubsubsection{\texorpdfstring{maxRating}{maxRating}}
+{\footnotesize\ttfamily float fxsrc.\+propyecto.\+data.\+Data\+Rating.\+max\+Rating\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+
+
+rating maximo (5, 10, 100) sobre el que se están puntuando los items 
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_a87b5cbcc90facaf3a0ebb2c128a460e8}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_a87b5cbcc90facaf3a0ebb2c128a460e8}} 
+\index{fxsrc.propyecto.data.DataRating@{fxsrc.propyecto.data.DataRating}!ratings@{ratings}}
+\index{ratings@{ratings}!fxsrc.propyecto.data.DataRating@{fxsrc.propyecto.data.DataRating}}
+\doxysubsubsection{\texorpdfstring{ratings}{ratings}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}}$>$ fxsrc.\+propyecto.\+data.\+Data\+Rating.\+ratings\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+{\itshape ratings} es un array de Rating donde se guardan todos los Rating del sistema. 
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_a90a573ee2ae30dbdf1d3e52e410aecb6}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_rating_a90a573ee2ae30dbdf1d3e52e410aecb6}} 
+\index{fxsrc.propyecto.data.DataRating@{fxsrc.propyecto.data.DataRating}!ratingsMap@{ratingsMap}}
+\index{ratingsMap@{ratingsMap}!fxsrc.propyecto.data.DataRating@{fxsrc.propyecto.data.DataRating}}
+\doxysubsubsection{\texorpdfstring{ratingsMap}{ratingsMap}}
+{\footnotesize\ttfamily Hash\+Map$<$Pair$<$Integer, Integer$>$, Float$>$ fxsrc.\+propyecto.\+data.\+Data\+Rating.\+ratings\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Hash\+Map de los Rating del sistema (para buscar un valor concreto) 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/fxsrc/propyecto/data/\mbox{\hyperlink{_data_rating_8java}{Data\+Rating.\+java}}\end{DoxyCompactItemize}

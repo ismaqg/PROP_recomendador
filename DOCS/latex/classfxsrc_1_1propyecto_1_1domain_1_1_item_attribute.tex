@@ -1,0 +1,332 @@
+\hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute}{}\doxysection{fxsrc.\+propyecto.\+domain.\+Item\+Attribute$<$ T $>$ Class Template Reference}
+\label{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute}\index{fxsrc.propyecto.domain.ItemAttribute$<$ T $>$@{fxsrc.propyecto.domain.ItemAttribute$<$ T $>$}}
+
+
+Clase que contiene los datos necesarios para un atributo de un \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}}.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute_a7c5edcde00a33660a3e426b3ecc59ebe}{Item\+Attribute}} (String \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute_aead461cbdf8896892a9b8dd1239b64dd}{attribute\+Name}})
+\begin{DoxyCompactList}\small\item\em Constructor del \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute}{Item\+Attribute}} con nombre. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute_ae9602ed7b224a81356ac47f58b31268a}{Item\+Attribute}} (String \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute_aead461cbdf8896892a9b8dd1239b64dd}{attribute\+Name}}, Array\+List$<$ T $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute_ad5b0384866dfe1a186800438591e5027}{attribute\+Value}})
+\begin{DoxyCompactList}\small\item\em Constructor del \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute}{Item\+Attribute}} con nombre y los valores del atributo. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute_adcb56e269d9ec034cb0abf5d385efa54}{Get\+Attribute\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Getter del nombre del atributo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute_a26d37c74bc2d8753833e1b0f1fc81fc4}{Set\+Attribute\+Name}} (String \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute_aead461cbdf8896892a9b8dd1239b64dd}{attribute\+Name}})
+\begin{DoxyCompactList}\small\item\em Setter del nombre del atributo. \end{DoxyCompactList}\item 
+Array\+List$<$ T $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute_a3e5dbe2d7f1541c7d4a7646a5c36888e}{Get\+All\+Attribute\+Values}} ()
+\begin{DoxyCompactList}\small\item\em Getter de los valores del atributo. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute_ac02d3d81377ada23ba21e1c33ead0e51}{Get\+Attribute\+Value}} (int i)  throws Att\+Val\+Does\+Not\+Exist\+Exception 
+\begin{DoxyCompactList}\small\item\em Getter de el valor en la posicion {\itshape i} del atributo. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute_ac13b9bee561f30aa2f6cdb088e855fb7}{Get\+Size}} ()
+\begin{DoxyCompactList}\small\item\em Getter de la cantidad de valores que tiene el atributo. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute_a2455170b93e045261ef58e9255b9d475}{Equals}} (\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute}{Item\+Attribute}}$<$ T $>$ other)
+\begin{DoxyCompactList}\small\item\em Compara este \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute}{Item\+Attribute}} con otro y devuelve si son equivalentes o no. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute_afe0510ecb1b518e8a0b2030e98130faf}{Contains}} (T other\+Value)
+\begin{DoxyCompactList}\small\item\em Devuelve si el atributo contiene el valor pasado por parametro. \end{DoxyCompactList}\item 
+Class \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute_af2e1c520eb0cffc28dcc1dd5ecb795c3}{Get\+Class}} ()
+\begin{DoxyCompactList}\small\item\em Devuelve el tipo de clase que es el atributo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute_af7ada536af8e0ae6af479a6d4f2cba1b}{Set\+Attribute\+Value}} (Array\+List$<$ T $>$ new\+Value)
+\begin{DoxyCompactList}\small\item\em Asigna los valores del atributo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute_aba9343a80bcc9a1e3b674d444f88b5e9}{Add\+Attribute\+Value}} (T new\+Value)
+\begin{DoxyCompactList}\small\item\em Añade un valor a la lista de valores del atributo. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute_a2729088b97596d891b3d7085fc1568d4}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em Devuelve los valores del atributo en formato C\+SV. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute_aead461cbdf8896892a9b8dd1239b64dd}{attribute\+Name}}
+\begin{DoxyCompactList}\small\item\em {\itshape attribute\+Name} Corresponde al nombre del atributo \end{DoxyCompactList}\item 
+Array\+List$<$ T $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute_ad5b0384866dfe1a186800438591e5027}{attribute\+Value}}
+\begin{DoxyCompactList}\small\item\em {\itshape attribute\+Value} Corresponde a los valores del atributo (puede ser uno o varios) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase que contiene los datos necesarios para un atributo de un \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}}. 
+
+Es una clase generica que usa tipos genericos para poder tener atributos de cualquier tipo. Ofrece Varias funciones útiles para añadir valores al vector de atributos, getters y setters 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute_a7c5edcde00a33660a3e426b3ecc59ebe}\label{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute_a7c5edcde00a33660a3e426b3ecc59ebe}} 
+\index{fxsrc.propyecto.domain.ItemAttribute$<$ T $>$@{fxsrc.propyecto.domain.ItemAttribute$<$ T $>$}!ItemAttribute@{ItemAttribute}}
+\index{ItemAttribute@{ItemAttribute}!fxsrc.propyecto.domain.ItemAttribute$<$ T $>$@{fxsrc.propyecto.domain.ItemAttribute$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ItemAttribute()}{ItemAttribute()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute}{fxsrc.\+propyecto.\+domain.\+Item\+Attribute}}$<$ T $>$.\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute}{Item\+Attribute}} (\begin{DoxyParamCaption}\item[{String}]{attribute\+Name }\end{DoxyParamCaption})}
+
+
+
+Constructor del \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute}{Item\+Attribute}} con nombre. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em String} & attribute\+Name Corresponde al nombre del atributo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Crea una instancia de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute}{Item\+Attribute}} y asigna el nombre del atributo a {\itshape attribute\+Name} 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute_ae9602ed7b224a81356ac47f58b31268a}\label{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute_ae9602ed7b224a81356ac47f58b31268a}} 
+\index{fxsrc.propyecto.domain.ItemAttribute$<$ T $>$@{fxsrc.propyecto.domain.ItemAttribute$<$ T $>$}!ItemAttribute@{ItemAttribute}}
+\index{ItemAttribute@{ItemAttribute}!fxsrc.propyecto.domain.ItemAttribute$<$ T $>$@{fxsrc.propyecto.domain.ItemAttribute$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ItemAttribute()}{ItemAttribute()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute}{fxsrc.\+propyecto.\+domain.\+Item\+Attribute}}$<$ T $>$.\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute}{Item\+Attribute}} (\begin{DoxyParamCaption}\item[{String}]{attribute\+Name,  }\item[{Array\+List$<$ T $>$}]{attribute\+Value }\end{DoxyParamCaption})}
+
+
+
+Constructor del \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute}{Item\+Attribute}} con nombre y los valores del atributo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em String} & attribute\+Name Corresponde al nombre del atributo \\
+\hline
+{\em Array\+List$<$\+T$>$} & attribute\+Value Corresponde a los valores del atributo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Crea una instancia de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute}{Item\+Attribute}} y asigna el nombre del atributo a {\itshape attribute\+Name} y los valores del atributo 
+\end{DoxyPostcond}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute_aba9343a80bcc9a1e3b674d444f88b5e9}\label{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute_aba9343a80bcc9a1e3b674d444f88b5e9}} 
+\index{fxsrc.propyecto.domain.ItemAttribute$<$ T $>$@{fxsrc.propyecto.domain.ItemAttribute$<$ T $>$}!AddAttributeValue@{AddAttributeValue}}
+\index{AddAttributeValue@{AddAttributeValue}!fxsrc.propyecto.domain.ItemAttribute$<$ T $>$@{fxsrc.propyecto.domain.ItemAttribute$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{AddAttributeValue()}{AddAttributeValue()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute}{fxsrc.\+propyecto.\+domain.\+Item\+Attribute}}$<$ T $>$.Add\+Attribute\+Value (\begin{DoxyParamCaption}\item[{T}]{new\+Value }\end{DoxyParamCaption})}
+
+
+
+Añade un valor a la lista de valores del atributo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em T} & new\+Value Corresponde al valor a añadir \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Se añade un valor a la lista de valores del atributo 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute_afe0510ecb1b518e8a0b2030e98130faf}\label{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute_afe0510ecb1b518e8a0b2030e98130faf}} 
+\index{fxsrc.propyecto.domain.ItemAttribute$<$ T $>$@{fxsrc.propyecto.domain.ItemAttribute$<$ T $>$}!Contains@{Contains}}
+\index{Contains@{Contains}!fxsrc.propyecto.domain.ItemAttribute$<$ T $>$@{fxsrc.propyecto.domain.ItemAttribute$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Contains()}{Contains()}}
+{\footnotesize\ttfamily boolean \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute}{fxsrc.\+propyecto.\+domain.\+Item\+Attribute}}$<$ T $>$.Contains (\begin{DoxyParamCaption}\item[{T}]{other\+Value }\end{DoxyParamCaption})}
+
+
+
+Devuelve si el atributo contiene el valor pasado por parametro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em T} & other\+Value Corresponde al valor que se desea buscar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Debuelve si el atributo contiene el valor pasado por paramtro o no 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute_a2455170b93e045261ef58e9255b9d475}\label{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute_a2455170b93e045261ef58e9255b9d475}} 
+\index{fxsrc.propyecto.domain.ItemAttribute$<$ T $>$@{fxsrc.propyecto.domain.ItemAttribute$<$ T $>$}!Equals@{Equals}}
+\index{Equals@{Equals}!fxsrc.propyecto.domain.ItemAttribute$<$ T $>$@{fxsrc.propyecto.domain.ItemAttribute$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Equals()}{Equals()}}
+{\footnotesize\ttfamily boolean \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute}{fxsrc.\+propyecto.\+domain.\+Item\+Attribute}}$<$ T $>$.Equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute}{Item\+Attribute}}$<$ T $>$}]{other }\end{DoxyParamCaption})}
+
+
+
+Compara este \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute}{Item\+Attribute}} con otro y devuelve si son equivalentes o no. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Item\+Attribute(\+T)} & other Corresponde al \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute}{Item\+Attribute}} con el que se quiere la comparación \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Compara dos \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute}{Item\+Attribute}} y devuelve si son equivalentes o no 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute_a3e5dbe2d7f1541c7d4a7646a5c36888e}\label{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute_a3e5dbe2d7f1541c7d4a7646a5c36888e}} 
+\index{fxsrc.propyecto.domain.ItemAttribute$<$ T $>$@{fxsrc.propyecto.domain.ItemAttribute$<$ T $>$}!GetAllAttributeValues@{GetAllAttributeValues}}
+\index{GetAllAttributeValues@{GetAllAttributeValues}!fxsrc.propyecto.domain.ItemAttribute$<$ T $>$@{fxsrc.propyecto.domain.ItemAttribute$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetAllAttributeValues()}{GetAllAttributeValues()}}
+{\footnotesize\ttfamily Array\+List$<$T$>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute}{fxsrc.\+propyecto.\+domain.\+Item\+Attribute}}$<$ T $>$.Get\+All\+Attribute\+Values (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter de los valores del atributo. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve los valores del atributo 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute_adcb56e269d9ec034cb0abf5d385efa54}\label{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute_adcb56e269d9ec034cb0abf5d385efa54}} 
+\index{fxsrc.propyecto.domain.ItemAttribute$<$ T $>$@{fxsrc.propyecto.domain.ItemAttribute$<$ T $>$}!GetAttributeName@{GetAttributeName}}
+\index{GetAttributeName@{GetAttributeName}!fxsrc.propyecto.domain.ItemAttribute$<$ T $>$@{fxsrc.propyecto.domain.ItemAttribute$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetAttributeName()}{GetAttributeName()}}
+{\footnotesize\ttfamily String \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute}{fxsrc.\+propyecto.\+domain.\+Item\+Attribute}}$<$ T $>$.Get\+Attribute\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter del nombre del atributo. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve el nombre del atributo 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute_ac02d3d81377ada23ba21e1c33ead0e51}\label{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute_ac02d3d81377ada23ba21e1c33ead0e51}} 
+\index{fxsrc.propyecto.domain.ItemAttribute$<$ T $>$@{fxsrc.propyecto.domain.ItemAttribute$<$ T $>$}!GetAttributeValue@{GetAttributeValue}}
+\index{GetAttributeValue@{GetAttributeValue}!fxsrc.propyecto.domain.ItemAttribute$<$ T $>$@{fxsrc.propyecto.domain.ItemAttribute$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetAttributeValue()}{GetAttributeValue()}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute}{fxsrc.\+propyecto.\+domain.\+Item\+Attribute}}$<$ T $>$.Get\+Attribute\+Value (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_att_val_does_not_exist_exception}{Att\+Val\+Does\+Not\+Exist\+Exception}}}
+
+
+
+Getter de el valor en la posicion {\itshape i} del atributo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & i Corresponde a la posición que queremos acceder del atributo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve el valor en la posicion {\itshape i} del atributo 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute_af2e1c520eb0cffc28dcc1dd5ecb795c3}\label{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute_af2e1c520eb0cffc28dcc1dd5ecb795c3}} 
+\index{fxsrc.propyecto.domain.ItemAttribute$<$ T $>$@{fxsrc.propyecto.domain.ItemAttribute$<$ T $>$}!GetClass@{GetClass}}
+\index{GetClass@{GetClass}!fxsrc.propyecto.domain.ItemAttribute$<$ T $>$@{fxsrc.propyecto.domain.ItemAttribute$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetClass()}{GetClass()}}
+{\footnotesize\ttfamily Class \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute}{fxsrc.\+propyecto.\+domain.\+Item\+Attribute}}$<$ T $>$.Get\+Class (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Devuelve el tipo de clase que es el atributo. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve el tipo de clase que es el atributo 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute_ac13b9bee561f30aa2f6cdb088e855fb7}\label{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute_ac13b9bee561f30aa2f6cdb088e855fb7}} 
+\index{fxsrc.propyecto.domain.ItemAttribute$<$ T $>$@{fxsrc.propyecto.domain.ItemAttribute$<$ T $>$}!GetSize@{GetSize}}
+\index{GetSize@{GetSize}!fxsrc.propyecto.domain.ItemAttribute$<$ T $>$@{fxsrc.propyecto.domain.ItemAttribute$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetSize()}{GetSize()}}
+{\footnotesize\ttfamily int \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute}{fxsrc.\+propyecto.\+domain.\+Item\+Attribute}}$<$ T $>$.Get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter de la cantidad de valores que tiene el atributo. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve el tamaño del array {\itshape attribute\+Value} 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute_a26d37c74bc2d8753833e1b0f1fc81fc4}\label{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute_a26d37c74bc2d8753833e1b0f1fc81fc4}} 
+\index{fxsrc.propyecto.domain.ItemAttribute$<$ T $>$@{fxsrc.propyecto.domain.ItemAttribute$<$ T $>$}!SetAttributeName@{SetAttributeName}}
+\index{SetAttributeName@{SetAttributeName}!fxsrc.propyecto.domain.ItemAttribute$<$ T $>$@{fxsrc.propyecto.domain.ItemAttribute$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SetAttributeName()}{SetAttributeName()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute}{fxsrc.\+propyecto.\+domain.\+Item\+Attribute}}$<$ T $>$.Set\+Attribute\+Name (\begin{DoxyParamCaption}\item[{String}]{attribute\+Name }\end{DoxyParamCaption})}
+
+
+
+Setter del nombre del atributo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em String} & attribute\+Name Corresponde al nombre del atributo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Asigna el nuevo valor del nombre del atributo 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute_af7ada536af8e0ae6af479a6d4f2cba1b}\label{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute_af7ada536af8e0ae6af479a6d4f2cba1b}} 
+\index{fxsrc.propyecto.domain.ItemAttribute$<$ T $>$@{fxsrc.propyecto.domain.ItemAttribute$<$ T $>$}!SetAttributeValue@{SetAttributeValue}}
+\index{SetAttributeValue@{SetAttributeValue}!fxsrc.propyecto.domain.ItemAttribute$<$ T $>$@{fxsrc.propyecto.domain.ItemAttribute$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SetAttributeValue()}{SetAttributeValue()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute}{fxsrc.\+propyecto.\+domain.\+Item\+Attribute}}$<$ T $>$.Set\+Attribute\+Value (\begin{DoxyParamCaption}\item[{Array\+List$<$ T $>$}]{new\+Value }\end{DoxyParamCaption})}
+
+
+
+Asigna los valores del atributo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Array\+List$<$\+T$>$} & new\+Value Corresponde al nuevo valor a asignar en el atributo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Asigna los nuevos valores al atributo 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute_a2729088b97596d891b3d7085fc1568d4}\label{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute_a2729088b97596d891b3d7085fc1568d4}} 
+\index{fxsrc.propyecto.domain.ItemAttribute$<$ T $>$@{fxsrc.propyecto.domain.ItemAttribute$<$ T $>$}!ToString@{ToString}}
+\index{ToString@{ToString}!fxsrc.propyecto.domain.ItemAttribute$<$ T $>$@{fxsrc.propyecto.domain.ItemAttribute$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily String \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute}{fxsrc.\+propyecto.\+domain.\+Item\+Attribute}}$<$ T $>$.To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Devuelve los valores del atributo en formato C\+SV. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve los valores del atributo en formato C\+SV 
+\end{DoxyPostcond}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute_aead461cbdf8896892a9b8dd1239b64dd}\label{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute_aead461cbdf8896892a9b8dd1239b64dd}} 
+\index{fxsrc.propyecto.domain.ItemAttribute$<$ T $>$@{fxsrc.propyecto.domain.ItemAttribute$<$ T $>$}!attributeName@{attributeName}}
+\index{attributeName@{attributeName}!fxsrc.propyecto.domain.ItemAttribute$<$ T $>$@{fxsrc.propyecto.domain.ItemAttribute$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{attributeName}{attributeName}}
+{\footnotesize\ttfamily String \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute}{fxsrc.\+propyecto.\+domain.\+Item\+Attribute}}$<$ T $>$.attribute\+Name\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+{\itshape attribute\+Name} Corresponde al nombre del atributo 
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute_ad5b0384866dfe1a186800438591e5027}\label{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute_ad5b0384866dfe1a186800438591e5027}} 
+\index{fxsrc.propyecto.domain.ItemAttribute$<$ T $>$@{fxsrc.propyecto.domain.ItemAttribute$<$ T $>$}!attributeValue@{attributeValue}}
+\index{attributeValue@{attributeValue}!fxsrc.propyecto.domain.ItemAttribute$<$ T $>$@{fxsrc.propyecto.domain.ItemAttribute$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{attributeValue}{attributeValue}}
+{\footnotesize\ttfamily Array\+List$<$T$>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item_attribute}{fxsrc.\+propyecto.\+domain.\+Item\+Attribute}}$<$ T $>$.attribute\+Value\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+{\itshape attribute\+Value} Corresponde a los valores del atributo (puede ser uno o varios) 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/fxsrc/propyecto/domain/\mbox{\hyperlink{_item_attribute_8java}{Item\+Attribute.\+java}}\end{DoxyCompactItemize}

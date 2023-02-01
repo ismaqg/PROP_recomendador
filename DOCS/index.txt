@@ -1,0 +1,3 @@
+Este directorio contiene lo siguiente:
+- Carpetas html y latex: Contiene todas las carpetas y contenido del Doxygen.
+- Documentacion.zip: Contiene todos los documentos de texto requeridos en la entrega.

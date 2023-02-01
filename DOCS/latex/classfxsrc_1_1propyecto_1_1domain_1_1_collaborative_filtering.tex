@@ -1,0 +1,382 @@
+\hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering}{}\doxysection{fxsrc.\+propyecto.\+domain.\+Collaborative\+Filtering Class Reference}
+\label{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering}\index{fxsrc.propyecto.domain.CollaborativeFiltering@{fxsrc.propyecto.domain.CollaborativeFiltering}}
+
+
+Clase encargada de recibir peticiones de recomendación basándose en el \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering}{Collaborative\+Filtering}}. Hereda de la clase {\itshape \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_recommender}{Recommender}}}.  
+
+
+Inheritance diagram for fxsrc.\+propyecto.\+domain.\+Collaborative\+Filtering\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering_1_1_frequency_and_sum_of_scores}{Frequency\+And\+Sum\+Of\+Scores}}
+\begin{DoxyCompactList}\small\item\em Clase privada que actua de par de int y float. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering_a26c45fbd43765ee5c462ee4f97e9be1a}{Collaborative\+Filtering}} (int k)
+\begin{DoxyCompactList}\small\item\em Constructora de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering}{Collaborative\+Filtering}}. \end{DoxyCompactList}\item 
+Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering_a2fa93a9f5c4e9fc43a5bb71ace3ffb6a}{Recommend}} (Integer Existant\+User\+I\+D\+Recommend, int number\+Of\+Recommendations)  throws No\+Existing\+User\+I\+D\+Exception 
+\begin{DoxyCompactList}\small\item\em Función recomendadora que hará la recomendación a \textbackslash{}\+Existant\+User\+I\+D\+Recommend (un usuario que existiese previamente en el dataset que se nos dio en la asignatura) en base a Kmeans+\+Slope\+One. \end{DoxyCompactList}\item 
+Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering_abc4902026a6e6820a10301ab4ce1cbe7}{Recommend}} (Integer new\+User\+ID, Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} $>$ ratings\+Of\+That\+User, int number\+Of\+Recommendations)
+\begin{DoxyCompactList}\small\item\em Función recomendadora que hará la recomendación a un usuario que hemos creado a través de la interfaz gráfica (en lugar de ser un user preexistente en el dataset que nos dieron en la asignatura) en base a Kmeans+\+Slope\+One. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering_acaf1b5624faa9fe6b8fb40ae8ac44986}{Distance\+Between\+Users}} (Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} $>$ items\+And\+Scores\+User1, Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} $>$ items\+And\+Scores\+User2)
+\begin{DoxyCompactList}\small\item\em Retorna la distancia entre 2 usuarios. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering_a450a2727168dc638626a3040f7c1a2df}{Change\+User\+Between\+Clusters}} (int index\+Destination\+Cluster, Integer user\+ID)
+\begin{DoxyCompactList}\small\item\em Mueve a un user del grupo de Kgroups en el que se encuentre a otro grupo, cuyo índice es {\itshape index\+Destination\+Cluster}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering_ae2fbfc7f8f1f7dad89e326d6e026d7e6}{Kmeans}} ()
+\begin{DoxyCompactList}\small\item\em Se crean los {\itshape K} grupos de usuarios con gustos similares, siendo {\itshape K} el atributo de esta clase (se especificó en la constructora) \end{DoxyCompactList}\item 
+Array\+List$<$ Integer $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering_af92f4841b8a4d48f220f7445cfa85c57}{Users\+I\+Dof\+Similar\+Users}} (int user\+ID)
+\begin{DoxyCompactList}\small\item\em Retorna el grupo de usuarios (representados por users\+ID) con los gustos más similares al usuario representado por el {\itshape user\+ID} que hay como parametro, incluyendo a ese usuario. Se utiliza cuando se quiere saber los usuarios más cercanos a un usuario que ya esté presente en alguno de los K grupos. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering_aa771d627a05fd716320a8184ceca39d7}{Rating\+Of\+One\+User\+To\+An\+Item}} (int user\+ID, int item\+ID)
+\begin{DoxyCompactList}\small\item\em Retorna el rating de un cierto usuario a un cierto item, -\/1.\+0 si no lo había valorado. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering_a0208d0d8c7bee6a21105e4176832a280}{Was\+That\+Item\+Rated\+By\+Main\+User}} (\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} item, Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} $>$ items\+And\+Score\+Of\+Main\+User)
+\begin{DoxyCompactList}\small\item\em Retorna un booleano diciendo si un cierto item fue valorado por el usuario al cual estamos intentando predecir sus gustos. \end{DoxyCompactList}\item 
+Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering_a9b60adf017772aec4c52532e469316c5}{Slope\+One}} (Array\+List$<$ Integer $>$ Similar\+Users\+ID, int main\+User\+ID, int number\+Of\+Recommendations, Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} $>$ items\+Rated\+By\+Main\+User)
+\begin{DoxyCompactList}\small\item\em Hace las predicciones para el usuario principal (identificado por {\itshape main\+User\+ID}) a través del algoritmo Slope\+One. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering_ad51c8c4253e3ad751ee0b6d43832b205}{K}}
+\begin{DoxyCompactList}\small\item\em {\itshape K} es la cantidad de agrupaciones de usuarios distintas que queremos. \end{DoxyCompactList}\item 
+Array\+List$<$ Array\+List$<$ Integer $>$ $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering_a70ea0e07537acd6570064d0816603d69}{Kgroups}}
+\begin{DoxyCompactList}\small\item\em {\itshape Kgroups} son las K agrupaciones de usuarios similares distintas que tenemos. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering_a8eb6fdcfc042c76928d1e48ed885e1cc}{Kgroups\+Empty}}
+\begin{DoxyCompactList}\small\item\em {\itshape Kgroups\+Empty} indica si {\itshape Kgroups} está vacío o no, para saber si se debe calcular o ya se ha calculado. \end{DoxyCompactList}\item 
+Hash\+Map$<$ Integer, Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} $>$ $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering_a72211f48845af4f720a9ed2787658212}{ratings\+Map}}
+\begin{DoxyCompactList}\small\item\em {\itshape ratings\+Map} guarda, para cada usuario (representado por su User\+ID), todas sus valoraciones (en forma de vector de {\itshape Ratings}) existentes en el sistema. \end{DoxyCompactList}\item 
+Array\+List$<$ Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} $>$ $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering_a2b485c991f4f66d64b7fee5e79de7ded}{centroids}}
+\begin{DoxyCompactList}\small\item\em {\itshape centroids} almacena los K centroides, uno por cada agrupación de usuarios. Un centroide representa el centro de gustos dentro de un grupo de usuarios similares \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering_a929e16bddad3c184044f33e7f6bf2bfe}{dataset}} = 750
+\begin{DoxyCompactList}\small\item\em {\itshape dataset} indica la cantidad de usuarios del dataset que utilizamos (en el caso de series, puede ser 250, 750, 2250) \end{DoxyCompactList}\item 
+static final float \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering_a996264fde77d711e68293fb8807c5489}{max\+Rating\+Value}} = \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a71c21d0bf791f6d993f20456d3b4dbf3}{Data\+Manager.\+Get\+Instance}}().Get\+Max\+Rating()
+\begin{DoxyCompactList}\small\item\em {\itshape max\+Rating\+Value} almacena el valor máximo que puede dar un user a un item \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase encargada de recibir peticiones de recomendación basándose en el \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering}{Collaborative\+Filtering}}. Hereda de la clase {\itshape \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_recommender}{Recommender}}}. 
+
+Ofrece operaciones de recomendación de items, basadas en agrupación de usuarios similares mediante el algoritmo Kmeans (donde la K es un parámetro en la construcción de la clase) y la posterior recomendación de items basada en los gustos de los usuarios similares haciendo uso de Slope\+One. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering_a26c45fbd43765ee5c462ee4f97e9be1a}\label{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering_a26c45fbd43765ee5c462ee4f97e9be1a}} 
+\index{fxsrc.propyecto.domain.CollaborativeFiltering@{fxsrc.propyecto.domain.CollaborativeFiltering}!CollaborativeFiltering@{CollaborativeFiltering}}
+\index{CollaborativeFiltering@{CollaborativeFiltering}!fxsrc.propyecto.domain.CollaborativeFiltering@{fxsrc.propyecto.domain.CollaborativeFiltering}}
+\doxysubsubsection{\texorpdfstring{CollaborativeFiltering()}{CollaborativeFiltering()}}
+{\footnotesize\ttfamily fxsrc.\+propyecto.\+domain.\+Collaborative\+Filtering.\+Collaborative\+Filtering (\begin{DoxyParamCaption}\item[{int}]{k }\end{DoxyParamCaption})}
+
+
+
+Constructora de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering}{Collaborative\+Filtering}}. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape K} $>$= 1 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em k} & es la K deseada para Kmeans \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Se crea una instancia de la clase \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering}{Collaborative\+Filtering}}, lista para dar recomendaciones utilizando K grupos distintos para ello. 
+\end{DoxyPostcond}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering_a450a2727168dc638626a3040f7c1a2df}\label{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering_a450a2727168dc638626a3040f7c1a2df}} 
+\index{fxsrc.propyecto.domain.CollaborativeFiltering@{fxsrc.propyecto.domain.CollaborativeFiltering}!ChangeUserBetweenClusters@{ChangeUserBetweenClusters}}
+\index{ChangeUserBetweenClusters@{ChangeUserBetweenClusters}!fxsrc.propyecto.domain.CollaborativeFiltering@{fxsrc.propyecto.domain.CollaborativeFiltering}}
+\doxysubsubsection{\texorpdfstring{ChangeUserBetweenClusters()}{ChangeUserBetweenClusters()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+domain.\+Collaborative\+Filtering.\+Change\+User\+Between\+Clusters (\begin{DoxyParamCaption}\item[{int}]{index\+Destination\+Cluster,  }\item[{Integer}]{user\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Mueve a un user del grupo de Kgroups en el que se encuentre a otro grupo, cuyo índice es {\itshape index\+Destination\+Cluster}. 
+
+\begin{DoxyPrecond}{Precondition}
+index\+Destination\+Cluster $>$= 0 y $<$ K. Y user\+ID es el user\+ID de un usuario existente en el sistema. Es completamente necesario que user\+ID sea un Integer y no un int. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em index\+Destination\+Cluster} & es el índice que representa el cluster al que queremos mover a un usuario \\
+\hline
+{\em user\+ID} & es el ID del usuario que queremos mover de cluster \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+El usuario con ese {\itshape user\+ID} sale del grupo de usuarios en el que estaba y se mueve al grupo destino. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering_acaf1b5624faa9fe6b8fb40ae8ac44986}\label{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering_acaf1b5624faa9fe6b8fb40ae8ac44986}} 
+\index{fxsrc.propyecto.domain.CollaborativeFiltering@{fxsrc.propyecto.domain.CollaborativeFiltering}!DistanceBetweenUsers@{DistanceBetweenUsers}}
+\index{DistanceBetweenUsers@{DistanceBetweenUsers}!fxsrc.propyecto.domain.CollaborativeFiltering@{fxsrc.propyecto.domain.CollaborativeFiltering}}
+\doxysubsubsection{\texorpdfstring{DistanceBetweenUsers()}{DistanceBetweenUsers()}}
+{\footnotesize\ttfamily double fxsrc.\+propyecto.\+domain.\+Collaborative\+Filtering.\+Distance\+Between\+Users (\begin{DoxyParamCaption}\item[{Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} $>$}]{items\+And\+Scores\+User1,  }\item[{Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} $>$}]{items\+And\+Scores\+User2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Retorna la distancia entre 2 usuarios. 
+
+La fórmula utilizada para calcular la distancia es la raiz cuadrada de la suma de los cuadrados de las diferencias de notas entre esos dos items para un cierto user. Solo se tienen en cuenta aquellos items que hayan valorado ambos.
+
+\begin{DoxyPrecond}{Precondition}
+Los argumentos representan las listas de valoraciones de 2 usuarios, donde cualquiera de esos usuarios podría ser un centroide o no. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em items\+And\+Scores\+User1} & son los ratings de uno de los dos users de los que se quiere ver su distancia \\
+\hline
+{\em items\+And\+Scores\+User1} & son los ratings del otro user \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Retorna la distancia entre 2 usuarios. Esa distancia puede llegar a ser un número muy alto en caso de que no haya ninguna similitud entre los usuarios. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering_ae2fbfc7f8f1f7dad89e326d6e026d7e6}\label{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering_ae2fbfc7f8f1f7dad89e326d6e026d7e6}} 
+\index{fxsrc.propyecto.domain.CollaborativeFiltering@{fxsrc.propyecto.domain.CollaborativeFiltering}!Kmeans@{Kmeans}}
+\index{Kmeans@{Kmeans}!fxsrc.propyecto.domain.CollaborativeFiltering@{fxsrc.propyecto.domain.CollaborativeFiltering}}
+\doxysubsubsection{\texorpdfstring{Kmeans()}{Kmeans()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+domain.\+Collaborative\+Filtering.\+Kmeans (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Se crean los {\itshape K} grupos de usuarios con gustos similares, siendo {\itshape K} el atributo de esta clase (se especificó en la constructora) 
+
+Solo se volverá a computar Kmeans si no estaba ya computado
+
+\begin{DoxyPrecond}{Precondition}
+El atributo {\itshape Kgrups\+Empty} tiene el valor {\itshape true}. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Se crean los grupos de usuarios con gustos similares. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering_aa771d627a05fd716320a8184ceca39d7}\label{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering_aa771d627a05fd716320a8184ceca39d7}} 
+\index{fxsrc.propyecto.domain.CollaborativeFiltering@{fxsrc.propyecto.domain.CollaborativeFiltering}!RatingOfOneUserToAnItem@{RatingOfOneUserToAnItem}}
+\index{RatingOfOneUserToAnItem@{RatingOfOneUserToAnItem}!fxsrc.propyecto.domain.CollaborativeFiltering@{fxsrc.propyecto.domain.CollaborativeFiltering}}
+\doxysubsubsection{\texorpdfstring{RatingOfOneUserToAnItem()}{RatingOfOneUserToAnItem()}}
+{\footnotesize\ttfamily float fxsrc.\+propyecto.\+domain.\+Collaborative\+Filtering.\+Rating\+Of\+One\+User\+To\+An\+Item (\begin{DoxyParamCaption}\item[{int}]{user\+ID,  }\item[{int}]{item\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Retorna el rating de un cierto usuario a un cierto item, -\/1.\+0 si no lo había valorado. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape user\+ID} representa a un usuario válido contenido en la base de datos de \textbackslash{}ratings que hay en el sistema e item\+ID representa a un ítem válido 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em user\+ID} & es el ID del usuario del que queremos saber su nota para un item \\
+\hline
+{\em item\+ID} & representa ese item \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Retorna el rating de un cierto usuario a un cierto item, -\/1.\+0 si no lo había valorado 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering_a2fa93a9f5c4e9fc43a5bb71ace3ffb6a}\label{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering_a2fa93a9f5c4e9fc43a5bb71ace3ffb6a}} 
+\index{fxsrc.propyecto.domain.CollaborativeFiltering@{fxsrc.propyecto.domain.CollaborativeFiltering}!Recommend@{Recommend}}
+\index{Recommend@{Recommend}!fxsrc.propyecto.domain.CollaborativeFiltering@{fxsrc.propyecto.domain.CollaborativeFiltering}}
+\doxysubsubsection{\texorpdfstring{Recommend()}{Recommend()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}}$>$ fxsrc.\+propyecto.\+domain.\+Collaborative\+Filtering.\+Recommend (\begin{DoxyParamCaption}\item[{Integer}]{Existant\+User\+I\+D\+Recommend,  }\item[{int}]{number\+Of\+Recommendations }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_no_existing_user_i_d_exception}{No\+Existing\+User\+I\+D\+Exception}}}
+
+
+
+Función recomendadora que hará la recomendación a \textbackslash{}\+Existant\+User\+I\+D\+Recommend (un usuario que existiese previamente en el dataset que se nos dio en la asignatura) en base a Kmeans+\+Slope\+One. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape Existant\+User\+I\+D\+Recommend} tiene que ser un usuario que se encuentre en el dataset que se nos proporcionó en la asignatura, es decir, no puede ser un usuario que hayamos creado a partir de nuestra interfaz grafica aparte, debe ser un Integer, no un int. {\itshape number\+Of\+Recommendations} $>$ 0 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em Existant\+User\+I\+D\+Recommend} & es el ID del usuario al que queremos recomendar \\
+\hline
+{\em number\+Of\+Recommendations} & es el número de recomendaciones que queremos hacer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Retorna {\itshape number\+Of\+Recommendations} recomendaciones ordenadas por valoración decreciente. Si {\itshape number\+Of\+Recommendations} es mayor a la cantidad de ítems en el sistema sobre los cuales se pueden hacer predicciones, retornará ese número de predicciones. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering_abc4902026a6e6820a10301ab4ce1cbe7}\label{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering_abc4902026a6e6820a10301ab4ce1cbe7}} 
+\index{fxsrc.propyecto.domain.CollaborativeFiltering@{fxsrc.propyecto.domain.CollaborativeFiltering}!Recommend@{Recommend}}
+\index{Recommend@{Recommend}!fxsrc.propyecto.domain.CollaborativeFiltering@{fxsrc.propyecto.domain.CollaborativeFiltering}}
+\doxysubsubsection{\texorpdfstring{Recommend()}{Recommend()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}}$>$ fxsrc.\+propyecto.\+domain.\+Collaborative\+Filtering.\+Recommend (\begin{DoxyParamCaption}\item[{Integer}]{new\+User\+ID,  }\item[{Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} $>$}]{ratings\+Of\+That\+User,  }\item[{int}]{number\+Of\+Recommendations }\end{DoxyParamCaption})}
+
+
+
+Función recomendadora que hará la recomendación a un usuario que hemos creado a través de la interfaz gráfica (en lugar de ser un user preexistente en el dataset que nos dieron en la asignatura) en base a Kmeans+\+Slope\+One. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape new\+User\+ID} tiene que ser un usuario que NO se encuentre en la base de datos de ratings que se nos entregó como dataset en la asignatura; aparte, debe ser un Integer, no un int. {\itshape number\+Of\+Recommendations} $>$ 0. {\itshape ratings\+Of\+That\+User} son los ratings de ese usuario nuevo. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em new\+User\+ID} & es el ID del usuario al que queremos recomendar \\
+\hline
+{\em ratings\+Of\+That\+User} & son las valoraciones conocidas de ese usuario \\
+\hline
+{\em number\+Of\+Recommendations} & es el numero de recomendaciones que queremos hacer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Retorna {\itshape number\+Of\+Recommendations} recomendaciones ordenadas por valoracion decreciente. Si {\itshape number\+Of\+Recommendations} es mayor a la cantidad de ítems en el sistema sobre los cuales se pueden hacer predicciones, retornará ese número de predicciones. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering_a9b60adf017772aec4c52532e469316c5}\label{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering_a9b60adf017772aec4c52532e469316c5}} 
+\index{fxsrc.propyecto.domain.CollaborativeFiltering@{fxsrc.propyecto.domain.CollaborativeFiltering}!SlopeOne@{SlopeOne}}
+\index{SlopeOne@{SlopeOne}!fxsrc.propyecto.domain.CollaborativeFiltering@{fxsrc.propyecto.domain.CollaborativeFiltering}}
+\doxysubsubsection{\texorpdfstring{SlopeOne()}{SlopeOne()}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}}$>$ fxsrc.\+propyecto.\+domain.\+Collaborative\+Filtering.\+Slope\+One (\begin{DoxyParamCaption}\item[{Array\+List$<$ Integer $>$}]{Similar\+Users\+ID,  }\item[{int}]{main\+User\+ID,  }\item[{int}]{number\+Of\+Recommendations,  }\item[{Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} $>$}]{items\+Rated\+By\+Main\+User }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Hace las predicciones para el usuario principal (identificado por {\itshape main\+User\+ID}) a través del algoritmo Slope\+One. 
+
+\begin{DoxyPrecond}{Precondition}
+El vector de {\itshape Similar\+Users\+ID} no contiene el {\itshape main\+User\+ID}, el cual es un ID válido. El vector {\itshape items\+Rated\+By\+Main\+User} contiene todas las valoraciones que ha realizado el usuario sobre el que vamos a intentar predecir. {\itshape number\+Of\+Recommendations} $>$ 0 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em Similar\+Users\+ID} & son los ID de los usuarios similares al main\+User \\
+\hline
+{\em main\+User\+ID} & es el ID del main\+User (que es el usuario para el que estamos prediciendo valoraciones) \\
+\hline
+{\em number\+Of\+Recommendations} & es el numero de recomendaciones que nos interesa hacerle a main\+User \\
+\hline
+{\em items\+Rated\+By\+Main\+User} & son las valoraciones de main\+User \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Retorna {\itshape number\+Of\+Recommendations} recomendaciones ordenadas por valoracion decreciente. Si {\itshape number\+Of\+Recommendations} es mayor a la cantidad de ítems en el sistema sobre los cuales se pueden hacer predicciones, retornará ese número de predicciones. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering_af92f4841b8a4d48f220f7445cfa85c57}\label{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering_af92f4841b8a4d48f220f7445cfa85c57}} 
+\index{fxsrc.propyecto.domain.CollaborativeFiltering@{fxsrc.propyecto.domain.CollaborativeFiltering}!UsersIDofSimilarUsers@{UsersIDofSimilarUsers}}
+\index{UsersIDofSimilarUsers@{UsersIDofSimilarUsers}!fxsrc.propyecto.domain.CollaborativeFiltering@{fxsrc.propyecto.domain.CollaborativeFiltering}}
+\doxysubsubsection{\texorpdfstring{UsersIDofSimilarUsers()}{UsersIDofSimilarUsers()}}
+{\footnotesize\ttfamily Array\+List$<$Integer$>$ fxsrc.\+propyecto.\+domain.\+Collaborative\+Filtering.\+Users\+I\+Dof\+Similar\+Users (\begin{DoxyParamCaption}\item[{int}]{user\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Retorna el grupo de usuarios (representados por users\+ID) con los gustos más similares al usuario representado por el {\itshape user\+ID} que hay como parametro, incluyendo a ese usuario. Se utiliza cuando se quiere saber los usuarios más cercanos a un usuario que ya esté presente en alguno de los K grupos. 
+
+\begin{DoxyPrecond}{Precondition}
+User\+ID está contenido en algún grupo de Kgroups. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em user\+ID} & es el ID del usuario del cual queremos saber los demás usuarios del sistema con afinidad a él \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Retorna el grupo de usuarios (representados por users\+ID) con los gustos más similares al usuario representado por el {\itshape user\+ID} que hay como parametro 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering_a0208d0d8c7bee6a21105e4176832a280}\label{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering_a0208d0d8c7bee6a21105e4176832a280}} 
+\index{fxsrc.propyecto.domain.CollaborativeFiltering@{fxsrc.propyecto.domain.CollaborativeFiltering}!WasThatItemRatedByMainUser@{WasThatItemRatedByMainUser}}
+\index{WasThatItemRatedByMainUser@{WasThatItemRatedByMainUser}!fxsrc.propyecto.domain.CollaborativeFiltering@{fxsrc.propyecto.domain.CollaborativeFiltering}}
+\doxysubsubsection{\texorpdfstring{WasThatItemRatedByMainUser()}{WasThatItemRatedByMainUser()}}
+{\footnotesize\ttfamily boolean fxsrc.\+propyecto.\+domain.\+Collaborative\+Filtering.\+Was\+That\+Item\+Rated\+By\+Main\+User (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}}}]{item,  }\item[{Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} $>$}]{items\+And\+Score\+Of\+Main\+User }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Retorna un booleano diciendo si un cierto item fue valorado por el usuario al cual estamos intentando predecir sus gustos. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape item} es un ítem válido y {\itshape items\+And\+Score\+Of\+Main\+User} es la lista de valoraciones del usuario a quien estamos intentando predecir sus gustos 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em item} & es el item que nos interesa saber si fue valorado \\
+\hline
+{\em items\+And\+Score\+Of\+Main\+User} & es el vector de valoraciones en el que queremos ver si existe ese item \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Retorna {\itshape true} si {\itshape item} está presente en {\itshape items\+And\+Score\+Of\+Main\+User}. Retorna {\itshape false} en caso contrario. 
+\end{DoxyPostcond}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering_a2b485c991f4f66d64b7fee5e79de7ded}\label{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering_a2b485c991f4f66d64b7fee5e79de7ded}} 
+\index{fxsrc.propyecto.domain.CollaborativeFiltering@{fxsrc.propyecto.domain.CollaborativeFiltering}!centroids@{centroids}}
+\index{centroids@{centroids}!fxsrc.propyecto.domain.CollaborativeFiltering@{fxsrc.propyecto.domain.CollaborativeFiltering}}
+\doxysubsubsection{\texorpdfstring{centroids}{centroids}}
+{\footnotesize\ttfamily Array\+List$<$Array\+List$<$\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}}$>$ $>$ fxsrc.\+propyecto.\+domain.\+Collaborative\+Filtering.\+centroids\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+{\itshape centroids} almacena los K centroides, uno por cada agrupación de usuarios. Un centroide representa el centro de gustos dentro de un grupo de usuarios similares 
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering_a929e16bddad3c184044f33e7f6bf2bfe}\label{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering_a929e16bddad3c184044f33e7f6bf2bfe}} 
+\index{fxsrc.propyecto.domain.CollaborativeFiltering@{fxsrc.propyecto.domain.CollaborativeFiltering}!dataset@{dataset}}
+\index{dataset@{dataset}!fxsrc.propyecto.domain.CollaborativeFiltering@{fxsrc.propyecto.domain.CollaborativeFiltering}}
+\doxysubsubsection{\texorpdfstring{dataset}{dataset}}
+{\footnotesize\ttfamily final int fxsrc.\+propyecto.\+domain.\+Collaborative\+Filtering.\+dataset = 750\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+{\itshape dataset} indica la cantidad de usuarios del dataset que utilizamos (en el caso de series, puede ser 250, 750, 2250) 
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering_ad51c8c4253e3ad751ee0b6d43832b205}\label{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering_ad51c8c4253e3ad751ee0b6d43832b205}} 
+\index{fxsrc.propyecto.domain.CollaborativeFiltering@{fxsrc.propyecto.domain.CollaborativeFiltering}!K@{K}}
+\index{K@{K}!fxsrc.propyecto.domain.CollaborativeFiltering@{fxsrc.propyecto.domain.CollaborativeFiltering}}
+\doxysubsubsection{\texorpdfstring{K}{K}}
+{\footnotesize\ttfamily int fxsrc.\+propyecto.\+domain.\+Collaborative\+Filtering.\+K\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+{\itshape K} es la cantidad de agrupaciones de usuarios distintas que queremos. 
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering_a70ea0e07537acd6570064d0816603d69}\label{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering_a70ea0e07537acd6570064d0816603d69}} 
+\index{fxsrc.propyecto.domain.CollaborativeFiltering@{fxsrc.propyecto.domain.CollaborativeFiltering}!Kgroups@{Kgroups}}
+\index{Kgroups@{Kgroups}!fxsrc.propyecto.domain.CollaborativeFiltering@{fxsrc.propyecto.domain.CollaborativeFiltering}}
+\doxysubsubsection{\texorpdfstring{Kgroups}{Kgroups}}
+{\footnotesize\ttfamily Array\+List$<$Array\+List$<$Integer$>$ $>$ fxsrc.\+propyecto.\+domain.\+Collaborative\+Filtering.\+Kgroups\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+{\itshape Kgroups} son las K agrupaciones de usuarios similares distintas que tenemos. 
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering_a8eb6fdcfc042c76928d1e48ed885e1cc}\label{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering_a8eb6fdcfc042c76928d1e48ed885e1cc}} 
+\index{fxsrc.propyecto.domain.CollaborativeFiltering@{fxsrc.propyecto.domain.CollaborativeFiltering}!KgroupsEmpty@{KgroupsEmpty}}
+\index{KgroupsEmpty@{KgroupsEmpty}!fxsrc.propyecto.domain.CollaborativeFiltering@{fxsrc.propyecto.domain.CollaborativeFiltering}}
+\doxysubsubsection{\texorpdfstring{KgroupsEmpty}{KgroupsEmpty}}
+{\footnotesize\ttfamily boolean fxsrc.\+propyecto.\+domain.\+Collaborative\+Filtering.\+Kgroups\+Empty\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+{\itshape Kgroups\+Empty} indica si {\itshape Kgroups} está vacío o no, para saber si se debe calcular o ya se ha calculado. 
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering_a996264fde77d711e68293fb8807c5489}\label{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering_a996264fde77d711e68293fb8807c5489}} 
+\index{fxsrc.propyecto.domain.CollaborativeFiltering@{fxsrc.propyecto.domain.CollaborativeFiltering}!maxRatingValue@{maxRatingValue}}
+\index{maxRatingValue@{maxRatingValue}!fxsrc.propyecto.domain.CollaborativeFiltering@{fxsrc.propyecto.domain.CollaborativeFiltering}}
+\doxysubsubsection{\texorpdfstring{maxRatingValue}{maxRatingValue}}
+{\footnotesize\ttfamily final float fxsrc.\+propyecto.\+domain.\+Collaborative\+Filtering.\+max\+Rating\+Value = \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a71c21d0bf791f6d993f20456d3b4dbf3}{Data\+Manager.\+Get\+Instance}}().Get\+Max\+Rating()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+{\itshape max\+Rating\+Value} almacena el valor máximo que puede dar un user a un item 
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering_a72211f48845af4f720a9ed2787658212}\label{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering_a72211f48845af4f720a9ed2787658212}} 
+\index{fxsrc.propyecto.domain.CollaborativeFiltering@{fxsrc.propyecto.domain.CollaborativeFiltering}!ratingsMap@{ratingsMap}}
+\index{ratingsMap@{ratingsMap}!fxsrc.propyecto.domain.CollaborativeFiltering@{fxsrc.propyecto.domain.CollaborativeFiltering}}
+\doxysubsubsection{\texorpdfstring{ratingsMap}{ratingsMap}}
+{\footnotesize\ttfamily Hash\+Map$<$Integer, Array\+List$<$\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}}$>$ $>$ fxsrc.\+propyecto.\+domain.\+Collaborative\+Filtering.\+ratings\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+{\itshape ratings\+Map} guarda, para cada usuario (representado por su User\+ID), todas sus valoraciones (en forma de vector de {\itshape Ratings}) existentes en el sistema. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/fxsrc/propyecto/domain/\mbox{\hyperlink{_collaborative_filtering_8java}{Collaborative\+Filtering.\+java}}\end{DoxyCompactItemize}

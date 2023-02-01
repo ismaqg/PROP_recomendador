@@ -1,0 +1,526 @@
+\hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager}{}\doxysection{fxsrc.\+propyecto.\+domain.\+Scene\+Manager Class Reference}
+\label{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager}\index{fxsrc.propyecto.domain.SceneManager@{fxsrc.propyecto.domain.SceneManager}}
+
+
+Clase singleton encargada de gestionar el inicio de la interfaz y los cambios de escena.  
+
+
+Inheritance diagram for fxsrc.\+propyecto.\+domain.\+Scene\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_a692494559f639e3e3104a9ddee1d9305}{start}} (Stage first\+Stage)
+\begin{DoxyCompactList}\small\item\em Función de inicio de escena. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_a691d5ab2e167d227e2eae2bac4799ca8}{Logout}} ()  throws No\+Existing\+Active\+User\+Exception 
+\begin{DoxyCompactList}\small\item\em Permite salir de la aplicación y la cuenta. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_a6e9aeeb86f63ffa9a0678c278b82b178}{Close}} ()
+\begin{DoxyCompactList}\small\item\em Permite salir de la aplicación. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_a87db5dc99d8d01c41cf51e55667a55b9}{Change\+Scene}} (String new\+Scene)  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Permite cambiar de escena. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_a6513a979022003c22171737c0acd01d2}{Change\+Scene\+To\+Past}} ()  throws I\+O\+Exception
+\begin{DoxyCompactList}\small\item\em Permite cambiar a la escena anterior. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_a6d82b72c2bed84adc80524c87f483198}{Change\+Scene\+To\+Sign\+Up}} ()  throws I\+O\+Exception
+\begin{DoxyCompactList}\small\item\em Permite cambiar a la escena Sign\+Up. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_a98e77f3164b5acc5763eb6d78ae92b4f}{Change\+Scene\+To\+Log\+In}} ()  throws I\+O\+Exception
+\begin{DoxyCompactList}\small\item\em Permite cambiar a la escena Log\+In. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_a6ac5602be7bbcfb4d9b2e348401234a7}{Change\+Scene\+To\+Home}} ()  throws I\+O\+Exception
+\begin{DoxyCompactList}\small\item\em Permite cambiar a la escena Home. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_a7386e14b23d2d2c27954e1eeb873398a}{Change\+Scene\+To\+Forgot\+Pass}} ()  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Permite cambiar a la escena Forgot\+Pass. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_aaf1d72fb0ea73b8aad42f56700306a6b}{Change\+Scene\+To\+Edit\+Profile}} ()  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Permite cambiar a la escena Edit\+Profile. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_aab7378ce2d4a02f2f77983445491ece6}{Change\+Scene\+To\+Get\+Started}} ()  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Permite cambiar a la escena Get\+Started. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_a420473c3d4ecb67036e8afc4615136eb}{Change\+Scene\+To\+Fav\+List}} ()  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Permite cambiar a la escena Fav\+List. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_a3d05c99b9594600a1cc4e75b1007af59}{Change\+Scene\+To\+Recommend\+List}} ()  throws I\+O\+Exception
+\begin{DoxyCompactList}\small\item\em Permite cambiar a la escena Recommend\+List. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_affefec7c25078ce8c12d9437292e214b}{Change\+Scene\+To\+Recommend\+Me}} ()  throws I\+O\+Exception
+\begin{DoxyCompactList}\small\item\em Permite cambiar a la escena Recommend\+Me. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_adcc2bcdd50ca8396e02b74661ed028fa}{Change\+Scene\+To\+Item\+Info}} (String item\+Name)  throws I\+O\+Exception, Att\+Val\+Does\+Not\+Exist\+Exception, No\+Existing\+Active\+User\+Exception 
+\begin{DoxyCompactList}\small\item\em Permite cambiar a la escena Item\+Info. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_a01be661103744d2c11499722ae34022e}{main}} (String\mbox{[}$\,$\mbox{]} args)  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Función principal de la clase. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager}{Scene\+Manager}} \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_a4785228e4cdb0422c2bf78832758d9c0}{Get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em Devuelve la instancia de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager}{Scene\+Manager}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_a00544774576644bb10174d121a0a1de3}{Maximize}} ()
+\begin{DoxyCompactList}\small\item\em Permite cambiar el tamaño de la escena a grande. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_aa4bd95b53c1342ac72f66450684bb83a}{Minimize}} ()
+\begin{DoxyCompactList}\small\item\em Permite cambiar el tamaño de la escena a pequeño. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Stack$<$ String $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_ada1d476c16edd2f7c56e0c0e26fa7d4b}{scene\+Stack}}
+\begin{DoxyCompactList}\small\item\em {\itshape scene\+Stack} es una pila de escenas para gestionar el Go\+Back. \end{DoxyCompactList}\item 
+Stack$<$ String $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_a415c7991f6c7156e25682981fe5fa09a}{item\+Stack}}
+\begin{DoxyCompactList}\small\item\em {\itshape item\+Stack} es una pila de item\+Names para gestionar el Go\+Back. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_a76814b7aa05e654e0af400deb7874b53}{first}} = true
+\begin{DoxyCompactList}\small\item\em {\itshape first} es un booleano que gestiona el Go\+Back. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager}{Scene\+Manager}} \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_ab0d21eeae8fd29a333d3968dba0327e1}{instance}}
+\begin{DoxyCompactList}\small\item\em {\itshape instance} es la instancia de la clase Singleton \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager}{Scene\+Manager}}. \end{DoxyCompactList}\item 
+static Stage \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_ab94eb2fcbb5f502f9779a817a24bd58b}{stg}}
+\begin{DoxyCompactList}\small\item\em {\itshape stg} es el Stage principal que se instancia la primera vez. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase singleton encargada de gestionar el inicio de la interfaz y los cambios de escena. 
+
+Ofrece operaciones de cambio de escena a todos los controladores. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_a87db5dc99d8d01c41cf51e55667a55b9}\label{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_a87db5dc99d8d01c41cf51e55667a55b9}} 
+\index{fxsrc.propyecto.domain.SceneManager@{fxsrc.propyecto.domain.SceneManager}!ChangeScene@{ChangeScene}}
+\index{ChangeScene@{ChangeScene}!fxsrc.propyecto.domain.SceneManager@{fxsrc.propyecto.domain.SceneManager}}
+\doxysubsubsection{\texorpdfstring{ChangeScene()}{ChangeScene()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+domain.\+Scene\+Manager.\+Change\+Scene (\begin{DoxyParamCaption}\item[{String}]{new\+Scene }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Permite cambiar de escena. 
+
+\begin{DoxyPrecond}{Precondition}
+Existe una aplicación abierta. 
+\end{DoxyPrecond}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em String} & new\+Scene path relativo a la nueva escena a cambiar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Se cambia la escena a la recibida por parámetro. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_aaf1d72fb0ea73b8aad42f56700306a6b}\label{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_aaf1d72fb0ea73b8aad42f56700306a6b}} 
+\index{fxsrc.propyecto.domain.SceneManager@{fxsrc.propyecto.domain.SceneManager}!ChangeSceneToEditProfile@{ChangeSceneToEditProfile}}
+\index{ChangeSceneToEditProfile@{ChangeSceneToEditProfile}!fxsrc.propyecto.domain.SceneManager@{fxsrc.propyecto.domain.SceneManager}}
+\doxysubsubsection{\texorpdfstring{ChangeSceneToEditProfile()}{ChangeSceneToEditProfile()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+domain.\+Scene\+Manager.\+Change\+Scene\+To\+Edit\+Profile (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Permite cambiar a la escena Edit\+Profile. 
+
+\begin{DoxyPrecond}{Precondition}
+Existe una aplicación abierta. 
+\end{DoxyPrecond}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPostcond}{Postcondition}
+Se cambia la escena a Edit\+Profile y se maximiza la escena para obtener mayor tamaño. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_a420473c3d4ecb67036e8afc4615136eb}\label{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_a420473c3d4ecb67036e8afc4615136eb}} 
+\index{fxsrc.propyecto.domain.SceneManager@{fxsrc.propyecto.domain.SceneManager}!ChangeSceneToFavList@{ChangeSceneToFavList}}
+\index{ChangeSceneToFavList@{ChangeSceneToFavList}!fxsrc.propyecto.domain.SceneManager@{fxsrc.propyecto.domain.SceneManager}}
+\doxysubsubsection{\texorpdfstring{ChangeSceneToFavList()}{ChangeSceneToFavList()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+domain.\+Scene\+Manager.\+Change\+Scene\+To\+Fav\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Permite cambiar a la escena Fav\+List. 
+
+\begin{DoxyPrecond}{Precondition}
+Existe una aplicación abierta. 
+\end{DoxyPrecond}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPostcond}{Postcondition}
+Se cambia la escena a Fav\+List y se maximiza la escena para obtener mayor tamaño. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_a7386e14b23d2d2c27954e1eeb873398a}\label{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_a7386e14b23d2d2c27954e1eeb873398a}} 
+\index{fxsrc.propyecto.domain.SceneManager@{fxsrc.propyecto.domain.SceneManager}!ChangeSceneToForgotPass@{ChangeSceneToForgotPass}}
+\index{ChangeSceneToForgotPass@{ChangeSceneToForgotPass}!fxsrc.propyecto.domain.SceneManager@{fxsrc.propyecto.domain.SceneManager}}
+\doxysubsubsection{\texorpdfstring{ChangeSceneToForgotPass()}{ChangeSceneToForgotPass()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+domain.\+Scene\+Manager.\+Change\+Scene\+To\+Forgot\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Permite cambiar a la escena Forgot\+Pass. 
+
+\begin{DoxyPrecond}{Precondition}
+Existe una aplicación abierta. 
+\end{DoxyPrecond}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPostcond}{Postcondition}
+Se cambia la escena a Forgot\+Pass. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_aab7378ce2d4a02f2f77983445491ece6}\label{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_aab7378ce2d4a02f2f77983445491ece6}} 
+\index{fxsrc.propyecto.domain.SceneManager@{fxsrc.propyecto.domain.SceneManager}!ChangeSceneToGetStarted@{ChangeSceneToGetStarted}}
+\index{ChangeSceneToGetStarted@{ChangeSceneToGetStarted}!fxsrc.propyecto.domain.SceneManager@{fxsrc.propyecto.domain.SceneManager}}
+\doxysubsubsection{\texorpdfstring{ChangeSceneToGetStarted()}{ChangeSceneToGetStarted()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+domain.\+Scene\+Manager.\+Change\+Scene\+To\+Get\+Started (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Permite cambiar a la escena Get\+Started. 
+
+\begin{DoxyPrecond}{Precondition}
+Existe una aplicación abierta. 
+\end{DoxyPrecond}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPostcond}{Postcondition}
+Se cambia la escena a Get\+Started y se maximiza la escena para obtener mayor tamaño. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_a6ac5602be7bbcfb4d9b2e348401234a7}\label{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_a6ac5602be7bbcfb4d9b2e348401234a7}} 
+\index{fxsrc.propyecto.domain.SceneManager@{fxsrc.propyecto.domain.SceneManager}!ChangeSceneToHome@{ChangeSceneToHome}}
+\index{ChangeSceneToHome@{ChangeSceneToHome}!fxsrc.propyecto.domain.SceneManager@{fxsrc.propyecto.domain.SceneManager}}
+\doxysubsubsection{\texorpdfstring{ChangeSceneToHome()}{ChangeSceneToHome()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+domain.\+Scene\+Manager.\+Change\+Scene\+To\+Home (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Permite cambiar a la escena Home. 
+
+\begin{DoxyPrecond}{Precondition}
+Existe una aplicación abierta. 
+\end{DoxyPrecond}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPostcond}{Postcondition}
+Se cambia la escena a Home y se maximiza la escena para obtener mayor tamaño. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_adcc2bcdd50ca8396e02b74661ed028fa}\label{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_adcc2bcdd50ca8396e02b74661ed028fa}} 
+\index{fxsrc.propyecto.domain.SceneManager@{fxsrc.propyecto.domain.SceneManager}!ChangeSceneToItemInfo@{ChangeSceneToItemInfo}}
+\index{ChangeSceneToItemInfo@{ChangeSceneToItemInfo}!fxsrc.propyecto.domain.SceneManager@{fxsrc.propyecto.domain.SceneManager}}
+\doxysubsubsection{\texorpdfstring{ChangeSceneToItemInfo()}{ChangeSceneToItemInfo()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+domain.\+Scene\+Manager.\+Change\+Scene\+To\+Item\+Info (\begin{DoxyParamCaption}\item[{String}]{item\+Name }\end{DoxyParamCaption}) throws I\+O\+Exception, \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_att_val_does_not_exist_exception}{Att\+Val\+Does\+Not\+Exist\+Exception}}, \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_no_existing_active_user_exception}{No\+Existing\+Active\+User\+Exception}}}
+
+
+
+Permite cambiar a la escena Item\+Info. 
+
+\begin{DoxyPrecond}{Precondition}
+Existe una aplicación abierta. 
+\end{DoxyPrecond}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPostcond}{Postcondition}
+Se cambia la escena a Item\+Info y se maximiza la escena para obtener mayor tamaño. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_a98e77f3164b5acc5763eb6d78ae92b4f}\label{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_a98e77f3164b5acc5763eb6d78ae92b4f}} 
+\index{fxsrc.propyecto.domain.SceneManager@{fxsrc.propyecto.domain.SceneManager}!ChangeSceneToLogIn@{ChangeSceneToLogIn}}
+\index{ChangeSceneToLogIn@{ChangeSceneToLogIn}!fxsrc.propyecto.domain.SceneManager@{fxsrc.propyecto.domain.SceneManager}}
+\doxysubsubsection{\texorpdfstring{ChangeSceneToLogIn()}{ChangeSceneToLogIn()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+domain.\+Scene\+Manager.\+Change\+Scene\+To\+Log\+In (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Permite cambiar a la escena Log\+In. 
+
+\begin{DoxyPrecond}{Precondition}
+Existe una aplicación abierta. 
+\end{DoxyPrecond}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPostcond}{Postcondition}
+Se cambia la escena a Log\+In. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_a6513a979022003c22171737c0acd01d2}\label{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_a6513a979022003c22171737c0acd01d2}} 
+\index{fxsrc.propyecto.domain.SceneManager@{fxsrc.propyecto.domain.SceneManager}!ChangeSceneToPast@{ChangeSceneToPast}}
+\index{ChangeSceneToPast@{ChangeSceneToPast}!fxsrc.propyecto.domain.SceneManager@{fxsrc.propyecto.domain.SceneManager}}
+\doxysubsubsection{\texorpdfstring{ChangeSceneToPast()}{ChangeSceneToPast()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+domain.\+Scene\+Manager.\+Change\+Scene\+To\+Past (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Permite cambiar a la escena anterior. 
+
+\begin{DoxyPrecond}{Precondition}
+Existe una aplicación abierta. 
+\end{DoxyPrecond}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPostcond}{Postcondition}
+Se cambia la escena a la anterior guardada en scene\+Stack. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_a3d05c99b9594600a1cc4e75b1007af59}\label{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_a3d05c99b9594600a1cc4e75b1007af59}} 
+\index{fxsrc.propyecto.domain.SceneManager@{fxsrc.propyecto.domain.SceneManager}!ChangeSceneToRecommendList@{ChangeSceneToRecommendList}}
+\index{ChangeSceneToRecommendList@{ChangeSceneToRecommendList}!fxsrc.propyecto.domain.SceneManager@{fxsrc.propyecto.domain.SceneManager}}
+\doxysubsubsection{\texorpdfstring{ChangeSceneToRecommendList()}{ChangeSceneToRecommendList()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+domain.\+Scene\+Manager.\+Change\+Scene\+To\+Recommend\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Permite cambiar a la escena Recommend\+List. 
+
+\begin{DoxyPrecond}{Precondition}
+Existe una aplicación abierta. 
+\end{DoxyPrecond}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPostcond}{Postcondition}
+Se cambia la escena a Recommend\+List y se maximiza la escena para obtener mayor tamaño. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_affefec7c25078ce8c12d9437292e214b}\label{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_affefec7c25078ce8c12d9437292e214b}} 
+\index{fxsrc.propyecto.domain.SceneManager@{fxsrc.propyecto.domain.SceneManager}!ChangeSceneToRecommendMe@{ChangeSceneToRecommendMe}}
+\index{ChangeSceneToRecommendMe@{ChangeSceneToRecommendMe}!fxsrc.propyecto.domain.SceneManager@{fxsrc.propyecto.domain.SceneManager}}
+\doxysubsubsection{\texorpdfstring{ChangeSceneToRecommendMe()}{ChangeSceneToRecommendMe()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+domain.\+Scene\+Manager.\+Change\+Scene\+To\+Recommend\+Me (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Permite cambiar a la escena Recommend\+Me. 
+
+\begin{DoxyPrecond}{Precondition}
+Existe una aplicación abierta. 
+\end{DoxyPrecond}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPostcond}{Postcondition}
+Se cambia la escena a Recommend\+Me y se maximiza la escena para obtener mayor tamaño. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_a6d82b72c2bed84adc80524c87f483198}\label{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_a6d82b72c2bed84adc80524c87f483198}} 
+\index{fxsrc.propyecto.domain.SceneManager@{fxsrc.propyecto.domain.SceneManager}!ChangeSceneToSignUp@{ChangeSceneToSignUp}}
+\index{ChangeSceneToSignUp@{ChangeSceneToSignUp}!fxsrc.propyecto.domain.SceneManager@{fxsrc.propyecto.domain.SceneManager}}
+\doxysubsubsection{\texorpdfstring{ChangeSceneToSignUp()}{ChangeSceneToSignUp()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+domain.\+Scene\+Manager.\+Change\+Scene\+To\+Sign\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Permite cambiar a la escena Sign\+Up. 
+
+\begin{DoxyPrecond}{Precondition}
+Existe una aplicación abierta. 
+\end{DoxyPrecond}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPostcond}{Postcondition}
+Se cambia la escena a Sign\+Up. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_a6e9aeeb86f63ffa9a0678c278b82b178}\label{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_a6e9aeeb86f63ffa9a0678c278b82b178}} 
+\index{fxsrc.propyecto.domain.SceneManager@{fxsrc.propyecto.domain.SceneManager}!Close@{Close}}
+\index{Close@{Close}!fxsrc.propyecto.domain.SceneManager@{fxsrc.propyecto.domain.SceneManager}}
+\doxysubsubsection{\texorpdfstring{Close()}{Close()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+domain.\+Scene\+Manager.\+Close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Permite salir de la aplicación. 
+
+\begin{DoxyPrecond}{Precondition}
+Existe una aplicación abierta. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+La aplicación se cierra. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_a4785228e4cdb0422c2bf78832758d9c0}\label{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_a4785228e4cdb0422c2bf78832758d9c0}} 
+\index{fxsrc.propyecto.domain.SceneManager@{fxsrc.propyecto.domain.SceneManager}!GetInstance@{GetInstance}}
+\index{GetInstance@{GetInstance}!fxsrc.propyecto.domain.SceneManager@{fxsrc.propyecto.domain.SceneManager}}
+\doxysubsubsection{\texorpdfstring{GetInstance()}{GetInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager}{Scene\+Manager}} fxsrc.\+propyecto.\+domain.\+Scene\+Manager.\+Get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Devuelve la instancia de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager}{Scene\+Manager}}. 
+
+\begin{DoxyPrecond}{Precondition}
+Cierto. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Si no existe la instancia de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager}{Scene\+Manager}}, la crea y luego la devuelve, sino solo la devuelve. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_a691d5ab2e167d227e2eae2bac4799ca8}\label{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_a691d5ab2e167d227e2eae2bac4799ca8}} 
+\index{fxsrc.propyecto.domain.SceneManager@{fxsrc.propyecto.domain.SceneManager}!Logout@{Logout}}
+\index{Logout@{Logout}!fxsrc.propyecto.domain.SceneManager@{fxsrc.propyecto.domain.SceneManager}}
+\doxysubsubsection{\texorpdfstring{Logout()}{Logout()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+domain.\+Scene\+Manager.\+Logout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_no_existing_active_user_exception}{No\+Existing\+Active\+User\+Exception}}}
+
+
+
+Permite salir de la aplicación y la cuenta. 
+
+\begin{DoxyPrecond}{Precondition}
+Existe una aplicación abierta. 
+\end{DoxyPrecond}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_no_existing_active_user_exception}{No\+Existing\+Active\+User\+Exception}}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPostcond}{Postcondition}
+El usuario (si existe) cierra sesión y la aplicación se cierra. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_a01be661103744d2c11499722ae34022e}\label{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_a01be661103744d2c11499722ae34022e}} 
+\index{fxsrc.propyecto.domain.SceneManager@{fxsrc.propyecto.domain.SceneManager}!main@{main}}
+\index{main@{main}!fxsrc.propyecto.domain.SceneManager@{fxsrc.propyecto.domain.SceneManager}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void fxsrc.\+propyecto.\+domain.\+Scene\+Manager.\+main (\begin{DoxyParamCaption}\item[{String\mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Función principal de la clase. 
+
+\begin{DoxyPrecond}{Precondition}
+Cierto. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em String\mbox{[}$\,$\mbox{]}} & args. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Se lanza la ventana inicial de la aplicación y posteriormente se permite probar por consola el \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_algorithm_tester}{Algorithm\+Tester}}. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_a00544774576644bb10174d121a0a1de3}\label{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_a00544774576644bb10174d121a0a1de3}} 
+\index{fxsrc.propyecto.domain.SceneManager@{fxsrc.propyecto.domain.SceneManager}!Maximize@{Maximize}}
+\index{Maximize@{Maximize}!fxsrc.propyecto.domain.SceneManager@{fxsrc.propyecto.domain.SceneManager}}
+\doxysubsubsection{\texorpdfstring{Maximize()}{Maximize()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+domain.\+Scene\+Manager.\+Maximize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Permite cambiar el tamaño de la escena a grande. 
+
+\begin{DoxyPrecond}{Precondition}
+Existe una aplicación abierta. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Se maximiza la escena para obtener mayor tamaño. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_aa4bd95b53c1342ac72f66450684bb83a}\label{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_aa4bd95b53c1342ac72f66450684bb83a}} 
+\index{fxsrc.propyecto.domain.SceneManager@{fxsrc.propyecto.domain.SceneManager}!Minimize@{Minimize}}
+\index{Minimize@{Minimize}!fxsrc.propyecto.domain.SceneManager@{fxsrc.propyecto.domain.SceneManager}}
+\doxysubsubsection{\texorpdfstring{Minimize()}{Minimize()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+domain.\+Scene\+Manager.\+Minimize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Permite cambiar el tamaño de la escena a pequeño. 
+
+\begin{DoxyPrecond}{Precondition}
+Existe una aplicación abierta. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Se minimiza la escena para obtener menor tamaño. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_a692494559f639e3e3104a9ddee1d9305}\label{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_a692494559f639e3e3104a9ddee1d9305}} 
+\index{fxsrc.propyecto.domain.SceneManager@{fxsrc.propyecto.domain.SceneManager}!start@{start}}
+\index{start@{start}!fxsrc.propyecto.domain.SceneManager@{fxsrc.propyecto.domain.SceneManager}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+domain.\+Scene\+Manager.\+start (\begin{DoxyParamCaption}\item[{Stage}]{first\+Stage }\end{DoxyParamCaption})}
+
+
+
+Función de inicio de escena. 
+
+\begin{DoxyPrecond}{Precondition}
+Cierto. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em Stage} & first\+Stage Stage principal en que va a empezar la interfaz. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Se configura la ventana inicial y se abre la ventana de Log\+In. 
+\end{DoxyPostcond}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_a76814b7aa05e654e0af400deb7874b53}\label{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_a76814b7aa05e654e0af400deb7874b53}} 
+\index{fxsrc.propyecto.domain.SceneManager@{fxsrc.propyecto.domain.SceneManager}!first@{first}}
+\index{first@{first}!fxsrc.propyecto.domain.SceneManager@{fxsrc.propyecto.domain.SceneManager}}
+\doxysubsubsection{\texorpdfstring{first}{first}}
+{\footnotesize\ttfamily boolean fxsrc.\+propyecto.\+domain.\+Scene\+Manager.\+first = true\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+{\itshape first} es un booleano que gestiona el Go\+Back. 
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_ab0d21eeae8fd29a333d3968dba0327e1}\label{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_ab0d21eeae8fd29a333d3968dba0327e1}} 
+\index{fxsrc.propyecto.domain.SceneManager@{fxsrc.propyecto.domain.SceneManager}!instance@{instance}}
+\index{instance@{instance}!fxsrc.propyecto.domain.SceneManager@{fxsrc.propyecto.domain.SceneManager}}
+\doxysubsubsection{\texorpdfstring{instance}{instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager}{Scene\+Manager}} fxsrc.\+propyecto.\+domain.\+Scene\+Manager.\+instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+{\itshape instance} es la instancia de la clase Singleton \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager}{Scene\+Manager}}. 
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_a415c7991f6c7156e25682981fe5fa09a}\label{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_a415c7991f6c7156e25682981fe5fa09a}} 
+\index{fxsrc.propyecto.domain.SceneManager@{fxsrc.propyecto.domain.SceneManager}!itemStack@{itemStack}}
+\index{itemStack@{itemStack}!fxsrc.propyecto.domain.SceneManager@{fxsrc.propyecto.domain.SceneManager}}
+\doxysubsubsection{\texorpdfstring{itemStack}{itemStack}}
+{\footnotesize\ttfamily Stack$<$String$>$ fxsrc.\+propyecto.\+domain.\+Scene\+Manager.\+item\+Stack\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+{\itshape item\+Stack} es una pila de item\+Names para gestionar el Go\+Back. 
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_ada1d476c16edd2f7c56e0c0e26fa7d4b}\label{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_ada1d476c16edd2f7c56e0c0e26fa7d4b}} 
+\index{fxsrc.propyecto.domain.SceneManager@{fxsrc.propyecto.domain.SceneManager}!sceneStack@{sceneStack}}
+\index{sceneStack@{sceneStack}!fxsrc.propyecto.domain.SceneManager@{fxsrc.propyecto.domain.SceneManager}}
+\doxysubsubsection{\texorpdfstring{sceneStack}{sceneStack}}
+{\footnotesize\ttfamily Stack$<$String$>$ fxsrc.\+propyecto.\+domain.\+Scene\+Manager.\+scene\+Stack\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+{\itshape scene\+Stack} es una pila de escenas para gestionar el Go\+Back. 
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_ab94eb2fcbb5f502f9779a817a24bd58b}\label{classfxsrc_1_1propyecto_1_1domain_1_1_scene_manager_ab94eb2fcbb5f502f9779a817a24bd58b}} 
+\index{fxsrc.propyecto.domain.SceneManager@{fxsrc.propyecto.domain.SceneManager}!stg@{stg}}
+\index{stg@{stg}!fxsrc.propyecto.domain.SceneManager@{fxsrc.propyecto.domain.SceneManager}}
+\doxysubsubsection{\texorpdfstring{stg}{stg}}
+{\footnotesize\ttfamily Stage fxsrc.\+propyecto.\+domain.\+Scene\+Manager.\+stg\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+{\itshape stg} es el Stage principal que se instancia la primera vez. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/fxsrc/propyecto/domain/\mbox{\hyperlink{_scene_manager_8java}{Scene\+Manager.\+java}}\end{DoxyCompactItemize}

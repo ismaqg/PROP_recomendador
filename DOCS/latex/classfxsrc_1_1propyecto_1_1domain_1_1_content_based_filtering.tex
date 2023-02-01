@@ -1,0 +1,299 @@
+\hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_content_based_filtering}{}\doxysection{fxsrc.\+propyecto.\+domain.\+Content\+Based\+Filtering Class Reference}
+\label{classfxsrc_1_1propyecto_1_1domain_1_1_content_based_filtering}\index{fxsrc.propyecto.domain.ContentBasedFiltering@{fxsrc.propyecto.domain.ContentBasedFiltering}}
+
+
+Clase encargada del cálculo de distancias entre dos items mediante el uso del algoritmo {\itshape k-\/nearest}.  
+
+
+Inheritance diagram for fxsrc.\+propyecto.\+domain.\+Content\+Based\+Filtering\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classfxsrc_1_1propyecto_1_1domain_1_1_content_based_filtering}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_content_based_filtering_a6e87989d929423b71fb11814bb9ab278}{Content\+Based\+Filtering}} (int k)
+\begin{DoxyCompactList}\small\item\em Constructora de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_content_based_filtering}{Content\+Based\+Filtering}}. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_content_based_filtering_a52dad1a7b1875a04571bf6ba9ae09e7f}{Compare\+Items}} (\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} itemA, \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} itemB)
+\begin{DoxyCompactList}\small\item\em Retorna la distancia entre dos items dando uso a las ponderaciones. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_content_based_filtering_a32bdba8ddfae570343d89e2fe2ef3086}{Print\+K\+Nearest}} (Array\+List$<$ Pair$<$ Integer, Float $>$$>$ final\+List)
+\begin{DoxyCompactList}\small\item\em Imprime por pantalla los {\itshape k\+Value} elementos con mayor cercanía al item identificado por {\itshape item\+ID}. \end{DoxyCompactList}\item 
+Array\+List$<$ Pair$<$ Integer, Float $>$ $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_content_based_filtering_ae8d4cd22e86dc24485523f175d3ef81a}{Compute\+K\+Nearest}} (int item\+ID)
+\begin{DoxyCompactList}\small\item\em Llena y retorna el Array computado. \end{DoxyCompactList}\item 
+Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_content_based_filtering_ab8338907acbda8b276c6468622acaf0d}{Get\+N\+Similar\+Items}} (int item\+ID, int n\+Items)
+\begin{DoxyCompactList}\small\item\em Devuelve una lista con los N items más parecidos al item del parámetro. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_content_based_filtering_a782812cf869f90343591e74dd1fb1ddd}{Compute\+Ponderations}} ()
+\begin{DoxyCompactList}\small\item\em Calcula las ponderaciones mediante un algoritmo que analiza si queremos guardar o no cada atributo. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_content_based_filtering_a3f80d721e20783e085e9d52db38a43ab}{Compute\+Jaccard}} (String string1, String string2)
+\begin{DoxyCompactList}\small\item\em Retorna la similitud entre dos strings mediante Jaccard. \end{DoxyCompactList}\item 
+Array\+List$<$ Pair$<$ Integer, Float $>$ $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_content_based_filtering_aea51a58ac03d0b97b21b2c8c8574cfd5}{Sort\+Array}} (Array\+List$<$ Pair$<$ Integer, Float $>$$>$ array)
+\begin{DoxyCompactList}\small\item\em Retorna el Array\+List de entrada ordenado. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_content_based_filtering_ab8e77a013bd56db1ad9563309ecc1318}{k\+Value}}
+\begin{DoxyCompactList}\small\item\em {\itshape k\+Value} es el número de items cercanos que queremos recibir respecto un item inicial. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_content_based_filtering_a8f759597081cdd3e1850d4969706ca19}{items\+Size}}
+\begin{DoxyCompactList}\small\item\em {\itshape items\+Size} contiene el tamaño del array {\itshape all\+Items} para evitar el coste computacional de repetirlo. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_content_based_filtering_a0f22f2a54734581c9f0ed6e82e42f122}{A\+L\+L\+\_\+\+I\+T\+E\+M\+S\+\_\+\+N\+I\+N\+E\+T\+Y\+\_\+\+P\+E\+R\+C\+E\+NT}}
+\begin{DoxyCompactList}\small\item\em {\itshape A\+L\+L\+\_\+\+I\+T\+E\+M\+S\+\_\+\+N\+I\+N\+E\+T\+Y\+\_\+\+P\+E\+R\+C\+E\+NT} contiene el valor del 90\% del tamaño de {\itshape all\+Items} para evitar el coste computacional de repetirlo. ~\newline
+ \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_content_based_filtering_add93782ccf17c79544df7ac5ef15807f}{A\+L\+L\+\_\+\+I\+T\+E\+M\+S\+\_\+\+T\+W\+E\+N\+T\+Y\+\_\+\+P\+E\+R\+C\+E\+NT}}
+\begin{DoxyCompactList}\small\item\em {\itshape A\+L\+L\+\_\+\+I\+T\+E\+M\+S\+\_\+\+T\+W\+E\+N\+T\+Y\+\_\+\+P\+E\+R\+C\+E\+NT} contiene el valor del 20\% del tamaño de {\itshape all\+Items} para evitar el coste computacional de repetirlo. \end{DoxyCompactList}\item 
+Array\+List$<$ Float $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_content_based_filtering_aec6086fdba35cdf0329b309a1438537d}{ponderations}} = new Array\+List$<$$>$()
+\begin{DoxyCompactList}\small\item\em {\itshape ponderations} almacena el valor de ponderación de cada atributo. En caso de no ser útil un atributo, contiene un 0 en su columna. \end{DoxyCompactList}\item 
+Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_content_based_filtering_ad8fa5801d46861fd66db51dc35fe3edb}{all\+Items}}
+\begin{DoxyCompactList}\small\item\em {\itshape all\+Items} almacena la información de todos los items de la base de datos. Se usa para calcular \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase encargada del cálculo de distancias entre dos items mediante el uso del algoritmo {\itshape k-\/nearest}. 
+
+Ofrece operaciones de comparación de items según como de cercanos sean sus atributos, y asignando ponderaciones si estos son realmente útiles para el cálculo. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_content_based_filtering_a6e87989d929423b71fb11814bb9ab278}\label{classfxsrc_1_1propyecto_1_1domain_1_1_content_based_filtering_a6e87989d929423b71fb11814bb9ab278}} 
+\index{fxsrc.propyecto.domain.ContentBasedFiltering@{fxsrc.propyecto.domain.ContentBasedFiltering}!ContentBasedFiltering@{ContentBasedFiltering}}
+\index{ContentBasedFiltering@{ContentBasedFiltering}!fxsrc.propyecto.domain.ContentBasedFiltering@{fxsrc.propyecto.domain.ContentBasedFiltering}}
+\doxysubsubsection{\texorpdfstring{ContentBasedFiltering()}{ContentBasedFiltering()}}
+{\footnotesize\ttfamily fxsrc.\+propyecto.\+domain.\+Content\+Based\+Filtering.\+Content\+Based\+Filtering (\begin{DoxyParamCaption}\item[{int}]{k }\end{DoxyParamCaption})}
+
+
+
+Constructora de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_content_based_filtering}{Content\+Based\+Filtering}}. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape k} $>$= 1 e {\itshape item\+I\+D\+\_\+} existe en el sistema. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em int} & k Valor que tomará k\+Value. \\
+\hline
+{\em int} & item\+I\+D\+\_\+ Valor que tomara item\+ID. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Se crea una instancia de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_content_based_filtering}{Content\+Based\+Filtering}}, esperando a que se llame a algún método público. 
+\end{DoxyPostcond}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_content_based_filtering_a52dad1a7b1875a04571bf6ba9ae09e7f}\label{classfxsrc_1_1propyecto_1_1domain_1_1_content_based_filtering_a52dad1a7b1875a04571bf6ba9ae09e7f}} 
+\index{fxsrc.propyecto.domain.ContentBasedFiltering@{fxsrc.propyecto.domain.ContentBasedFiltering}!CompareItems@{CompareItems}}
+\index{CompareItems@{CompareItems}!fxsrc.propyecto.domain.ContentBasedFiltering@{fxsrc.propyecto.domain.ContentBasedFiltering}}
+\doxysubsubsection{\texorpdfstring{CompareItems()}{CompareItems()}}
+{\footnotesize\ttfamily float fxsrc.\+propyecto.\+domain.\+Content\+Based\+Filtering.\+Compare\+Items (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}}}]{itemA,  }\item[{\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}}}]{itemB }\end{DoxyParamCaption})}
+
+
+
+Retorna la distancia entre dos items dando uso a las ponderaciones. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape itemA} e {\itshape itemB} existen en el sistema. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}}} & itemA Primer item a comparar. \\
+\hline
+{\em \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}}} & itemB Segundo item a comparar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Se retorna un float con la distancia entre los dos items. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_content_based_filtering_a3f80d721e20783e085e9d52db38a43ab}\label{classfxsrc_1_1propyecto_1_1domain_1_1_content_based_filtering_a3f80d721e20783e085e9d52db38a43ab}} 
+\index{fxsrc.propyecto.domain.ContentBasedFiltering@{fxsrc.propyecto.domain.ContentBasedFiltering}!ComputeJaccard@{ComputeJaccard}}
+\index{ComputeJaccard@{ComputeJaccard}!fxsrc.propyecto.domain.ContentBasedFiltering@{fxsrc.propyecto.domain.ContentBasedFiltering}}
+\doxysubsubsection{\texorpdfstring{ComputeJaccard()}{ComputeJaccard()}}
+{\footnotesize\ttfamily float fxsrc.\+propyecto.\+domain.\+Content\+Based\+Filtering.\+Compute\+Jaccard (\begin{DoxyParamCaption}\item[{String}]{string1,  }\item[{String}]{string2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Retorna la similitud entre dos strings mediante Jaccard. 
+
+La fórmula utilizada es la división de la union de los caracteres entre la intersección de los mismos.
+
+\begin{DoxyPrecond}{Precondition}
+Cierto 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em String} & string1 Primer string a comparar \\
+\hline
+{\em String} & string2 Segundo string a comprar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Retorna la similitud entre dos strings en un Float comprendido entre 0 y 1 siendo 0 totalmente distintos y 1 iguales. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_content_based_filtering_ae8d4cd22e86dc24485523f175d3ef81a}\label{classfxsrc_1_1propyecto_1_1domain_1_1_content_based_filtering_ae8d4cd22e86dc24485523f175d3ef81a}} 
+\index{fxsrc.propyecto.domain.ContentBasedFiltering@{fxsrc.propyecto.domain.ContentBasedFiltering}!ComputeKNearest@{ComputeKNearest}}
+\index{ComputeKNearest@{ComputeKNearest}!fxsrc.propyecto.domain.ContentBasedFiltering@{fxsrc.propyecto.domain.ContentBasedFiltering}}
+\doxysubsubsection{\texorpdfstring{ComputeKNearest()}{ComputeKNearest()}}
+{\footnotesize\ttfamily Array\+List$<$Pair$<$Integer, Float$>$ $>$ fxsrc.\+propyecto.\+domain.\+Content\+Based\+Filtering.\+Compute\+K\+Nearest (\begin{DoxyParamCaption}\item[{int}]{item\+ID }\end{DoxyParamCaption})}
+
+
+
+Llena y retorna el Array computado. 
+
+\begin{DoxyPrecond}{Precondition}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Llena y retorna el Array ordenado de los {\itshape k\+Value} elementos con mayor cercanía al item identificado por {\itshape item\+ID}. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_content_based_filtering_a782812cf869f90343591e74dd1fb1ddd}\label{classfxsrc_1_1propyecto_1_1domain_1_1_content_based_filtering_a782812cf869f90343591e74dd1fb1ddd}} 
+\index{fxsrc.propyecto.domain.ContentBasedFiltering@{fxsrc.propyecto.domain.ContentBasedFiltering}!ComputePonderations@{ComputePonderations}}
+\index{ComputePonderations@{ComputePonderations}!fxsrc.propyecto.domain.ContentBasedFiltering@{fxsrc.propyecto.domain.ContentBasedFiltering}}
+\doxysubsubsection{\texorpdfstring{ComputePonderations()}{ComputePonderations()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+domain.\+Content\+Based\+Filtering.\+Compute\+Ponderations (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Calcula las ponderaciones mediante un algoritmo que analiza si queremos guardar o no cada atributo. 
+
+\begin{DoxyPrecond}{Precondition}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Se llena el array \textbackslash{}ponderations con los valores generados. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_content_based_filtering_ab8338907acbda8b276c6468622acaf0d}\label{classfxsrc_1_1propyecto_1_1domain_1_1_content_based_filtering_ab8338907acbda8b276c6468622acaf0d}} 
+\index{fxsrc.propyecto.domain.ContentBasedFiltering@{fxsrc.propyecto.domain.ContentBasedFiltering}!GetNSimilarItems@{GetNSimilarItems}}
+\index{GetNSimilarItems@{GetNSimilarItems}!fxsrc.propyecto.domain.ContentBasedFiltering@{fxsrc.propyecto.domain.ContentBasedFiltering}}
+\doxysubsubsection{\texorpdfstring{GetNSimilarItems()}{GetNSimilarItems()}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}}$>$ fxsrc.\+propyecto.\+domain.\+Content\+Based\+Filtering.\+Get\+N\+Similar\+Items (\begin{DoxyParamCaption}\item[{int}]{item\+ID,  }\item[{int}]{n\+Items }\end{DoxyParamCaption})}
+
+
+
+Devuelve una lista con los N items más parecidos al item del parámetro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & item\+ID Es el identificador del item base \\
+\hline
+{\em int} & n\+Items Es el número de items que devolvera la función \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve una lista con los N items más parecidos al item del parámetro 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_content_based_filtering_a32bdba8ddfae570343d89e2fe2ef3086}\label{classfxsrc_1_1propyecto_1_1domain_1_1_content_based_filtering_a32bdba8ddfae570343d89e2fe2ef3086}} 
+\index{fxsrc.propyecto.domain.ContentBasedFiltering@{fxsrc.propyecto.domain.ContentBasedFiltering}!PrintKNearest@{PrintKNearest}}
+\index{PrintKNearest@{PrintKNearest}!fxsrc.propyecto.domain.ContentBasedFiltering@{fxsrc.propyecto.domain.ContentBasedFiltering}}
+\doxysubsubsection{\texorpdfstring{PrintKNearest()}{PrintKNearest()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+domain.\+Content\+Based\+Filtering.\+Print\+K\+Nearest (\begin{DoxyParamCaption}\item[{Array\+List$<$ Pair$<$ Integer, Float $>$$>$}]{final\+List }\end{DoxyParamCaption})}
+
+
+
+Imprime por pantalla los {\itshape k\+Value} elementos con mayor cercanía al item identificado por {\itshape item\+ID}. 
+
+\begin{DoxyPrecond}{Precondition}
+Cierto 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em Array\+List$<$\+Pair$<$\+Integer,Float$>$$>$} & final\+List Lista a imprimir. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Se escriben por pantalla los {\itshape k\+Value} elementos con porcentaje de similitud mayor al item identificado por {\itshape item\+ID}. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_content_based_filtering_aea51a58ac03d0b97b21b2c8c8574cfd5}\label{classfxsrc_1_1propyecto_1_1domain_1_1_content_based_filtering_aea51a58ac03d0b97b21b2c8c8574cfd5}} 
+\index{fxsrc.propyecto.domain.ContentBasedFiltering@{fxsrc.propyecto.domain.ContentBasedFiltering}!SortArray@{SortArray}}
+\index{SortArray@{SortArray}!fxsrc.propyecto.domain.ContentBasedFiltering@{fxsrc.propyecto.domain.ContentBasedFiltering}}
+\doxysubsubsection{\texorpdfstring{SortArray()}{SortArray()}}
+{\footnotesize\ttfamily Array\+List$<$Pair$<$Integer, Float$>$ $>$ fxsrc.\+propyecto.\+domain.\+Content\+Based\+Filtering.\+Sort\+Array (\begin{DoxyParamCaption}\item[{Array\+List$<$ Pair$<$ Integer, Float $>$$>$}]{array }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Retorna el Array\+List de entrada ordenado. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape array} contiene valores. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em $<$\+Array\+List$<$\+Pair$<$\+Integer,Float$>$$>$} & array Array de entrada para ser ordenado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Se retorna el Array\+List de entrada ordenado primero por el \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} y luego por el ID 
+\end{DoxyPostcond}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_content_based_filtering_a0f22f2a54734581c9f0ed6e82e42f122}\label{classfxsrc_1_1propyecto_1_1domain_1_1_content_based_filtering_a0f22f2a54734581c9f0ed6e82e42f122}} 
+\index{fxsrc.propyecto.domain.ContentBasedFiltering@{fxsrc.propyecto.domain.ContentBasedFiltering}!ALL\_ITEMS\_NINETY\_PERCENT@{ALL\_ITEMS\_NINETY\_PERCENT}}
+\index{ALL\_ITEMS\_NINETY\_PERCENT@{ALL\_ITEMS\_NINETY\_PERCENT}!fxsrc.propyecto.domain.ContentBasedFiltering@{fxsrc.propyecto.domain.ContentBasedFiltering}}
+\doxysubsubsection{\texorpdfstring{ALL\_ITEMS\_NINETY\_PERCENT}{ALL\_ITEMS\_NINETY\_PERCENT}}
+{\footnotesize\ttfamily double fxsrc.\+propyecto.\+domain.\+Content\+Based\+Filtering.\+A\+L\+L\+\_\+\+I\+T\+E\+M\+S\+\_\+\+N\+I\+N\+E\+T\+Y\+\_\+\+P\+E\+R\+C\+E\+NT\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+{\itshape A\+L\+L\+\_\+\+I\+T\+E\+M\+S\+\_\+\+N\+I\+N\+E\+T\+Y\+\_\+\+P\+E\+R\+C\+E\+NT} contiene el valor del 90\% del tamaño de {\itshape all\+Items} para evitar el coste computacional de repetirlo. ~\newline
+ 
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_content_based_filtering_add93782ccf17c79544df7ac5ef15807f}\label{classfxsrc_1_1propyecto_1_1domain_1_1_content_based_filtering_add93782ccf17c79544df7ac5ef15807f}} 
+\index{fxsrc.propyecto.domain.ContentBasedFiltering@{fxsrc.propyecto.domain.ContentBasedFiltering}!ALL\_ITEMS\_TWENTY\_PERCENT@{ALL\_ITEMS\_TWENTY\_PERCENT}}
+\index{ALL\_ITEMS\_TWENTY\_PERCENT@{ALL\_ITEMS\_TWENTY\_PERCENT}!fxsrc.propyecto.domain.ContentBasedFiltering@{fxsrc.propyecto.domain.ContentBasedFiltering}}
+\doxysubsubsection{\texorpdfstring{ALL\_ITEMS\_TWENTY\_PERCENT}{ALL\_ITEMS\_TWENTY\_PERCENT}}
+{\footnotesize\ttfamily double fxsrc.\+propyecto.\+domain.\+Content\+Based\+Filtering.\+A\+L\+L\+\_\+\+I\+T\+E\+M\+S\+\_\+\+T\+W\+E\+N\+T\+Y\+\_\+\+P\+E\+R\+C\+E\+NT\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+{\itshape A\+L\+L\+\_\+\+I\+T\+E\+M\+S\+\_\+\+T\+W\+E\+N\+T\+Y\+\_\+\+P\+E\+R\+C\+E\+NT} contiene el valor del 20\% del tamaño de {\itshape all\+Items} para evitar el coste computacional de repetirlo. 
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_content_based_filtering_ad8fa5801d46861fd66db51dc35fe3edb}\label{classfxsrc_1_1propyecto_1_1domain_1_1_content_based_filtering_ad8fa5801d46861fd66db51dc35fe3edb}} 
+\index{fxsrc.propyecto.domain.ContentBasedFiltering@{fxsrc.propyecto.domain.ContentBasedFiltering}!allItems@{allItems}}
+\index{allItems@{allItems}!fxsrc.propyecto.domain.ContentBasedFiltering@{fxsrc.propyecto.domain.ContentBasedFiltering}}
+\doxysubsubsection{\texorpdfstring{allItems}{allItems}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}}$>$ fxsrc.\+propyecto.\+domain.\+Content\+Based\+Filtering.\+all\+Items\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+{\itshape all\+Items} almacena la información de todos los items de la base de datos. Se usa para calcular 
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_content_based_filtering_a8f759597081cdd3e1850d4969706ca19}\label{classfxsrc_1_1propyecto_1_1domain_1_1_content_based_filtering_a8f759597081cdd3e1850d4969706ca19}} 
+\index{fxsrc.propyecto.domain.ContentBasedFiltering@{fxsrc.propyecto.domain.ContentBasedFiltering}!itemsSize@{itemsSize}}
+\index{itemsSize@{itemsSize}!fxsrc.propyecto.domain.ContentBasedFiltering@{fxsrc.propyecto.domain.ContentBasedFiltering}}
+\doxysubsubsection{\texorpdfstring{itemsSize}{itemsSize}}
+{\footnotesize\ttfamily int fxsrc.\+propyecto.\+domain.\+Content\+Based\+Filtering.\+items\+Size\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+{\itshape items\+Size} contiene el tamaño del array {\itshape all\+Items} para evitar el coste computacional de repetirlo. 
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_content_based_filtering_ab8e77a013bd56db1ad9563309ecc1318}\label{classfxsrc_1_1propyecto_1_1domain_1_1_content_based_filtering_ab8e77a013bd56db1ad9563309ecc1318}} 
+\index{fxsrc.propyecto.domain.ContentBasedFiltering@{fxsrc.propyecto.domain.ContentBasedFiltering}!kValue@{kValue}}
+\index{kValue@{kValue}!fxsrc.propyecto.domain.ContentBasedFiltering@{fxsrc.propyecto.domain.ContentBasedFiltering}}
+\doxysubsubsection{\texorpdfstring{kValue}{kValue}}
+{\footnotesize\ttfamily int fxsrc.\+propyecto.\+domain.\+Content\+Based\+Filtering.\+k\+Value\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+{\itshape k\+Value} es el número de items cercanos que queremos recibir respecto un item inicial. 
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_content_based_filtering_aec6086fdba35cdf0329b309a1438537d}\label{classfxsrc_1_1propyecto_1_1domain_1_1_content_based_filtering_aec6086fdba35cdf0329b309a1438537d}} 
+\index{fxsrc.propyecto.domain.ContentBasedFiltering@{fxsrc.propyecto.domain.ContentBasedFiltering}!ponderations@{ponderations}}
+\index{ponderations@{ponderations}!fxsrc.propyecto.domain.ContentBasedFiltering@{fxsrc.propyecto.domain.ContentBasedFiltering}}
+\doxysubsubsection{\texorpdfstring{ponderations}{ponderations}}
+{\footnotesize\ttfamily Array\+List$<$Float$>$ fxsrc.\+propyecto.\+domain.\+Content\+Based\+Filtering.\+ponderations = new Array\+List$<$$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+{\itshape ponderations} almacena el valor de ponderación de cada atributo. En caso de no ser útil un atributo, contiene un 0 en su columna. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/fxsrc/propyecto/domain/\mbox{\hyperlink{_content_based_filtering_8java}{Content\+Based\+Filtering.\+java}}\end{DoxyCompactItemize}

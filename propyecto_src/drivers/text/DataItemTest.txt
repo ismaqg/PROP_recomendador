@@ -1,0 +1,2 @@
+Drama,AwaKT_enBicicleta*,"Awakt va al cel amb patinet",AwaktFalls,89
+Genero;Protagonista;Trama;Desenlace;ID

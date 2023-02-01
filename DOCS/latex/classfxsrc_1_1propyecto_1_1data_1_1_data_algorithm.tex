@@ -1,0 +1,384 @@
+\hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm}{}\doxysection{fxsrc.\+propyecto.\+data.\+Data\+Algorithm Class Reference}
+\label{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm}\index{fxsrc.propyecto.data.DataAlgorithm@{fxsrc.propyecto.data.DataAlgorithm}}
+
+
+Clase que contiene los datos de los cálculos del algoritmo K\+Means.  
+
+
+Inheritance diagram for fxsrc.\+propyecto.\+data.\+Data\+Algorithm\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm_aa7cb11919d10aecd9e91ad1fb82eb8c0}{Is\+Dirty}} ()
+\begin{DoxyCompactList}\small\item\em Función que devuelve si el dataset es correcto o no. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm_a536ef1d8fd2099ccb88b40fbab1839db}{Set\+Dirty}} (boolean dirty)
+\begin{DoxyCompactList}\small\item\em Función que asigna si el dataset es correcto o no. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm_aeb0e8a6e0670c53bf42f1ae83781a9ec}{Init}} ()
+\begin{DoxyCompactList}\small\item\em Función para inicializar la información del algoritmo K\+Means. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm_af3ddb69387ff5b27db37bad8d1477cd9}{Clear\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Función para inicializar los conjuntos de datos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm_a899c0a2b3439c6be855b59e89150c7c9}{Parse\+And\+Add\+Data}} (String\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_ac0986d4f64fe86583523fd175b58cbf8}{attributes\+Names}}, String line\+Read)
+\begin{DoxyCompactList}\small\item\em Parsea una linea C\+SV a K\+Group. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm_a1430e764d7cc78829f8473771ef86e43}{Set\+K\+Groups}} (int newK, int new\+Dataset, Array\+List$<$ Array\+List$<$ Integer $>$$>$ kmeans, Array\+List$<$ Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} $>$$>$ cent)
+\begin{DoxyCompactList}\small\item\em Función que modifica los datos del algoritmo de K\+Means a guardar. \end{DoxyCompactList}\item 
+Array\+List$<$ Array\+List$<$ Integer $>$ $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm_a81b82281a473d878fbcb3622b5677025}{Get\+K\+Groups}} (int newK, int new\+Dataset)
+\begin{DoxyCompactList}\small\item\em Función que devuelve los K\+Group guardados si los parametros corresponden con la inforación almacenada. \end{DoxyCompactList}\item 
+Array\+List$<$ Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} $>$ $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm_af460148d8d22760f8dbe944a40ea94e8}{Get\+Centroids}} ()
+\begin{DoxyCompactList}\small\item\em Función que devuelve los centroides guardados. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm_a52beb882adcb43797e05edb45efbe77a}{Load\+C\+SV}} (String path)
+\begin{DoxyCompactList}\small\item\em Lee un fichero C\+SV y trata sus campos para parsearlo y convertirlo en datos usables para el programa. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm_a6baa5c3eb6626727f73b5ce38b4109a2}{Store\+C\+SV}} (String path)
+\begin{DoxyCompactList}\small\item\em Guarda toda la información en un fichero C\+SV con nombre {\itshape path}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm_aeb6432420ae54ae98fc78d9fa9d0b6b2}{Has\+Next\+Line}} ()
+\begin{DoxyCompactList}\small\item\em Funcion que devuelve si hay una línea más por guardar. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm_a1d5ab5161f4174936d68f4f3401443c7}{Get\+Next\+Line}} ()
+\begin{DoxyCompactList}\small\item\em Funcion que devuelve la siguiente línea a guardar. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Array\+List$<$ Array\+List$<$ Integer $>$ $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm_a047ef4c28a6a678625004bea2016e4ca}{data\+Kgroups}}
+\begin{DoxyCompactList}\small\item\em Correpsonde a los k\+Groups del algoritmo K\+Means. \end{DoxyCompactList}\item 
+Array\+List$<$ Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} $>$ $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm_ac83a9e849d7e632e58f3c4a6b28562d1}{centroids}}
+\begin{DoxyCompactList}\small\item\em Correpsonde a los Centroids del algoritmo K\+Means. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm_a7f060374770616bd43dd54d73e88a504}{k}}
+\begin{DoxyCompactList}\small\item\em Correpsonde a la k del algoritmo K\+Means. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm_aeb9a58531de96a04d180e961fcf2a4b1}{dataset}}
+\begin{DoxyCompactList}\small\item\em Correpsonde al dataset del algoritmo K\+Means. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm_aa0038af1aaaa344901be1cdd9e6f7321}{is\+Dirty}}
+\begin{DoxyCompactList}\small\item\em Indica si el dataset es correcto o no. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Clase que contiene los datos de los cálculos del algoritmo K\+Means. 
+
+Ofrece operaciones para que el Data\+Manager pueda acceder a información precargada del algoritmo K\+Means y para poder guardar una nueva configuración de éste. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm_af3ddb69387ff5b27db37bad8d1477cd9}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm_af3ddb69387ff5b27db37bad8d1477cd9}} 
+\index{fxsrc.propyecto.data.DataAlgorithm@{fxsrc.propyecto.data.DataAlgorithm}!ClearData@{ClearData}}
+\index{ClearData@{ClearData}!fxsrc.propyecto.data.DataAlgorithm@{fxsrc.propyecto.data.DataAlgorithm}}
+\doxysubsubsection{\texorpdfstring{ClearData()}{ClearData()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+data.\+Data\+Algorithm.\+Clear\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Función para inicializar los conjuntos de datos. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape data\+Kgroups} no es null. 
+
+{\itshape centroids} no es null. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Se resetea los conjuntos de datos y se ponen a 0 {\itshape dataset} y {\itshape k} 
+\end{DoxyPostcond}
+
+
+Reimplemented from \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_ad20bbf20a9c11034e72cbb8128aa9c69}{fxsrc.\+propyecto.\+data.\+Data}}.
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm_af460148d8d22760f8dbe944a40ea94e8}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm_af460148d8d22760f8dbe944a40ea94e8}} 
+\index{fxsrc.propyecto.data.DataAlgorithm@{fxsrc.propyecto.data.DataAlgorithm}!GetCentroids@{GetCentroids}}
+\index{GetCentroids@{GetCentroids}!fxsrc.propyecto.data.DataAlgorithm@{fxsrc.propyecto.data.DataAlgorithm}}
+\doxysubsubsection{\texorpdfstring{GetCentroids()}{GetCentroids()}}
+{\footnotesize\ttfamily Array\+List$<$Array\+List$<$\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}}$>$ $>$ fxsrc.\+propyecto.\+data.\+Data\+Algorithm.\+Get\+Centroids (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Función que devuelve los centroides guardados. 
+
+\begin{DoxyPrecond}{Precondition}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve los centroides guardados. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm_a81b82281a473d878fbcb3622b5677025}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm_a81b82281a473d878fbcb3622b5677025}} 
+\index{fxsrc.propyecto.data.DataAlgorithm@{fxsrc.propyecto.data.DataAlgorithm}!GetKGroups@{GetKGroups}}
+\index{GetKGroups@{GetKGroups}!fxsrc.propyecto.data.DataAlgorithm@{fxsrc.propyecto.data.DataAlgorithm}}
+\doxysubsubsection{\texorpdfstring{GetKGroups()}{GetKGroups()}}
+{\footnotesize\ttfamily Array\+List$<$Array\+List$<$Integer$>$ $>$ fxsrc.\+propyecto.\+data.\+Data\+Algorithm.\+Get\+K\+Groups (\begin{DoxyParamCaption}\item[{int}]{newK,  }\item[{int}]{new\+Dataset }\end{DoxyParamCaption})}
+
+
+
+Función que devuelve los K\+Group guardados si los parametros corresponden con la inforación almacenada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & newK correpsonde a la k del algoritmo K\+Means deseado \\
+\hline
+{\em int} & new\+Dataset correpsonde al dataset del algoritmo K\+Means deseado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve los K\+Group guardados si los paramtros corresponden con la información almacenada, sino devuelve null 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm_a1d5ab5161f4174936d68f4f3401443c7}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm_a1d5ab5161f4174936d68f4f3401443c7}} 
+\index{fxsrc.propyecto.data.DataAlgorithm@{fxsrc.propyecto.data.DataAlgorithm}!GetNextLine@{GetNextLine}}
+\index{GetNextLine@{GetNextLine}!fxsrc.propyecto.data.DataAlgorithm@{fxsrc.propyecto.data.DataAlgorithm}}
+\doxysubsubsection{\texorpdfstring{GetNextLine()}{GetNextLine()}}
+{\footnotesize\ttfamily String fxsrc.\+propyecto.\+data.\+Data\+Algorithm.\+Get\+Next\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Funcion que devuelve la siguiente línea a guardar. 
+
+\begin{DoxyPrecond}{Precondition}
+users\+Array no es null 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve la siguiente línea a guardar 
+\end{DoxyPostcond}
+
+
+Reimplemented from \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_a7bcf3576477253620b38f660afd3f45c}{fxsrc.\+propyecto.\+data.\+Data}}.
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm_aeb6432420ae54ae98fc78d9fa9d0b6b2}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm_aeb6432420ae54ae98fc78d9fa9d0b6b2}} 
+\index{fxsrc.propyecto.data.DataAlgorithm@{fxsrc.propyecto.data.DataAlgorithm}!HasNextLine@{HasNextLine}}
+\index{HasNextLine@{HasNextLine}!fxsrc.propyecto.data.DataAlgorithm@{fxsrc.propyecto.data.DataAlgorithm}}
+\doxysubsubsection{\texorpdfstring{HasNextLine()}{HasNextLine()}}
+{\footnotesize\ttfamily boolean fxsrc.\+propyecto.\+data.\+Data\+Algorithm.\+Has\+Next\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Funcion que devuelve si hay una línea más por guardar. 
+
+\begin{DoxyPrecond}{Precondition}
+system\+Users no es null 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve si hay alguna línea más por guardar 
+\end{DoxyPostcond}
+
+
+Reimplemented from \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_a4c4350fd83ac34db15e28cf1094d397b}{fxsrc.\+propyecto.\+data.\+Data}}.
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm_aeb0e8a6e0670c53bf42f1ae83781a9ec}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm_aeb0e8a6e0670c53bf42f1ae83781a9ec}} 
+\index{fxsrc.propyecto.data.DataAlgorithm@{fxsrc.propyecto.data.DataAlgorithm}!Init@{Init}}
+\index{Init@{Init}!fxsrc.propyecto.data.DataAlgorithm@{fxsrc.propyecto.data.DataAlgorithm}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+data.\+Data\+Algorithm.\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Función para inicializar la información del algoritmo K\+Means. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Se incializa {\itshape data\+Kgroups} y {\itshape centroids} y se pone a 0 {\itshape dataset} y {\itshape k} 
+\end{DoxyPostcond}
+
+
+Reimplemented from \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_a86f95d7c813244f9a1992fe4d7c8be99}{fxsrc.\+propyecto.\+data.\+Data}}.
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm_aa7cb11919d10aecd9e91ad1fb82eb8c0}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm_aa7cb11919d10aecd9e91ad1fb82eb8c0}} 
+\index{fxsrc.propyecto.data.DataAlgorithm@{fxsrc.propyecto.data.DataAlgorithm}!IsDirty@{IsDirty}}
+\index{IsDirty@{IsDirty}!fxsrc.propyecto.data.DataAlgorithm@{fxsrc.propyecto.data.DataAlgorithm}}
+\doxysubsubsection{\texorpdfstring{IsDirty()}{IsDirty()}}
+{\footnotesize\ttfamily boolean fxsrc.\+propyecto.\+data.\+Data\+Algorithm.\+Is\+Dirty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Función que devuelve si el dataset es correcto o no. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve si el dataset cargado es correcto o no 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm_a52beb882adcb43797e05edb45efbe77a}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm_a52beb882adcb43797e05edb45efbe77a}} 
+\index{fxsrc.propyecto.data.DataAlgorithm@{fxsrc.propyecto.data.DataAlgorithm}!LoadCSV@{LoadCSV}}
+\index{LoadCSV@{LoadCSV}!fxsrc.propyecto.data.DataAlgorithm@{fxsrc.propyecto.data.DataAlgorithm}}
+\doxysubsubsection{\texorpdfstring{LoadCSV()}{LoadCSV()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+data.\+Data\+Algorithm.\+Load\+C\+SV (\begin{DoxyParamCaption}\item[{String}]{path }\end{DoxyParamCaption})}
+
+
+
+Lee un fichero C\+SV y trata sus campos para parsearlo y convertirlo en datos usables para el programa. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em String} & path Corresponde al path del fichero que se desea leer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Carga el fichero C\+SV y los parsea a los tipos de datos que se deseen (a saber en Parse\+And\+Add\+Data) 
+\end{DoxyPostcond}
+
+
+Reimplemented from \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_ac15edc6a42ae4f80f5700f3251cd8a4c}{fxsrc.\+propyecto.\+data.\+Data}}.
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm_a899c0a2b3439c6be855b59e89150c7c9}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm_a899c0a2b3439c6be855b59e89150c7c9}} 
+\index{fxsrc.propyecto.data.DataAlgorithm@{fxsrc.propyecto.data.DataAlgorithm}!ParseAndAddData@{ParseAndAddData}}
+\index{ParseAndAddData@{ParseAndAddData}!fxsrc.propyecto.data.DataAlgorithm@{fxsrc.propyecto.data.DataAlgorithm}}
+\doxysubsubsection{\texorpdfstring{ParseAndAddData()}{ParseAndAddData()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+data.\+Data\+Algorithm.\+Parse\+And\+Add\+Data (\begin{DoxyParamCaption}\item[{String\mbox{[}$\,$\mbox{]}}]{attributes\+Names,  }\item[{String}]{line\+Read }\end{DoxyParamCaption})}
+
+
+
+Parsea una linea C\+SV a K\+Group. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em String\mbox{[}$\,$\mbox{]}} & attributes\+Names Corresponde al nombre de los atributos \\
+\hline
+{\em String} & line\+Read Corresponde a la linea C\+SV que hace referencia al K\+Group deseado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\itshape attributes\+Names} tiene el tamaño exacto de parametros que tenga el Item y {\itshape line\+Read} no es vacío. 
+
+Ningun conjunto es null 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Se parsean los atributos de K\+Group y finalmente se añade al conjunto. 
+\end{DoxyPostcond}
+
+
+Reimplemented from \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_aea413941c012cb7942abe5620f37634d}{fxsrc.\+propyecto.\+data.\+Data}}.
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm_a536ef1d8fd2099ccb88b40fbab1839db}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm_a536ef1d8fd2099ccb88b40fbab1839db}} 
+\index{fxsrc.propyecto.data.DataAlgorithm@{fxsrc.propyecto.data.DataAlgorithm}!SetDirty@{SetDirty}}
+\index{SetDirty@{SetDirty}!fxsrc.propyecto.data.DataAlgorithm@{fxsrc.propyecto.data.DataAlgorithm}}
+\doxysubsubsection{\texorpdfstring{SetDirty()}{SetDirty()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+data.\+Data\+Algorithm.\+Set\+Dirty (\begin{DoxyParamCaption}\item[{boolean}]{dirty }\end{DoxyParamCaption})}
+
+
+
+Función que asigna si el dataset es correcto o no. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em boolean} & dirty Corresponde a si el dataset cargado es correcto o no \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Asigna si el dataset es correcto o no 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm_a1430e764d7cc78829f8473771ef86e43}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm_a1430e764d7cc78829f8473771ef86e43}} 
+\index{fxsrc.propyecto.data.DataAlgorithm@{fxsrc.propyecto.data.DataAlgorithm}!SetKGroups@{SetKGroups}}
+\index{SetKGroups@{SetKGroups}!fxsrc.propyecto.data.DataAlgorithm@{fxsrc.propyecto.data.DataAlgorithm}}
+\doxysubsubsection{\texorpdfstring{SetKGroups()}{SetKGroups()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+data.\+Data\+Algorithm.\+Set\+K\+Groups (\begin{DoxyParamCaption}\item[{int}]{newK,  }\item[{int}]{new\+Dataset,  }\item[{Array\+List$<$ Array\+List$<$ Integer $>$$>$}]{kmeans,  }\item[{Array\+List$<$ Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} $>$$>$}]{cent }\end{DoxyParamCaption})}
+
+
+
+Función que modifica los datos del algoritmo de K\+Means a guardar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & newK Corresponde a la nueva K \\
+\hline
+{\em int} & new\+Dataset Corresponde al nuevo dataset \\
+\hline
+{\em Array\+List$<$\+Array\+List$<$\+Intger$>$$>$} & kmeans Corresponde al nuevo kmeans \\
+\hline
+{\em Array\+List$<$\+Array\+List$<$\+Rating$>$$>$} & cent Corresponde a los nuevos centroids \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Función que modifica los datos del algoritmo de K\+Means a guardar y después los guarda en formato C\+SV 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm_a6baa5c3eb6626727f73b5ce38b4109a2}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm_a6baa5c3eb6626727f73b5ce38b4109a2}} 
+\index{fxsrc.propyecto.data.DataAlgorithm@{fxsrc.propyecto.data.DataAlgorithm}!StoreCSV@{StoreCSV}}
+\index{StoreCSV@{StoreCSV}!fxsrc.propyecto.data.DataAlgorithm@{fxsrc.propyecto.data.DataAlgorithm}}
+\doxysubsubsection{\texorpdfstring{StoreCSV()}{StoreCSV()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+data.\+Data\+Algorithm.\+Store\+C\+SV (\begin{DoxyParamCaption}\item[{String}]{path }\end{DoxyParamCaption})}
+
+
+
+Guarda toda la información en un fichero C\+SV con nombre {\itshape path}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em String} & path Corresponde al path del fichero que se desea guardar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Parsea la información a C\+SV y lo guarda en el fichero C\+SV con nombre {\itshape path} borrando el contenido que tenía antes 
+\end{DoxyPostcond}
+
+
+Reimplemented from \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_ade7cc8ee4c6f32756103e757da258888}{fxsrc.\+propyecto.\+data.\+Data}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm_ac83a9e849d7e632e58f3c4a6b28562d1}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm_ac83a9e849d7e632e58f3c4a6b28562d1}} 
+\index{fxsrc.propyecto.data.DataAlgorithm@{fxsrc.propyecto.data.DataAlgorithm}!centroids@{centroids}}
+\index{centroids@{centroids}!fxsrc.propyecto.data.DataAlgorithm@{fxsrc.propyecto.data.DataAlgorithm}}
+\doxysubsubsection{\texorpdfstring{centroids}{centroids}}
+{\footnotesize\ttfamily Array\+List$<$Array\+List$<$\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}}$>$ $>$ fxsrc.\+propyecto.\+data.\+Data\+Algorithm.\+centroids\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Correpsonde a los Centroids del algoritmo K\+Means. 
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm_a047ef4c28a6a678625004bea2016e4ca}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm_a047ef4c28a6a678625004bea2016e4ca}} 
+\index{fxsrc.propyecto.data.DataAlgorithm@{fxsrc.propyecto.data.DataAlgorithm}!dataKgroups@{dataKgroups}}
+\index{dataKgroups@{dataKgroups}!fxsrc.propyecto.data.DataAlgorithm@{fxsrc.propyecto.data.DataAlgorithm}}
+\doxysubsubsection{\texorpdfstring{dataKgroups}{dataKgroups}}
+{\footnotesize\ttfamily Array\+List$<$Array\+List$<$Integer$>$ $>$ fxsrc.\+propyecto.\+data.\+Data\+Algorithm.\+data\+Kgroups\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Correpsonde a los k\+Groups del algoritmo K\+Means. 
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm_aeb9a58531de96a04d180e961fcf2a4b1}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm_aeb9a58531de96a04d180e961fcf2a4b1}} 
+\index{fxsrc.propyecto.data.DataAlgorithm@{fxsrc.propyecto.data.DataAlgorithm}!dataset@{dataset}}
+\index{dataset@{dataset}!fxsrc.propyecto.data.DataAlgorithm@{fxsrc.propyecto.data.DataAlgorithm}}
+\doxysubsubsection{\texorpdfstring{dataset}{dataset}}
+{\footnotesize\ttfamily int fxsrc.\+propyecto.\+data.\+Data\+Algorithm.\+dataset\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Correpsonde al dataset del algoritmo K\+Means. 
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm_aa0038af1aaaa344901be1cdd9e6f7321}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm_aa0038af1aaaa344901be1cdd9e6f7321}} 
+\index{fxsrc.propyecto.data.DataAlgorithm@{fxsrc.propyecto.data.DataAlgorithm}!isDirty@{isDirty}}
+\index{isDirty@{isDirty}!fxsrc.propyecto.data.DataAlgorithm@{fxsrc.propyecto.data.DataAlgorithm}}
+\doxysubsubsection{\texorpdfstring{isDirty}{isDirty}}
+{\footnotesize\ttfamily boolean fxsrc.\+propyecto.\+data.\+Data\+Algorithm.\+is\+Dirty\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Indica si el dataset es correcto o no. 
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm_a7f060374770616bd43dd54d73e88a504}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_algorithm_a7f060374770616bd43dd54d73e88a504}} 
+\index{fxsrc.propyecto.data.DataAlgorithm@{fxsrc.propyecto.data.DataAlgorithm}!k@{k}}
+\index{k@{k}!fxsrc.propyecto.data.DataAlgorithm@{fxsrc.propyecto.data.DataAlgorithm}}
+\doxysubsubsection{\texorpdfstring{k}{k}}
+{\footnotesize\ttfamily int fxsrc.\+propyecto.\+data.\+Data\+Algorithm.\+k\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Correpsonde a la k del algoritmo K\+Means. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/fxsrc/propyecto/data/\mbox{\hyperlink{_data_algorithm_8java}{Data\+Algorithm.\+java}}\end{DoxyCompactItemize}

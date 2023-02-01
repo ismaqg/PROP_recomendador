@@ -1,0 +1,455 @@
+\hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_item}{}\doxysection{fxsrc.\+propyecto.\+data.\+Data\+Item Class Reference}
+\label{classfxsrc_1_1propyecto_1_1data_1_1_data_item}\index{fxsrc.propyecto.data.DataItem@{fxsrc.propyecto.data.DataItem}}
+
+
+Clase que contiene los datos de todos los Item del sistema.  
+
+
+Inheritance diagram for fxsrc.\+propyecto.\+data.\+Data\+Item\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classfxsrc_1_1propyecto_1_1data_1_1_data_item}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_item_afe34773fc7265229f16c54b7e8f6e2e1}{Data\+Item}} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_item}{Data\+Item}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_item_ad5b75497a9386d6ad4d6c3f0106f5242}{Init}} ()
+\begin{DoxyCompactList}\small\item\em Función para inicializar {\itshape items}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_item_a7507688c5535626a397ddd053aee1754}{Clear\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Función para inicializar el {\itshape items}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_item_a68f644b21fa13445e91cdb7ba7d0b9d5}{Parse\+And\+Add\+Data}} (String \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_ac0986d4f64fe86583523fd175b58cbf8}{attributes\+Names}}\mbox{[}$\,$\mbox{]}, String line\+Read)
+\begin{DoxyCompactList}\small\item\em Parsea una linea C\+SV a un Item y lo añade a {\itshape items}. \end{DoxyCompactList}\item 
+Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_item_abd2c7f2ee71c27c8b905c6729632f713}{Get\+All\+Items}} ()
+\begin{DoxyCompactList}\small\item\em Debuelve todos los Item dentro de {\itshape items}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_item_a7f45105369c2c0f7dc69ff5ef6c0e4ba}{Get\+Item\+By\+Position}} (int pos)
+\begin{DoxyCompactList}\small\item\em Devuelve el Item en la posición {\itshape pos}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_item_a4e4ecc0046343e64decc1fc820dddb11}{Get\+Item\+By\+Name\+LC}} (String s)
+\item 
+\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_item_ac9ab2d5d220d128564026e785d6f1365}{Get\+Item\+By\+ID}} (int \mbox{\hyperlink{_parser_c_s_vtest_8txt_acf2488b95c97e0378c9bf49de3b50f28}{id}})  throws Item\+Does\+Not\+Exist\+Exception 
+\begin{DoxyCompactList}\small\item\em Devuelve el Item con ID {\itshape id}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_item_a9bdfa0a1e7d4cfdc0d65f7ddbbb6bce0}{Get\+Item\+By\+Name}} (String name)  throws Item\+Does\+Not\+Exist\+Exception 
+\begin{DoxyCompactList}\small\item\em Devuelve el Item con nombre {\itshape name}. \end{DoxyCompactList}\item 
+Array\+List$<$ String $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_item_a615ca03877efa78bf0c06d4f195d6f6e}{Get\+All\+Items\+Names}} ()
+\begin{DoxyCompactList}\small\item\em Devuelve los nombres de todos los Item. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_item_a52e2ee609293610b6221ea17573b847c}{Get\+Score}} (int \mbox{\hyperlink{_parser_c_s_vtest_8txt_acf2488b95c97e0378c9bf49de3b50f28}{id}})  throws Item\+Does\+Not\+Exist\+Exception 
+\begin{DoxyCompactList}\small\item\em Devuelve la puntuación del Item con id = {\itshape id}. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_item_a669848ca5e0a422e59cb27108f4b93e5}{Get\+Score}} (String name)  throws Item\+Does\+Not\+Exist\+Exception 
+\begin{DoxyCompactList}\small\item\em Devuelve la puntuación del Item con nombre = {\itshape name}. \end{DoxyCompactList}\item 
+Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_item_a5852155824a8ab4c8fe6cca7f77175d5}{Get\+Top\+Rated}} (int r)
+\begin{DoxyCompactList}\small\item\em Devuelve los {\itshape r} Items mejor punutados del sistema. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_item_ae39664fa5534e784fc662d9a548fc9be}{Has\+Next\+Line}} ()
+\begin{DoxyCompactList}\small\item\em Funcion que devuelve si hay una línea más por guardar. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_item_aa6f968eb9d8210384e794af20588cafb}{Get\+Next\+Line}} ()
+\begin{DoxyCompactList}\small\item\em Funcion que devuelve la siguiente línea a guardar. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_item_aee6777c8a7177fb6afeb549f1f9e279b}{items}}
+\begin{DoxyCompactList}\small\item\em {\itshape items} es un array de Item donde se guardan todos los Item del sistema. \end{DoxyCompactList}\item 
+Hash\+Map$<$ Integer, \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_item_a75ed93ecc0392662162735afcd989b05}{items\+Map}}
+\begin{DoxyCompactList}\small\item\em Hash\+Map de los items con su id como key. \end{DoxyCompactList}\item 
+Array\+List$<$ String $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_item_aff1694401673a5adc0a38f4517e5e875}{items\+Names}}
+\begin{DoxyCompactList}\small\item\em Lista de los nombres de todos los items. \end{DoxyCompactList}\item 
+Hash\+Map$<$ String, \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_item_a2e6ff05850d802b81ae7e3fc19e4319f}{items\+Name\+Map}}
+\begin{DoxyCompactList}\small\item\em Hash\+Map de los items con su id como key. \end{DoxyCompactList}\item 
+Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_item_a64b300ad92ce11b6e5a8d2c8c02287d9}{top\+Rated}}
+\begin{DoxyCompactList}\small\item\em Lista de los items mejor valorados del sistema. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Clase que contiene los datos de todos los Item del sistema. 
+
+Ofrece operaciones para que el Data\+Manager pueda añadir Items nuevos a partir de un String que sería la representación del Item a añadir en formato C\+SV. También ofrece operaciones para que el Data\+Manager pida todos los Items, un Item en concreto a partir de la posición del Array (útil para bucles) o incluso un Item a partir de su ID. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_item_afe34773fc7265229f16c54b7e8f6e2e1}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_item_afe34773fc7265229f16c54b7e8f6e2e1}} 
+\index{fxsrc.propyecto.data.DataItem@{fxsrc.propyecto.data.DataItem}!DataItem@{DataItem}}
+\index{DataItem@{DataItem}!fxsrc.propyecto.data.DataItem@{fxsrc.propyecto.data.DataItem}}
+\doxysubsubsection{\texorpdfstring{DataItem()}{DataItem()}}
+{\footnotesize\ttfamily fxsrc.\+propyecto.\+data.\+Data\+Item.\+Data\+Item (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor por defecto de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_item}{Data\+Item}}. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Crea una instanncia de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_item}{Data\+Item}} y llama a la constructora por defecto de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data}{Data}} 
+\end{DoxyPostcond}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_item_a7507688c5535626a397ddd053aee1754}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_item_a7507688c5535626a397ddd053aee1754}} 
+\index{fxsrc.propyecto.data.DataItem@{fxsrc.propyecto.data.DataItem}!ClearData@{ClearData}}
+\index{ClearData@{ClearData}!fxsrc.propyecto.data.DataItem@{fxsrc.propyecto.data.DataItem}}
+\doxysubsubsection{\texorpdfstring{ClearData()}{ClearData()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+data.\+Data\+Item.\+Clear\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Función para inicializar el {\itshape items}. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape items} no es null. 
+
+{\itshape items\+Map} no es null. 
+
+{\itshape items\+Names} no es null. 
+
+{\itshape items\+Name\+Map} no es null. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Se resetea el array {\itshape items}. 
+\end{DoxyPostcond}
+
+
+Reimplemented from \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_ad20bbf20a9c11034e72cbb8128aa9c69}{fxsrc.\+propyecto.\+data.\+Data}}.
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_item_abd2c7f2ee71c27c8b905c6729632f713}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_item_abd2c7f2ee71c27c8b905c6729632f713}} 
+\index{fxsrc.propyecto.data.DataItem@{fxsrc.propyecto.data.DataItem}!GetAllItems@{GetAllItems}}
+\index{GetAllItems@{GetAllItems}!fxsrc.propyecto.data.DataItem@{fxsrc.propyecto.data.DataItem}}
+\doxysubsubsection{\texorpdfstring{GetAllItems()}{GetAllItems()}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}}$>$ fxsrc.\+propyecto.\+data.\+Data\+Item.\+Get\+All\+Items (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Debuelve todos los Item dentro de {\itshape items}. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve todos los Item dentro de {\itshape items}. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_item_a615ca03877efa78bf0c06d4f195d6f6e}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_item_a615ca03877efa78bf0c06d4f195d6f6e}} 
+\index{fxsrc.propyecto.data.DataItem@{fxsrc.propyecto.data.DataItem}!GetAllItemsNames@{GetAllItemsNames}}
+\index{GetAllItemsNames@{GetAllItemsNames}!fxsrc.propyecto.data.DataItem@{fxsrc.propyecto.data.DataItem}}
+\doxysubsubsection{\texorpdfstring{GetAllItemsNames()}{GetAllItemsNames()}}
+{\footnotesize\ttfamily Array\+List$<$String$>$ fxsrc.\+propyecto.\+data.\+Data\+Item.\+Get\+All\+Items\+Names (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Devuelve los nombres de todos los Item. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve los nombres de todos los Item 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_item_ac9ab2d5d220d128564026e785d6f1365}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_item_ac9ab2d5d220d128564026e785d6f1365}} 
+\index{fxsrc.propyecto.data.DataItem@{fxsrc.propyecto.data.DataItem}!GetItemByID@{GetItemByID}}
+\index{GetItemByID@{GetItemByID}!fxsrc.propyecto.data.DataItem@{fxsrc.propyecto.data.DataItem}}
+\doxysubsubsection{\texorpdfstring{GetItemByID()}{GetItemByID()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} fxsrc.\+propyecto.\+data.\+Data\+Item.\+Get\+Item\+By\+ID (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item_does_not_exist_exception}{Item\+Does\+Not\+Exist\+Exception}}}
+
+
+
+Devuelve el Item con ID {\itshape id}. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Item\+Does\+Not\+Exist\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em int} & id Corresponde a la ID del Item deseado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve el Item con ID = {\itshape id} 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_item_a9bdfa0a1e7d4cfdc0d65f7ddbbb6bce0}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_item_a9bdfa0a1e7d4cfdc0d65f7ddbbb6bce0}} 
+\index{fxsrc.propyecto.data.DataItem@{fxsrc.propyecto.data.DataItem}!GetItemByName@{GetItemByName}}
+\index{GetItemByName@{GetItemByName}!fxsrc.propyecto.data.DataItem@{fxsrc.propyecto.data.DataItem}}
+\doxysubsubsection{\texorpdfstring{GetItemByName()}{GetItemByName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} fxsrc.\+propyecto.\+data.\+Data\+Item.\+Get\+Item\+By\+Name (\begin{DoxyParamCaption}\item[{String}]{name }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item_does_not_exist_exception}{Item\+Does\+Not\+Exist\+Exception}}}
+
+
+
+Devuelve el Item con nombre {\itshape name}. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Item\+Does\+Not\+Exist\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em String} & name Corresponde al nombre de un Item \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve el Item con nombre = name 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_item_a4e4ecc0046343e64decc1fc820dddb11}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_item_a4e4ecc0046343e64decc1fc820dddb11}} 
+\index{fxsrc.propyecto.data.DataItem@{fxsrc.propyecto.data.DataItem}!GetItemByNameLC@{GetItemByNameLC}}
+\index{GetItemByNameLC@{GetItemByNameLC}!fxsrc.propyecto.data.DataItem@{fxsrc.propyecto.data.DataItem}}
+\doxysubsubsection{\texorpdfstring{GetItemByNameLC()}{GetItemByNameLC()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} fxsrc.\+propyecto.\+data.\+Data\+Item.\+Get\+Item\+By\+Name\+LC (\begin{DoxyParamCaption}\item[{String}]{s }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_item_a7f45105369c2c0f7dc69ff5ef6c0e4ba}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_item_a7f45105369c2c0f7dc69ff5ef6c0e4ba}} 
+\index{fxsrc.propyecto.data.DataItem@{fxsrc.propyecto.data.DataItem}!GetItemByPosition@{GetItemByPosition}}
+\index{GetItemByPosition@{GetItemByPosition}!fxsrc.propyecto.data.DataItem@{fxsrc.propyecto.data.DataItem}}
+\doxysubsubsection{\texorpdfstring{GetItemByPosition()}{GetItemByPosition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} fxsrc.\+propyecto.\+data.\+Data\+Item.\+Get\+Item\+By\+Position (\begin{DoxyParamCaption}\item[{int}]{pos }\end{DoxyParamCaption})}
+
+
+
+Devuelve el Item en la posición {\itshape pos}. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Item\+Does\+Not\+Exist\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em int} & pos Corresponde a la posición a la que se quiere acceder del array {\itshape items} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve el Item en posición {\itshape pos} 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_item_aa6f968eb9d8210384e794af20588cafb}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_item_aa6f968eb9d8210384e794af20588cafb}} 
+\index{fxsrc.propyecto.data.DataItem@{fxsrc.propyecto.data.DataItem}!GetNextLine@{GetNextLine}}
+\index{GetNextLine@{GetNextLine}!fxsrc.propyecto.data.DataItem@{fxsrc.propyecto.data.DataItem}}
+\doxysubsubsection{\texorpdfstring{GetNextLine()}{GetNextLine()}}
+{\footnotesize\ttfamily String fxsrc.\+propyecto.\+data.\+Data\+Item.\+Get\+Next\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Funcion que devuelve la siguiente línea a guardar. 
+
+\begin{DoxyPrecond}{Precondition}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve la siguiente línea a guardar 
+\end{DoxyPostcond}
+
+
+Reimplemented from \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_a7bcf3576477253620b38f660afd3f45c}{fxsrc.\+propyecto.\+data.\+Data}}.
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_item_a52e2ee609293610b6221ea17573b847c}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_item_a52e2ee609293610b6221ea17573b847c}} 
+\index{fxsrc.propyecto.data.DataItem@{fxsrc.propyecto.data.DataItem}!GetScore@{GetScore}}
+\index{GetScore@{GetScore}!fxsrc.propyecto.data.DataItem@{fxsrc.propyecto.data.DataItem}}
+\doxysubsubsection{\texorpdfstring{GetScore()}{GetScore()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily float fxsrc.\+propyecto.\+data.\+Data\+Item.\+Get\+Score (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item_does_not_exist_exception}{Item\+Does\+Not\+Exist\+Exception}}}
+
+
+
+Devuelve la puntuación del Item con id = {\itshape id}. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Item\+Does\+Not\+Exist\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em int} & id Corresponde a la ID del Item deseado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve la puntuación del Item con ID = {\itshape id} 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_item_a669848ca5e0a422e59cb27108f4b93e5}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_item_a669848ca5e0a422e59cb27108f4b93e5}} 
+\index{fxsrc.propyecto.data.DataItem@{fxsrc.propyecto.data.DataItem}!GetScore@{GetScore}}
+\index{GetScore@{GetScore}!fxsrc.propyecto.data.DataItem@{fxsrc.propyecto.data.DataItem}}
+\doxysubsubsection{\texorpdfstring{GetScore()}{GetScore()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily float fxsrc.\+propyecto.\+data.\+Data\+Item.\+Get\+Score (\begin{DoxyParamCaption}\item[{String}]{name }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item_does_not_exist_exception}{Item\+Does\+Not\+Exist\+Exception}}}
+
+
+
+Devuelve la puntuación del Item con nombre = {\itshape name}. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Item\+Does\+Not\+Exist\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em String} & name Corresponde al nombre del Item deseado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve la puntuación del Item con nombre = {\itshape name} 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_item_a5852155824a8ab4c8fe6cca7f77175d5}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_item_a5852155824a8ab4c8fe6cca7f77175d5}} 
+\index{fxsrc.propyecto.data.DataItem@{fxsrc.propyecto.data.DataItem}!GetTopRated@{GetTopRated}}
+\index{GetTopRated@{GetTopRated}!fxsrc.propyecto.data.DataItem@{fxsrc.propyecto.data.DataItem}}
+\doxysubsubsection{\texorpdfstring{GetTopRated()}{GetTopRated()}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}}$>$ fxsrc.\+propyecto.\+data.\+Data\+Item.\+Get\+Top\+Rated (\begin{DoxyParamCaption}\item[{int}]{r }\end{DoxyParamCaption})}
+
+
+
+Devuelve los {\itshape r} Items mejor punutados del sistema. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Item\+Does\+Not\+Exist\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em int} & r Corresponde a la cantidad de Items que queremos \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve los {\itshape r} Items mejor punutados del sistema 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_item_ae39664fa5534e784fc662d9a548fc9be}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_item_ae39664fa5534e784fc662d9a548fc9be}} 
+\index{fxsrc.propyecto.data.DataItem@{fxsrc.propyecto.data.DataItem}!HasNextLine@{HasNextLine}}
+\index{HasNextLine@{HasNextLine}!fxsrc.propyecto.data.DataItem@{fxsrc.propyecto.data.DataItem}}
+\doxysubsubsection{\texorpdfstring{HasNextLine()}{HasNextLine()}}
+{\footnotesize\ttfamily boolean fxsrc.\+propyecto.\+data.\+Data\+Item.\+Has\+Next\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Funcion que devuelve si hay una línea más por guardar. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape items} no es null 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve si hay alguna línea más por guardar 
+\end{DoxyPostcond}
+
+
+Reimplemented from \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_a4c4350fd83ac34db15e28cf1094d397b}{fxsrc.\+propyecto.\+data.\+Data}}.
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_item_ad5b75497a9386d6ad4d6c3f0106f5242}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_item_ad5b75497a9386d6ad4d6c3f0106f5242}} 
+\index{fxsrc.propyecto.data.DataItem@{fxsrc.propyecto.data.DataItem}!Init@{Init}}
+\index{Init@{Init}!fxsrc.propyecto.data.DataItem@{fxsrc.propyecto.data.DataItem}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+data.\+Data\+Item.\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Función para inicializar {\itshape items}. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Se incializa el array {\itshape items} a un array vacío, 
+\end{DoxyPostcond}
+
+
+Reimplemented from \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_a86f95d7c813244f9a1992fe4d7c8be99}{fxsrc.\+propyecto.\+data.\+Data}}.
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_item_a68f644b21fa13445e91cdb7ba7d0b9d5}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_item_a68f644b21fa13445e91cdb7ba7d0b9d5}} 
+\index{fxsrc.propyecto.data.DataItem@{fxsrc.propyecto.data.DataItem}!ParseAndAddData@{ParseAndAddData}}
+\index{ParseAndAddData@{ParseAndAddData}!fxsrc.propyecto.data.DataItem@{fxsrc.propyecto.data.DataItem}}
+\doxysubsubsection{\texorpdfstring{ParseAndAddData()}{ParseAndAddData()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+data.\+Data\+Item.\+Parse\+And\+Add\+Data (\begin{DoxyParamCaption}\item[{String}]{attributes\+Names\mbox{[}$\,$\mbox{]},  }\item[{String}]{line\+Read }\end{DoxyParamCaption})}
+
+
+
+Parsea una linea C\+SV a un Item y lo añade a {\itshape items}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em String\mbox{[}$\,$\mbox{]}} & attributes\+Names Corresponde al nombre de los atributos \\
+\hline
+{\em String} & line\+Read Corresponde a la linea C\+SV que hace referencia al Item deseado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\itshape attributes\+Names} tiene el tamaño exacto de parametros que tenga el Item y {\itshape line\+Read} no es vacío. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Se parsean los atributos de Item y finalmente se añade a {\itshape items}. 
+\end{DoxyPostcond}
+
+
+Reimplemented from \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1data_1_1_data_aea413941c012cb7942abe5620f37634d}{fxsrc.\+propyecto.\+data.\+Data}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_item_aee6777c8a7177fb6afeb549f1f9e279b}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_item_aee6777c8a7177fb6afeb549f1f9e279b}} 
+\index{fxsrc.propyecto.data.DataItem@{fxsrc.propyecto.data.DataItem}!items@{items}}
+\index{items@{items}!fxsrc.propyecto.data.DataItem@{fxsrc.propyecto.data.DataItem}}
+\doxysubsubsection{\texorpdfstring{items}{items}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}}$>$ fxsrc.\+propyecto.\+data.\+Data\+Item.\+items\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+{\itshape items} es un array de Item donde se guardan todos los Item del sistema. 
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_item_a75ed93ecc0392662162735afcd989b05}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_item_a75ed93ecc0392662162735afcd989b05}} 
+\index{fxsrc.propyecto.data.DataItem@{fxsrc.propyecto.data.DataItem}!itemsMap@{itemsMap}}
+\index{itemsMap@{itemsMap}!fxsrc.propyecto.data.DataItem@{fxsrc.propyecto.data.DataItem}}
+\doxysubsubsection{\texorpdfstring{itemsMap}{itemsMap}}
+{\footnotesize\ttfamily Hash\+Map$<$Integer, \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}}$>$ fxsrc.\+propyecto.\+data.\+Data\+Item.\+items\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Hash\+Map de los items con su id como key. 
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_item_a2e6ff05850d802b81ae7e3fc19e4319f}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_item_a2e6ff05850d802b81ae7e3fc19e4319f}} 
+\index{fxsrc.propyecto.data.DataItem@{fxsrc.propyecto.data.DataItem}!itemsNameMap@{itemsNameMap}}
+\index{itemsNameMap@{itemsNameMap}!fxsrc.propyecto.data.DataItem@{fxsrc.propyecto.data.DataItem}}
+\doxysubsubsection{\texorpdfstring{itemsNameMap}{itemsNameMap}}
+{\footnotesize\ttfamily Hash\+Map$<$String, \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}}$>$ fxsrc.\+propyecto.\+data.\+Data\+Item.\+items\+Name\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Hash\+Map de los items con su id como key. 
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_item_aff1694401673a5adc0a38f4517e5e875}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_item_aff1694401673a5adc0a38f4517e5e875}} 
+\index{fxsrc.propyecto.data.DataItem@{fxsrc.propyecto.data.DataItem}!itemsNames@{itemsNames}}
+\index{itemsNames@{itemsNames}!fxsrc.propyecto.data.DataItem@{fxsrc.propyecto.data.DataItem}}
+\doxysubsubsection{\texorpdfstring{itemsNames}{itemsNames}}
+{\footnotesize\ttfamily Array\+List$<$String$>$ fxsrc.\+propyecto.\+data.\+Data\+Item.\+items\+Names\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Lista de los nombres de todos los items. 
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1data_1_1_data_item_a64b300ad92ce11b6e5a8d2c8c02287d9}\label{classfxsrc_1_1propyecto_1_1data_1_1_data_item_a64b300ad92ce11b6e5a8d2c8c02287d9}} 
+\index{fxsrc.propyecto.data.DataItem@{fxsrc.propyecto.data.DataItem}!topRated@{topRated}}
+\index{topRated@{topRated}!fxsrc.propyecto.data.DataItem@{fxsrc.propyecto.data.DataItem}}
+\doxysubsubsection{\texorpdfstring{topRated}{topRated}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}}$>$ fxsrc.\+propyecto.\+data.\+Data\+Item.\+top\+Rated\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Lista de los items mejor valorados del sistema. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/fxsrc/propyecto/data/\mbox{\hyperlink{_data_item_8java}{Data\+Item.\+java}}\end{DoxyCompactItemize}

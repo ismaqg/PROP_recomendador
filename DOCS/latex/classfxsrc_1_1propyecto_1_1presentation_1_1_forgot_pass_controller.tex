@@ -1,0 +1,171 @@
+\hypertarget{classfxsrc_1_1propyecto_1_1presentation_1_1_forgot_pass_controller}{}\doxysection{fxsrc.\+propyecto.\+presentation.\+Forgot\+Pass\+Controller Class Reference}
+\label{classfxsrc_1_1propyecto_1_1presentation_1_1_forgot_pass_controller}\index{fxsrc.propyecto.presentation.ForgotPassController@{fxsrc.propyecto.presentation.ForgotPassController}}
+
+
+Clase encargada de la generacion de contraseña en caso de perdida.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1presentation_1_1_forgot_pass_controller_a3ea5fde004d4800ac10d11a0b6bf278f}{send}} ()  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Gestiona el clic del botón Enviar. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1presentation_1_1_forgot_pass_controller_a85cd4f5d70e6dfa20a55da5cdd419b70}{go\+To\+Log\+In}} ()  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Gestiona el clic del botón Log\+In. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1presentation_1_1_forgot_pass_controller_a6a26d5c4c8b3db51c7b1d0f908b9f13b}{generate\+Pass}} ()
+\begin{DoxyCompactList}\small\item\em Gestiona la creación de la nueva contraseña. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1presentation_1_1_forgot_pass_controller_aa4789984c6848230406be2bfaca3285b}{Go\+Back}} ()  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Gestiona el clic del botón Atrás. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Text\+Field \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1presentation_1_1_forgot_pass_controller_ae6e8df345d64fad0a72de036344c875a}{answer\+Field}}
+\item 
+Label \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1presentation_1_1_forgot_pass_controller_a2c3240f87e417e249616482de1dd7b0f}{pass\+Label}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Text\+Field \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1presentation_1_1_forgot_pass_controller_ae70b0cbf3d7db7bf6fce727a58a29b27}{user\+Field}}
+\begin{DoxyCompactList}\small\item\em {\itshape user\+Field} es el campo de texto donde el usuario introduce su nombre de usuario, y answer\+Field donde introduce la respuesta a la pregunta de seguridad. \end{DoxyCompactList}\item 
+Label \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1presentation_1_1_forgot_pass_controller_a9893f8240a9c36538e387fc23f7680aa}{error\+Label}}
+\begin{DoxyCompactList}\small\item\em {\itshape error\+Label} es un texto de error que aparece en caso de que el usuario haga algo mal, y pass\+Label donde muestra la nueva contraseña generada. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1presentation_1_1_forgot_pass_controller_adaef34eec878d49404dfe4731bfab877}{new\+Pass}} = \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1presentation_1_1_forgot_pass_controller_a6a26d5c4c8b3db51c7b1d0f908b9f13b}{generate\+Pass}}()
+\begin{DoxyCompactList}\small\item\em {\itshape new\+Pass} es un string que contiene la nueva contraseña generada por generate\+Pass. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase encargada de la generacion de contraseña en caso de perdida. 
+
+Cambia la contraseña de un usuario a traves de la base de datos controlando el fichero de escena forgot\+Pass-\/view.\+fxml 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1presentation_1_1_forgot_pass_controller_a6a26d5c4c8b3db51c7b1d0f908b9f13b}\label{classfxsrc_1_1propyecto_1_1presentation_1_1_forgot_pass_controller_a6a26d5c4c8b3db51c7b1d0f908b9f13b}} 
+\index{fxsrc.propyecto.presentation.ForgotPassController@{fxsrc.propyecto.presentation.ForgotPassController}!generatePass@{generatePass}}
+\index{generatePass@{generatePass}!fxsrc.propyecto.presentation.ForgotPassController@{fxsrc.propyecto.presentation.ForgotPassController}}
+\doxysubsubsection{\texorpdfstring{generatePass()}{generatePass()}}
+{\footnotesize\ttfamily String fxsrc.\+propyecto.\+presentation.\+Forgot\+Pass\+Controller.\+generate\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gestiona la creación de la nueva contraseña. 
+
+\begin{DoxyPrecond}{Precondition}
+Cierto. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Retorna una contraseña en formato de String. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1presentation_1_1_forgot_pass_controller_aa4789984c6848230406be2bfaca3285b}\label{classfxsrc_1_1propyecto_1_1presentation_1_1_forgot_pass_controller_aa4789984c6848230406be2bfaca3285b}} 
+\index{fxsrc.propyecto.presentation.ForgotPassController@{fxsrc.propyecto.presentation.ForgotPassController}!GoBack@{GoBack}}
+\index{GoBack@{GoBack}!fxsrc.propyecto.presentation.ForgotPassController@{fxsrc.propyecto.presentation.ForgotPassController}}
+\doxysubsubsection{\texorpdfstring{GoBack()}{GoBack()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+presentation.\+Forgot\+Pass\+Controller.\+Go\+Back (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Gestiona el clic del botón Atrás. 
+
+\begin{DoxyPrecond}{Precondition}
+El usuario clica el botón de Atrás. 
+\end{DoxyPrecond}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPostcond}{Postcondition}
+Se envía al usuario a la escena anterior mediante Scene\+Manager. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1presentation_1_1_forgot_pass_controller_a85cd4f5d70e6dfa20a55da5cdd419b70}\label{classfxsrc_1_1propyecto_1_1presentation_1_1_forgot_pass_controller_a85cd4f5d70e6dfa20a55da5cdd419b70}} 
+\index{fxsrc.propyecto.presentation.ForgotPassController@{fxsrc.propyecto.presentation.ForgotPassController}!goToLogIn@{goToLogIn}}
+\index{goToLogIn@{goToLogIn}!fxsrc.propyecto.presentation.ForgotPassController@{fxsrc.propyecto.presentation.ForgotPassController}}
+\doxysubsubsection{\texorpdfstring{goToLogIn()}{goToLogIn()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+presentation.\+Forgot\+Pass\+Controller.\+go\+To\+Log\+In (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Gestiona el clic del botón Log\+In. 
+
+\begin{DoxyPrecond}{Precondition}
+El usuario clica el botón de Log\+In. 
+\end{DoxyPrecond}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPostcond}{Postcondition}
+Se envía al usuario a la escena de Log\+In mediante Scene\+Manager. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1presentation_1_1_forgot_pass_controller_a3ea5fde004d4800ac10d11a0b6bf278f}\label{classfxsrc_1_1propyecto_1_1presentation_1_1_forgot_pass_controller_a3ea5fde004d4800ac10d11a0b6bf278f}} 
+\index{fxsrc.propyecto.presentation.ForgotPassController@{fxsrc.propyecto.presentation.ForgotPassController}!send@{send}}
+\index{send@{send}!fxsrc.propyecto.presentation.ForgotPassController@{fxsrc.propyecto.presentation.ForgotPassController}}
+\doxysubsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+presentation.\+Forgot\+Pass\+Controller.\+send (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Gestiona el clic del botón Enviar. 
+
+\begin{DoxyPrecond}{Precondition}
+El usuario clica el botón de Enviar. 
+\end{DoxyPrecond}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPostcond}{Postcondition}
+Se comprueban las credencialesla respuesta de la pregunta de seguridad introducida por el usuario, y modifica los labels acorde a la situación. 
+\end{DoxyPostcond}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1presentation_1_1_forgot_pass_controller_ae6e8df345d64fad0a72de036344c875a}\label{classfxsrc_1_1propyecto_1_1presentation_1_1_forgot_pass_controller_ae6e8df345d64fad0a72de036344c875a}} 
+\index{fxsrc.propyecto.presentation.ForgotPassController@{fxsrc.propyecto.presentation.ForgotPassController}!answerField@{answerField}}
+\index{answerField@{answerField}!fxsrc.propyecto.presentation.ForgotPassController@{fxsrc.propyecto.presentation.ForgotPassController}}
+\doxysubsubsection{\texorpdfstring{answerField}{answerField}}
+{\footnotesize\ttfamily Text\+Field fxsrc.\+propyecto.\+presentation.\+Forgot\+Pass\+Controller.\+answer\+Field\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1presentation_1_1_forgot_pass_controller_a9893f8240a9c36538e387fc23f7680aa}\label{classfxsrc_1_1propyecto_1_1presentation_1_1_forgot_pass_controller_a9893f8240a9c36538e387fc23f7680aa}} 
+\index{fxsrc.propyecto.presentation.ForgotPassController@{fxsrc.propyecto.presentation.ForgotPassController}!errorLabel@{errorLabel}}
+\index{errorLabel@{errorLabel}!fxsrc.propyecto.presentation.ForgotPassController@{fxsrc.propyecto.presentation.ForgotPassController}}
+\doxysubsubsection{\texorpdfstring{errorLabel}{errorLabel}}
+{\footnotesize\ttfamily Label fxsrc.\+propyecto.\+presentation.\+Forgot\+Pass\+Controller.\+error\+Label\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+{\itshape error\+Label} es un texto de error que aparece en caso de que el usuario haga algo mal, y pass\+Label donde muestra la nueva contraseña generada. 
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1presentation_1_1_forgot_pass_controller_adaef34eec878d49404dfe4731bfab877}\label{classfxsrc_1_1propyecto_1_1presentation_1_1_forgot_pass_controller_adaef34eec878d49404dfe4731bfab877}} 
+\index{fxsrc.propyecto.presentation.ForgotPassController@{fxsrc.propyecto.presentation.ForgotPassController}!newPass@{newPass}}
+\index{newPass@{newPass}!fxsrc.propyecto.presentation.ForgotPassController@{fxsrc.propyecto.presentation.ForgotPassController}}
+\doxysubsubsection{\texorpdfstring{newPass}{newPass}}
+{\footnotesize\ttfamily String fxsrc.\+propyecto.\+presentation.\+Forgot\+Pass\+Controller.\+new\+Pass = \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1presentation_1_1_forgot_pass_controller_a6a26d5c4c8b3db51c7b1d0f908b9f13b}{generate\+Pass}}()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+{\itshape new\+Pass} es un string que contiene la nueva contraseña generada por generate\+Pass. 
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1presentation_1_1_forgot_pass_controller_a2c3240f87e417e249616482de1dd7b0f}\label{classfxsrc_1_1propyecto_1_1presentation_1_1_forgot_pass_controller_a2c3240f87e417e249616482de1dd7b0f}} 
+\index{fxsrc.propyecto.presentation.ForgotPassController@{fxsrc.propyecto.presentation.ForgotPassController}!passLabel@{passLabel}}
+\index{passLabel@{passLabel}!fxsrc.propyecto.presentation.ForgotPassController@{fxsrc.propyecto.presentation.ForgotPassController}}
+\doxysubsubsection{\texorpdfstring{passLabel}{passLabel}}
+{\footnotesize\ttfamily Label fxsrc.\+propyecto.\+presentation.\+Forgot\+Pass\+Controller.\+pass\+Label\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1presentation_1_1_forgot_pass_controller_ae70b0cbf3d7db7bf6fce727a58a29b27}\label{classfxsrc_1_1propyecto_1_1presentation_1_1_forgot_pass_controller_ae70b0cbf3d7db7bf6fce727a58a29b27}} 
+\index{fxsrc.propyecto.presentation.ForgotPassController@{fxsrc.propyecto.presentation.ForgotPassController}!userField@{userField}}
+\index{userField@{userField}!fxsrc.propyecto.presentation.ForgotPassController@{fxsrc.propyecto.presentation.ForgotPassController}}
+\doxysubsubsection{\texorpdfstring{userField}{userField}}
+{\footnotesize\ttfamily Text\+Field fxsrc.\+propyecto.\+presentation.\+Forgot\+Pass\+Controller.\+user\+Field\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+{\itshape user\+Field} es el campo de texto donde el usuario introduce su nombre de usuario, y answer\+Field donde introduce la respuesta a la pregunta de seguridad. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/fxsrc/propyecto/presentation/\mbox{\hyperlink{_forgot_pass_controller_8java}{Forgot\+Pass\+Controller.\+java}}\end{DoxyCompactItemize}

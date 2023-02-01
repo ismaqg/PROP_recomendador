@@ -1,0 +1,278 @@
+\hypertarget{classfxsrc_1_1propyecto_1_1presentation_1_1_sign_up_controller}{}\doxysection{fxsrc.\+propyecto.\+presentation.\+Sign\+Up\+Controller Class Reference}
+\label{classfxsrc_1_1propyecto_1_1presentation_1_1_sign_up_controller}\index{fxsrc.propyecto.presentation.SignUpController@{fxsrc.propyecto.presentation.SignUpController}}
+
+
+Clase encargada de registrar a un usuario nuevo con sus credenciales.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1presentation_1_1_sign_up_controller_a32dade2de9bae13ca7d05f6ae29cca62}{User\+Sign\+Up}} (Action\+Event e)  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Gestiona el clic del botón Sign\+Up. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1presentation_1_1_sign_up_controller_a42b62ea5e0a98d763315b8a49d47d486}{User\+Log\+In}} (Action\+Event e)  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Gestiona el clic del botón Log\+In. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Text\+Field \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1presentation_1_1_sign_up_controller_ac3f35a478205510792e71dfcb430dca2}{mail\+Field}}
+\item 
+Text\+Field \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1presentation_1_1_sign_up_controller_ab045a0392709edc890d44450b38351be}{answer\+Field}}
+\item 
+Password\+Field \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1presentation_1_1_sign_up_controller_ad084e06cadc0493d7d442ba2bab7104d}{confirm\+Password\+Field}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1presentation_1_1_sign_up_controller_aea1055eae55a94cfda5e1987147290e3}{Check\+Credentials}} ()  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Gestiona la comprobación de credenciales. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1presentation_1_1_sign_up_controller_af4564e162bc9685c42e7945e9937b742}{Check\+Security}} (String text)
+\begin{DoxyCompactList}\small\item\em Gestiona la comprobación de la respuesta de seguridad. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1presentation_1_1_sign_up_controller_a354c0a83bacb979dce8d6a15307f0a02}{Check\+Username}} (String text)
+\begin{DoxyCompactList}\small\item\em Gestiona la comprobación del nombre de usuario. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1presentation_1_1_sign_up_controller_a28ddcbef517fd7b458c7388c958433e3}{Check\+Mail}} (String text)
+\begin{DoxyCompactList}\small\item\em Gestiona la comprobación de la dirección de mail. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1presentation_1_1_sign_up_controller_a5db6cc3937bf80484ed6249adf89ba1e}{Check\+Password}} (String pass, String confirm\+Pass)
+\begin{DoxyCompactList}\small\item\em Gestiona la comprobación de la contraseña. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Label \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1presentation_1_1_sign_up_controller_a067ca1ce17b1d309a1c48d8e7bfcc341}{error\+Label}}
+\begin{DoxyCompactList}\small\item\em {\itshape error\+Label} es un texto de error que aparece en caso de que el usuario haga algo mal. \end{DoxyCompactList}\item 
+Text\+Field \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1presentation_1_1_sign_up_controller_ad210c96bb34a802966cfbaae04d7353e}{username\+Field}}
+\begin{DoxyCompactList}\small\item\em {\itshape username\+Field}, {\itshape mail\+Field} y {\itshape answer\+Field} son los campos de texto a rellenar por el usuario. Deben tener valores adecuados y formateados correctamente. \end{DoxyCompactList}\item 
+Password\+Field \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1presentation_1_1_sign_up_controller_af816a21620a5769c7ef49123457c485a}{password\+Field}}
+\begin{DoxyCompactList}\small\item\em {\itshape password\+Field} y {\itshape confirm\+Password\+Field} son los campos de contraseña a rellenar por el usuario. confirm\+Password\+Field debe tener el mismo contenido que password\+Field. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase encargada de registrar a un usuario nuevo con sus credenciales. 
+
+Gestiona el registro de usuarios controlando el fichero de escena sign\+Up-\/view.\+fxml 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1presentation_1_1_sign_up_controller_aea1055eae55a94cfda5e1987147290e3}\label{classfxsrc_1_1propyecto_1_1presentation_1_1_sign_up_controller_aea1055eae55a94cfda5e1987147290e3}} 
+\index{fxsrc.propyecto.presentation.SignUpController@{fxsrc.propyecto.presentation.SignUpController}!CheckCredentials@{CheckCredentials}}
+\index{CheckCredentials@{CheckCredentials}!fxsrc.propyecto.presentation.SignUpController@{fxsrc.propyecto.presentation.SignUpController}}
+\doxysubsubsection{\texorpdfstring{CheckCredentials()}{CheckCredentials()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+presentation.\+Sign\+Up\+Controller.\+Check\+Credentials (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Gestiona la comprobación de credenciales. 
+
+\begin{DoxyPrecond}{Precondition}
+Cierto. 
+\end{DoxyPrecond}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPostcond}{Postcondition}
+Se modifica el valor de error\+Label en caso de tener algún error, o se envia al usuario a Edit\+Profile mediante Scene\+Manager si no tiene errores. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1presentation_1_1_sign_up_controller_a28ddcbef517fd7b458c7388c958433e3}\label{classfxsrc_1_1propyecto_1_1presentation_1_1_sign_up_controller_a28ddcbef517fd7b458c7388c958433e3}} 
+\index{fxsrc.propyecto.presentation.SignUpController@{fxsrc.propyecto.presentation.SignUpController}!CheckMail@{CheckMail}}
+\index{CheckMail@{CheckMail}!fxsrc.propyecto.presentation.SignUpController@{fxsrc.propyecto.presentation.SignUpController}}
+\doxysubsubsection{\texorpdfstring{CheckMail()}{CheckMail()}}
+{\footnotesize\ttfamily boolean fxsrc.\+propyecto.\+presentation.\+Sign\+Up\+Controller.\+Check\+Mail (\begin{DoxyParamCaption}\item[{String}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Gestiona la comprobación de la dirección de mail. 
+
+\begin{DoxyPrecond}{Precondition}
+Cierto. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em String} & text Texto introducido por el usuario en el campo de la dirección de mail. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Se modifica el valor de error\+Label en caso de tener algún error, o se retorna true si no tiene errores. 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1presentation_1_1_sign_up_controller_a5db6cc3937bf80484ed6249adf89ba1e}\label{classfxsrc_1_1propyecto_1_1presentation_1_1_sign_up_controller_a5db6cc3937bf80484ed6249adf89ba1e}} 
+\index{fxsrc.propyecto.presentation.SignUpController@{fxsrc.propyecto.presentation.SignUpController}!CheckPassword@{CheckPassword}}
+\index{CheckPassword@{CheckPassword}!fxsrc.propyecto.presentation.SignUpController@{fxsrc.propyecto.presentation.SignUpController}}
+\doxysubsubsection{\texorpdfstring{CheckPassword()}{CheckPassword()}}
+{\footnotesize\ttfamily boolean fxsrc.\+propyecto.\+presentation.\+Sign\+Up\+Controller.\+Check\+Password (\begin{DoxyParamCaption}\item[{String}]{pass,  }\item[{String}]{confirm\+Pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Gestiona la comprobación de la contraseña. 
+
+\begin{DoxyPrecond}{Precondition}
+Cierto. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em String} & text Texto introducido por el usuario en el campo de la contraseña. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Se modifica el valor de error\+Label en caso de tener algún error, o se retorna true si no tiene errores. 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1presentation_1_1_sign_up_controller_af4564e162bc9685c42e7945e9937b742}\label{classfxsrc_1_1propyecto_1_1presentation_1_1_sign_up_controller_af4564e162bc9685c42e7945e9937b742}} 
+\index{fxsrc.propyecto.presentation.SignUpController@{fxsrc.propyecto.presentation.SignUpController}!CheckSecurity@{CheckSecurity}}
+\index{CheckSecurity@{CheckSecurity}!fxsrc.propyecto.presentation.SignUpController@{fxsrc.propyecto.presentation.SignUpController}}
+\doxysubsubsection{\texorpdfstring{CheckSecurity()}{CheckSecurity()}}
+{\footnotesize\ttfamily boolean fxsrc.\+propyecto.\+presentation.\+Sign\+Up\+Controller.\+Check\+Security (\begin{DoxyParamCaption}\item[{String}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Gestiona la comprobación de la respuesta de seguridad. 
+
+\begin{DoxyPrecond}{Precondition}
+Cierto. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em String} & text Texto introducido por el usuario en el campo de pregunta de seguridad. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Se modifica el valor de error\+Label en caso de tener algún error, o se retorna true si no tiene errores. 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1presentation_1_1_sign_up_controller_a354c0a83bacb979dce8d6a15307f0a02}\label{classfxsrc_1_1propyecto_1_1presentation_1_1_sign_up_controller_a354c0a83bacb979dce8d6a15307f0a02}} 
+\index{fxsrc.propyecto.presentation.SignUpController@{fxsrc.propyecto.presentation.SignUpController}!CheckUsername@{CheckUsername}}
+\index{CheckUsername@{CheckUsername}!fxsrc.propyecto.presentation.SignUpController@{fxsrc.propyecto.presentation.SignUpController}}
+\doxysubsubsection{\texorpdfstring{CheckUsername()}{CheckUsername()}}
+{\footnotesize\ttfamily boolean fxsrc.\+propyecto.\+presentation.\+Sign\+Up\+Controller.\+Check\+Username (\begin{DoxyParamCaption}\item[{String}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Gestiona la comprobación del nombre de usuario. 
+
+\begin{DoxyPrecond}{Precondition}
+Cierto. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em String} & text Texto introducido por el usuario en el campo de nombre de usuario. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Se modifica el valor de error\+Label en caso de tener algún error, o se retorna true si no tiene errores. 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1presentation_1_1_sign_up_controller_a42b62ea5e0a98d763315b8a49d47d486}\label{classfxsrc_1_1propyecto_1_1presentation_1_1_sign_up_controller_a42b62ea5e0a98d763315b8a49d47d486}} 
+\index{fxsrc.propyecto.presentation.SignUpController@{fxsrc.propyecto.presentation.SignUpController}!UserLogIn@{UserLogIn}}
+\index{UserLogIn@{UserLogIn}!fxsrc.propyecto.presentation.SignUpController@{fxsrc.propyecto.presentation.SignUpController}}
+\doxysubsubsection{\texorpdfstring{UserLogIn()}{UserLogIn()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+presentation.\+Sign\+Up\+Controller.\+User\+Log\+In (\begin{DoxyParamCaption}\item[{Action\+Event}]{e }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Gestiona el clic del botón Log\+In. 
+
+\begin{DoxyPrecond}{Precondition}
+El usuario clica el botón de Log\+In. 
+\end{DoxyPrecond}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em Action\+Event} & e Evento de clic de botón Log\+In. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Se envía al usuario a la escena de Log\+In mediante Scene\+Manager. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1presentation_1_1_sign_up_controller_a32dade2de9bae13ca7d05f6ae29cca62}\label{classfxsrc_1_1propyecto_1_1presentation_1_1_sign_up_controller_a32dade2de9bae13ca7d05f6ae29cca62}} 
+\index{fxsrc.propyecto.presentation.SignUpController@{fxsrc.propyecto.presentation.SignUpController}!UserSignUp@{UserSignUp}}
+\index{UserSignUp@{UserSignUp}!fxsrc.propyecto.presentation.SignUpController@{fxsrc.propyecto.presentation.SignUpController}}
+\doxysubsubsection{\texorpdfstring{UserSignUp()}{UserSignUp()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+presentation.\+Sign\+Up\+Controller.\+User\+Sign\+Up (\begin{DoxyParamCaption}\item[{Action\+Event}]{e }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Gestiona el clic del botón Sign\+Up. 
+
+\begin{DoxyPrecond}{Precondition}
+El usuario clica el botón de Sign\+Up. 
+\end{DoxyPrecond}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em Action\+Event} & e Evento de clic de botón Sign\+Up. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Se comprueban las credenciales introducidas por el usuario. 
+\end{DoxyPostcond}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1presentation_1_1_sign_up_controller_ab045a0392709edc890d44450b38351be}\label{classfxsrc_1_1propyecto_1_1presentation_1_1_sign_up_controller_ab045a0392709edc890d44450b38351be}} 
+\index{fxsrc.propyecto.presentation.SignUpController@{fxsrc.propyecto.presentation.SignUpController}!answerField@{answerField}}
+\index{answerField@{answerField}!fxsrc.propyecto.presentation.SignUpController@{fxsrc.propyecto.presentation.SignUpController}}
+\doxysubsubsection{\texorpdfstring{answerField}{answerField}}
+{\footnotesize\ttfamily Text\+Field fxsrc.\+propyecto.\+presentation.\+Sign\+Up\+Controller.\+answer\+Field\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1presentation_1_1_sign_up_controller_ad084e06cadc0493d7d442ba2bab7104d}\label{classfxsrc_1_1propyecto_1_1presentation_1_1_sign_up_controller_ad084e06cadc0493d7d442ba2bab7104d}} 
+\index{fxsrc.propyecto.presentation.SignUpController@{fxsrc.propyecto.presentation.SignUpController}!confirmPasswordField@{confirmPasswordField}}
+\index{confirmPasswordField@{confirmPasswordField}!fxsrc.propyecto.presentation.SignUpController@{fxsrc.propyecto.presentation.SignUpController}}
+\doxysubsubsection{\texorpdfstring{confirmPasswordField}{confirmPasswordField}}
+{\footnotesize\ttfamily Password\+Field fxsrc.\+propyecto.\+presentation.\+Sign\+Up\+Controller.\+confirm\+Password\+Field\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1presentation_1_1_sign_up_controller_a067ca1ce17b1d309a1c48d8e7bfcc341}\label{classfxsrc_1_1propyecto_1_1presentation_1_1_sign_up_controller_a067ca1ce17b1d309a1c48d8e7bfcc341}} 
+\index{fxsrc.propyecto.presentation.SignUpController@{fxsrc.propyecto.presentation.SignUpController}!errorLabel@{errorLabel}}
+\index{errorLabel@{errorLabel}!fxsrc.propyecto.presentation.SignUpController@{fxsrc.propyecto.presentation.SignUpController}}
+\doxysubsubsection{\texorpdfstring{errorLabel}{errorLabel}}
+{\footnotesize\ttfamily Label fxsrc.\+propyecto.\+presentation.\+Sign\+Up\+Controller.\+error\+Label\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+{\itshape error\+Label} es un texto de error que aparece en caso de que el usuario haga algo mal. 
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1presentation_1_1_sign_up_controller_ac3f35a478205510792e71dfcb430dca2}\label{classfxsrc_1_1propyecto_1_1presentation_1_1_sign_up_controller_ac3f35a478205510792e71dfcb430dca2}} 
+\index{fxsrc.propyecto.presentation.SignUpController@{fxsrc.propyecto.presentation.SignUpController}!mailField@{mailField}}
+\index{mailField@{mailField}!fxsrc.propyecto.presentation.SignUpController@{fxsrc.propyecto.presentation.SignUpController}}
+\doxysubsubsection{\texorpdfstring{mailField}{mailField}}
+{\footnotesize\ttfamily Text\+Field fxsrc.\+propyecto.\+presentation.\+Sign\+Up\+Controller.\+mail\+Field\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1presentation_1_1_sign_up_controller_af816a21620a5769c7ef49123457c485a}\label{classfxsrc_1_1propyecto_1_1presentation_1_1_sign_up_controller_af816a21620a5769c7ef49123457c485a}} 
+\index{fxsrc.propyecto.presentation.SignUpController@{fxsrc.propyecto.presentation.SignUpController}!passwordField@{passwordField}}
+\index{passwordField@{passwordField}!fxsrc.propyecto.presentation.SignUpController@{fxsrc.propyecto.presentation.SignUpController}}
+\doxysubsubsection{\texorpdfstring{passwordField}{passwordField}}
+{\footnotesize\ttfamily Password\+Field fxsrc.\+propyecto.\+presentation.\+Sign\+Up\+Controller.\+password\+Field\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+{\itshape password\+Field} y {\itshape confirm\+Password\+Field} son los campos de contraseña a rellenar por el usuario. confirm\+Password\+Field debe tener el mismo contenido que password\+Field. 
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1presentation_1_1_sign_up_controller_ad210c96bb34a802966cfbaae04d7353e}\label{classfxsrc_1_1propyecto_1_1presentation_1_1_sign_up_controller_ad210c96bb34a802966cfbaae04d7353e}} 
+\index{fxsrc.propyecto.presentation.SignUpController@{fxsrc.propyecto.presentation.SignUpController}!usernameField@{usernameField}}
+\index{usernameField@{usernameField}!fxsrc.propyecto.presentation.SignUpController@{fxsrc.propyecto.presentation.SignUpController}}
+\doxysubsubsection{\texorpdfstring{usernameField}{usernameField}}
+{\footnotesize\ttfamily Text\+Field fxsrc.\+propyecto.\+presentation.\+Sign\+Up\+Controller.\+username\+Field\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+{\itshape username\+Field}, {\itshape mail\+Field} y {\itshape answer\+Field} son los campos de texto a rellenar por el usuario. Deben tener valores adecuados y formateados correctamente. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/fxsrc/propyecto/presentation/\mbox{\hyperlink{_sign_up_controller_8java}{Sign\+Up\+Controller.\+java}}\end{DoxyCompactItemize}

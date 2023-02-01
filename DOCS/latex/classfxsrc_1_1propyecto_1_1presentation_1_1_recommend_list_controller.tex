@@ -1,0 +1,325 @@
+\hypertarget{classfxsrc_1_1propyecto_1_1presentation_1_1_recommend_list_controller}{}\doxysection{fxsrc.\+propyecto.\+presentation.\+Recommend\+List\+Controller Class Reference}
+\label{classfxsrc_1_1propyecto_1_1presentation_1_1_recommend_list_controller}\index{fxsrc.propyecto.presentation.RecommendListController@{fxsrc.propyecto.presentation.RecommendListController}}
+Inheritance diagram for fxsrc.\+propyecto.\+presentation.\+Recommend\+List\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classfxsrc_1_1propyecto_1_1presentation_1_1_recommend_list_controller}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1presentation_1_1_recommend_list_controller_a04d5cb724c0dc06f5d89c1129ae2ab23}{initialize}} (U\+RL url, Resource\+Bundle resource\+Bundle)
+\begin{DoxyCompactList}\small\item\em Funcion que se llama al crearse la escena. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1presentation_1_1_recommend_list_controller_a2a528b3807dacbc3b325ad4b8cefdc21}{Log\+Out}} (Mouse\+Event mouse\+Event)  throws No\+Existing\+Active\+User\+Exception 
+\begin{DoxyCompactList}\small\item\em Gestiona el clic del botón Log\+Out. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1presentation_1_1_recommend_list_controller_a18c2b9e4e77345f7cd6479b0a4242341}{Go\+To\+Home}} (Mouse\+Event mouse\+Event)  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Gestiona el clic del botón Home. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1presentation_1_1_recommend_list_controller_a72a38c852edfc81e10d7ae8d969de218}{Go\+To\+Profile}} (Mouse\+Event mouse\+Event)  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Gestiona el clic del botón Profile. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1presentation_1_1_recommend_list_controller_a5f93e6044a150460812c918d53f85917}{Go\+To\+Fav}} (Mouse\+Event mouse\+Event)  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Gestiona el clic del botón Fav. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1presentation_1_1_recommend_list_controller_ad755ce545881fb7d8f1f97322c630173}{Go\+To\+Recommend}} (Mouse\+Event mouse\+Event)  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Gestiona el clic del botón Recommend. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1presentation_1_1_recommend_list_controller_aaaf0518b049f9c903617cdd15fff8437}{Go\+Back}} (Action\+Event action\+Event)  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Gestiona el clic del botón Atrás. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1presentation_1_1_recommend_list_controller_ab559a906792e3b02f871993a9d944436}{Init}} ()
+\begin{DoxyCompactList}\small\item\em Inicialización de parámetros necesarios. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1presentation_1_1_recommend_list_controller_acd029cbfa72c173bf6c631c4967234fa}{Delete\+Item}} (int i, int \mbox{\hyperlink{_parser_c_s_vtest_8txt_acf2488b95c97e0378c9bf49de3b50f28}{id}})
+\begin{DoxyCompactList}\small\item\em Eliminación de Items de la grid. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1presentation_1_1_recommend_list_controller_acf2eac3014bb7fdbc4c64722453381f3}{Go\+To\+Item}} (String name)  throws No\+Existing\+Active\+User\+Exception, I\+O\+Exception, Att\+Val\+Does\+Not\+Exist\+Exception 
+\begin{DoxyCompactList}\small\item\em Gestiona el clic de las imagenes de los items. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Scroll\+Pane \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1presentation_1_1_recommend_list_controller_a990ed69050f2a7e8f9f1ab80c0b23dea}{scroll\+Pane}}
+\begin{DoxyCompactList}\small\item\em {\itshape scroll\+Pane} es el Scroll\+Pane que permite desplazarse verticalmente a través de la lista de items añadidos. \end{DoxyCompactList}\item 
+Grid\+Pane \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1presentation_1_1_recommend_list_controller_a7588ffa1aba002de93645605a7d98eab}{grid}}
+\begin{DoxyCompactList}\small\item\em {\itshape grid} es el Grid\+Pane que muestra la lista de items añadidos. \end{DoxyCompactList}\item 
+Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}} $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1presentation_1_1_recommend_list_controller_aec026fecedc8bf9851c8769af11020fe}{list}}
+\begin{DoxyCompactList}\small\item\em {\itshape list} es el array que controla la lista de items añadidos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1presentation_1_1_recommend_list_controller_acd029cbfa72c173bf6c631c4967234fa}\label{classfxsrc_1_1propyecto_1_1presentation_1_1_recommend_list_controller_acd029cbfa72c173bf6c631c4967234fa}} 
+\index{fxsrc.propyecto.presentation.RecommendListController@{fxsrc.propyecto.presentation.RecommendListController}!DeleteItem@{DeleteItem}}
+\index{DeleteItem@{DeleteItem}!fxsrc.propyecto.presentation.RecommendListController@{fxsrc.propyecto.presentation.RecommendListController}}
+\doxysubsubsection{\texorpdfstring{DeleteItem()}{DeleteItem()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+presentation.\+Recommend\+List\+Controller.\+Delete\+Item (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Eliminación de Items de la grid. 
+
+\begin{DoxyPrecond}{Precondition}
+Existen Items en la grid. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Se elimina el item con el ID pasado por parámetro. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1presentation_1_1_recommend_list_controller_aaaf0518b049f9c903617cdd15fff8437}\label{classfxsrc_1_1propyecto_1_1presentation_1_1_recommend_list_controller_aaaf0518b049f9c903617cdd15fff8437}} 
+\index{fxsrc.propyecto.presentation.RecommendListController@{fxsrc.propyecto.presentation.RecommendListController}!GoBack@{GoBack}}
+\index{GoBack@{GoBack}!fxsrc.propyecto.presentation.RecommendListController@{fxsrc.propyecto.presentation.RecommendListController}}
+\doxysubsubsection{\texorpdfstring{GoBack()}{GoBack()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+presentation.\+Recommend\+List\+Controller.\+Go\+Back (\begin{DoxyParamCaption}\item[{Action\+Event}]{action\+Event }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Gestiona el clic del botón Atrás. 
+
+\begin{DoxyPrecond}{Precondition}
+El usuario clica el botón de Atrás. 
+\end{DoxyPrecond}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em Action\+Event} & e Evento de clic de botón Atrás. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Se envía al usuario a la escena anterior mediante Scene\+Manager. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1presentation_1_1_recommend_list_controller_a5f93e6044a150460812c918d53f85917}\label{classfxsrc_1_1propyecto_1_1presentation_1_1_recommend_list_controller_a5f93e6044a150460812c918d53f85917}} 
+\index{fxsrc.propyecto.presentation.RecommendListController@{fxsrc.propyecto.presentation.RecommendListController}!GoToFav@{GoToFav}}
+\index{GoToFav@{GoToFav}!fxsrc.propyecto.presentation.RecommendListController@{fxsrc.propyecto.presentation.RecommendListController}}
+\doxysubsubsection{\texorpdfstring{GoToFav()}{GoToFav()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+presentation.\+Recommend\+List\+Controller.\+Go\+To\+Fav (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{mouse\+Event }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Gestiona el clic del botón Fav. 
+
+\begin{DoxyPrecond}{Precondition}
+El usuario clica el botón de Fav. 
+\end{DoxyPrecond}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em Action\+Event} & e Evento de clic de botón Fav. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Se envía al usuario a la escena de Fav\+List mediante Scene\+Manager. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1presentation_1_1_recommend_list_controller_a18c2b9e4e77345f7cd6479b0a4242341}\label{classfxsrc_1_1propyecto_1_1presentation_1_1_recommend_list_controller_a18c2b9e4e77345f7cd6479b0a4242341}} 
+\index{fxsrc.propyecto.presentation.RecommendListController@{fxsrc.propyecto.presentation.RecommendListController}!GoToHome@{GoToHome}}
+\index{GoToHome@{GoToHome}!fxsrc.propyecto.presentation.RecommendListController@{fxsrc.propyecto.presentation.RecommendListController}}
+\doxysubsubsection{\texorpdfstring{GoToHome()}{GoToHome()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+presentation.\+Recommend\+List\+Controller.\+Go\+To\+Home (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{mouse\+Event }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Gestiona el clic del botón Home. 
+
+\begin{DoxyPrecond}{Precondition}
+El usuario clica el botón de Home. 
+\end{DoxyPrecond}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em Action\+Event} & e Evento de clic de botón Home. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Se envía al usuario a la escena de Home mediante Scene\+Manager. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1presentation_1_1_recommend_list_controller_acf2eac3014bb7fdbc4c64722453381f3}\label{classfxsrc_1_1propyecto_1_1presentation_1_1_recommend_list_controller_acf2eac3014bb7fdbc4c64722453381f3}} 
+\index{fxsrc.propyecto.presentation.RecommendListController@{fxsrc.propyecto.presentation.RecommendListController}!GoToItem@{GoToItem}}
+\index{GoToItem@{GoToItem}!fxsrc.propyecto.presentation.RecommendListController@{fxsrc.propyecto.presentation.RecommendListController}}
+\doxysubsubsection{\texorpdfstring{GoToItem()}{GoToItem()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+presentation.\+Recommend\+List\+Controller.\+Go\+To\+Item (\begin{DoxyParamCaption}\item[{String}]{name }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_no_existing_active_user_exception}{No\+Existing\+Active\+User\+Exception}}, I\+O\+Exception, \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_att_val_does_not_exist_exception}{Att\+Val\+Does\+Not\+Exist\+Exception}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Gestiona el clic de las imagenes de los items. 
+
+\begin{DoxyPrecond}{Precondition}
+El usuario clica cualquier imagen de un item. 
+\end{DoxyPrecond}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em No\+Existing\+Active\+User\+Exception} & \\
+\hline
+{\em I\+O\+Exception} & \\
+\hline
+{\em Att\+Val\+Does\+Not\+Exist\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em String} & name Nombre del item a visitar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Se envía al usuario a la escena del Item mediante Scene\+Manager. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1presentation_1_1_recommend_list_controller_a72a38c852edfc81e10d7ae8d969de218}\label{classfxsrc_1_1propyecto_1_1presentation_1_1_recommend_list_controller_a72a38c852edfc81e10d7ae8d969de218}} 
+\index{fxsrc.propyecto.presentation.RecommendListController@{fxsrc.propyecto.presentation.RecommendListController}!GoToProfile@{GoToProfile}}
+\index{GoToProfile@{GoToProfile}!fxsrc.propyecto.presentation.RecommendListController@{fxsrc.propyecto.presentation.RecommendListController}}
+\doxysubsubsection{\texorpdfstring{GoToProfile()}{GoToProfile()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+presentation.\+Recommend\+List\+Controller.\+Go\+To\+Profile (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{mouse\+Event }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Gestiona el clic del botón Profile. 
+
+\begin{DoxyPrecond}{Precondition}
+El usuario clica el botón de Profile. 
+\end{DoxyPrecond}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em Action\+Event} & e Evento de clic de botón Profile. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Se envía al usuario a la escena de Edit\+Profile mediante Scene\+Manager. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1presentation_1_1_recommend_list_controller_ad755ce545881fb7d8f1f97322c630173}\label{classfxsrc_1_1propyecto_1_1presentation_1_1_recommend_list_controller_ad755ce545881fb7d8f1f97322c630173}} 
+\index{fxsrc.propyecto.presentation.RecommendListController@{fxsrc.propyecto.presentation.RecommendListController}!GoToRecommend@{GoToRecommend}}
+\index{GoToRecommend@{GoToRecommend}!fxsrc.propyecto.presentation.RecommendListController@{fxsrc.propyecto.presentation.RecommendListController}}
+\doxysubsubsection{\texorpdfstring{GoToRecommend()}{GoToRecommend()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+presentation.\+Recommend\+List\+Controller.\+Go\+To\+Recommend (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{mouse\+Event }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+Gestiona el clic del botón Recommend. 
+
+\begin{DoxyPrecond}{Precondition}
+El usuario clica el botón de Recommend. 
+\end{DoxyPrecond}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em Action\+Event} & e Evento de clic de botón Recommend. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Se envía al usuario a la escena de Recommend\+List mediante Scene\+Manager. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1presentation_1_1_recommend_list_controller_ab559a906792e3b02f871993a9d944436}\label{classfxsrc_1_1propyecto_1_1presentation_1_1_recommend_list_controller_ab559a906792e3b02f871993a9d944436}} 
+\index{fxsrc.propyecto.presentation.RecommendListController@{fxsrc.propyecto.presentation.RecommendListController}!Init@{Init}}
+\index{Init@{Init}!fxsrc.propyecto.presentation.RecommendListController@{fxsrc.propyecto.presentation.RecommendListController}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+presentation.\+Recommend\+List\+Controller.\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Inicialización de parámetros necesarios. 
+
+\begin{DoxyPrecond}{Precondition}
+Cierto. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Se crea la Grid que contendra todas las recomendaciones guardadas. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1presentation_1_1_recommend_list_controller_a04d5cb724c0dc06f5d89c1129ae2ab23}\label{classfxsrc_1_1propyecto_1_1presentation_1_1_recommend_list_controller_a04d5cb724c0dc06f5d89c1129ae2ab23}} 
+\index{fxsrc.propyecto.presentation.RecommendListController@{fxsrc.propyecto.presentation.RecommendListController}!initialize@{initialize}}
+\index{initialize@{initialize}!fxsrc.propyecto.presentation.RecommendListController@{fxsrc.propyecto.presentation.RecommendListController}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+presentation.\+Recommend\+List\+Controller.\+initialize (\begin{DoxyParamCaption}\item[{U\+RL}]{url,  }\item[{Resource\+Bundle}]{resource\+Bundle }\end{DoxyParamCaption})}
+
+
+
+Funcion que se llama al crearse la escena. 
+
+\begin{DoxyPrecond}{Precondition}
+Cierto. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em U\+RL} & location parámetro necesario de la función ajeno al funcionamiento de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1presentation_1_1_edit_profile_controller}{Edit\+Profile\+Controller}}. \\
+\hline
+{\em Resource\+Bundle} & resources parámetro necesario de la función ajeno al funcionamiento de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1presentation_1_1_edit_profile_controller}{Edit\+Profile\+Controller}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Se llama a la función Init. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1presentation_1_1_recommend_list_controller_a2a528b3807dacbc3b325ad4b8cefdc21}\label{classfxsrc_1_1propyecto_1_1presentation_1_1_recommend_list_controller_a2a528b3807dacbc3b325ad4b8cefdc21}} 
+\index{fxsrc.propyecto.presentation.RecommendListController@{fxsrc.propyecto.presentation.RecommendListController}!LogOut@{LogOut}}
+\index{LogOut@{LogOut}!fxsrc.propyecto.presentation.RecommendListController@{fxsrc.propyecto.presentation.RecommendListController}}
+\doxysubsubsection{\texorpdfstring{LogOut()}{LogOut()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+presentation.\+Recommend\+List\+Controller.\+Log\+Out (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{mouse\+Event }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_no_existing_active_user_exception}{No\+Existing\+Active\+User\+Exception}}}
+
+
+
+Gestiona el clic del botón Log\+Out. 
+
+\begin{DoxyPrecond}{Precondition}
+El usuario clica el botón de Log\+Out. 
+\end{DoxyPrecond}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em No\+Existing\+Active\+User\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em Action\+Event} & e Evento de clic de botón Log\+Out. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+El usuario sale del sistema y se cierra la aplicación. 
+\end{DoxyPostcond}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1presentation_1_1_recommend_list_controller_a7588ffa1aba002de93645605a7d98eab}\label{classfxsrc_1_1propyecto_1_1presentation_1_1_recommend_list_controller_a7588ffa1aba002de93645605a7d98eab}} 
+\index{fxsrc.propyecto.presentation.RecommendListController@{fxsrc.propyecto.presentation.RecommendListController}!grid@{grid}}
+\index{grid@{grid}!fxsrc.propyecto.presentation.RecommendListController@{fxsrc.propyecto.presentation.RecommendListController}}
+\doxysubsubsection{\texorpdfstring{grid}{grid}}
+{\footnotesize\ttfamily Grid\+Pane fxsrc.\+propyecto.\+presentation.\+Recommend\+List\+Controller.\+grid\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+{\itshape grid} es el Grid\+Pane que muestra la lista de items añadidos. 
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1presentation_1_1_recommend_list_controller_aec026fecedc8bf9851c8769af11020fe}\label{classfxsrc_1_1propyecto_1_1presentation_1_1_recommend_list_controller_aec026fecedc8bf9851c8769af11020fe}} 
+\index{fxsrc.propyecto.presentation.RecommendListController@{fxsrc.propyecto.presentation.RecommendListController}!list@{list}}
+\index{list@{list}!fxsrc.propyecto.presentation.RecommendListController@{fxsrc.propyecto.presentation.RecommendListController}}
+\doxysubsubsection{\texorpdfstring{list}{list}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_item}{Item}}$>$ fxsrc.\+propyecto.\+presentation.\+Recommend\+List\+Controller.\+list\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+{\itshape list} es el array que controla la lista de items añadidos. 
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1presentation_1_1_recommend_list_controller_a990ed69050f2a7e8f9f1ab80c0b23dea}\label{classfxsrc_1_1propyecto_1_1presentation_1_1_recommend_list_controller_a990ed69050f2a7e8f9f1ab80c0b23dea}} 
+\index{fxsrc.propyecto.presentation.RecommendListController@{fxsrc.propyecto.presentation.RecommendListController}!scrollPane@{scrollPane}}
+\index{scrollPane@{scrollPane}!fxsrc.propyecto.presentation.RecommendListController@{fxsrc.propyecto.presentation.RecommendListController}}
+\doxysubsubsection{\texorpdfstring{scrollPane}{scrollPane}}
+{\footnotesize\ttfamily Scroll\+Pane fxsrc.\+propyecto.\+presentation.\+Recommend\+List\+Controller.\+scroll\+Pane\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+{\itshape scroll\+Pane} es el Scroll\+Pane que permite desplazarse verticalmente a través de la lista de items añadidos. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/fxsrc/propyecto/presentation/\mbox{\hyperlink{_recommend_list_controller_8java}{Recommend\+List\+Controller.\+java}}\end{DoxyCompactItemize}

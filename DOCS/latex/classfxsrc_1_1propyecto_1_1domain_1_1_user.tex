@@ -1,0 +1,277 @@
+\hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_user}{}\doxysection{fxsrc.\+propyecto.\+domain.\+User Class Reference}
+\label{classfxsrc_1_1propyecto_1_1domain_1_1_user}\index{fxsrc.propyecto.domain.User@{fxsrc.propyecto.domain.User}}
+
+
+Clase encargada de representar a un cierto usuario, a través de su ID y sus gustos.  
+
+
+Inheritance diagram for fxsrc.\+propyecto.\+domain.\+User\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classfxsrc_1_1propyecto_1_1domain_1_1_user}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user_a79b8545a6d87f7ea1e6573e7b0d7ed7e}{User}} ()
+\begin{DoxyCompactList}\small\item\em Constructora de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} por defecto. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user_a839460d03a537209101fdd36ec8c716b}{User}} (int \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user_ac706907096bc624716b097cf66de0949}{user\+ID}})
+\begin{DoxyCompactList}\small\item\em Constructora de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} a través de su ID. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user_a8237a598f755c2cfbdcb7906abd2c212}{User}} (int \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user_ac706907096bc624716b097cf66de0949}{user\+ID}}, Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user_a725228074d4556c8a4c2d1fa0e1e1ee8}{ratings\+List}})
+\begin{DoxyCompactList}\small\item\em Constructora de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} a través de su ID y sus valoraciones. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user_a37e995116ed4709e966b5eaa0f268d15}{Get\+User\+ID}} ()
+\begin{DoxyCompactList}\small\item\em Getter del User\+ID de un Usuario. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user_af11f78459b8604c6b1ca5c3b6eb80224}{Set\+User\+ID}} (int \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user_ac706907096bc624716b097cf66de0949}{user\+ID}})
+\begin{DoxyCompactList}\small\item\em Setter del User\+ID de un Usuario. \end{DoxyCompactList}\item 
+Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user_a074d7f417a116a47447149b3de317a5b}{Get\+Ratings\+List}} ()
+\begin{DoxyCompactList}\small\item\em Getter de la lista de valoraciones de un Usuario. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user_a99705bca84a9b9178d934dc22f4fa528}{Set\+Ratings\+List}} (Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user_a725228074d4556c8a4c2d1fa0e1e1ee8}{ratings\+List}})
+\begin{DoxyCompactList}\small\item\em Setter de la lista de valoraciones de un Usuario. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user_a96d83636018576a945c42f91ebdbae62}{Add\+To\+Ratings\+List}} (\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} r)
+\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user_a7537afa446ef6eab0a90ca0cd0b8131c}{Remove\+From\+Ratings\+List}} (\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} r)
+\item 
+void \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user_a9d1daec70127daf8536250a4ca55a6c0}{Modify\+Item\+Rating}} (int item\+ID, float new\+Rating)
+\begin{DoxyCompactList}\small\item\em Para modificar la nota de un cierto item de la ratings\+List del user. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user_ac706907096bc624716b097cf66de0949}{user\+ID}}
+\begin{DoxyCompactList}\small\item\em {\itshape user\+ID} representa de forma única a un usuario. \end{DoxyCompactList}\item 
+Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user_a725228074d4556c8a4c2d1fa0e1e1ee8}{ratings\+List}}
+\begin{DoxyCompactList}\small\item\em {\itshape ratings\+List} contiene toda la lista de valoraciones de ese usuario a items del sistema que haya llegado a valorar. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase encargada de representar a un cierto usuario, a través de su ID y sus gustos. 
+
+Ofrece getters y setters de sus atributos 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_user_a79b8545a6d87f7ea1e6573e7b0d7ed7e}\label{classfxsrc_1_1propyecto_1_1domain_1_1_user_a79b8545a6d87f7ea1e6573e7b0d7ed7e}} 
+\index{fxsrc.propyecto.domain.User@{fxsrc.propyecto.domain.User}!User@{User}}
+\index{User@{User}!fxsrc.propyecto.domain.User@{fxsrc.propyecto.domain.User}}
+\doxysubsubsection{\texorpdfstring{User()}{User()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily fxsrc.\+propyecto.\+domain.\+User.\+User (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructora de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} por defecto. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Se crea una instancia de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} vacía 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_user_a839460d03a537209101fdd36ec8c716b}\label{classfxsrc_1_1propyecto_1_1domain_1_1_user_a839460d03a537209101fdd36ec8c716b}} 
+\index{fxsrc.propyecto.domain.User@{fxsrc.propyecto.domain.User}!User@{User}}
+\index{User@{User}!fxsrc.propyecto.domain.User@{fxsrc.propyecto.domain.User}}
+\doxysubsubsection{\texorpdfstring{User()}{User()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily fxsrc.\+propyecto.\+domain.\+User.\+User (\begin{DoxyParamCaption}\item[{int}]{user\+ID }\end{DoxyParamCaption})}
+
+
+
+Constructora de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} a través de su ID. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape user\+ID} es válido (positivo y representa a un user existente) 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em user\+ID} & es el ID del usuario que queremos instanciar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Se crea una instancia de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} con ese {\itshape user\+ID} y sin valoraciones hechas 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_user_a8237a598f755c2cfbdcb7906abd2c212}\label{classfxsrc_1_1propyecto_1_1domain_1_1_user_a8237a598f755c2cfbdcb7906abd2c212}} 
+\index{fxsrc.propyecto.domain.User@{fxsrc.propyecto.domain.User}!User@{User}}
+\index{User@{User}!fxsrc.propyecto.domain.User@{fxsrc.propyecto.domain.User}}
+\doxysubsubsection{\texorpdfstring{User()}{User()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily fxsrc.\+propyecto.\+domain.\+User.\+User (\begin{DoxyParamCaption}\item[{int}]{user\+ID,  }\item[{Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} $>$}]{ratings\+List }\end{DoxyParamCaption})}
+
+
+
+Constructora de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} a través de su ID y sus valoraciones. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape user\+ID} es válido (positivo y representa a un user existente) y {\itshape ratings\+List} son sus valoraciones reales 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em user\+ID} & es el ID del usuario que queremos instanciar \\
+\hline
+{\em ratings\+List} & son las valoraciones del usuario que queremos instanciar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Se crea una instancia de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_user}{User}} con ese {\itshape user\+ID} y sus valoraciones 
+\end{DoxyPostcond}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_user_a96d83636018576a945c42f91ebdbae62}\label{classfxsrc_1_1propyecto_1_1domain_1_1_user_a96d83636018576a945c42f91ebdbae62}} 
+\index{fxsrc.propyecto.domain.User@{fxsrc.propyecto.domain.User}!AddToRatingsList@{AddToRatingsList}}
+\index{AddToRatingsList@{AddToRatingsList}!fxsrc.propyecto.domain.User@{fxsrc.propyecto.domain.User}}
+\doxysubsubsection{\texorpdfstring{AddToRatingsList()}{AddToRatingsList()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+domain.\+User.\+Add\+To\+Ratings\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}}}]{r }\end{DoxyParamCaption})}
+
+Añade un nuevo rating al vector ratings\+List
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape r} es un rating válido 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em r} & es el rating a añadir \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+{\itshape r} es añadido a la ratingg\+List del user 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_user_a074d7f417a116a47447149b3de317a5b}\label{classfxsrc_1_1propyecto_1_1domain_1_1_user_a074d7f417a116a47447149b3de317a5b}} 
+\index{fxsrc.propyecto.domain.User@{fxsrc.propyecto.domain.User}!GetRatingsList@{GetRatingsList}}
+\index{GetRatingsList@{GetRatingsList}!fxsrc.propyecto.domain.User@{fxsrc.propyecto.domain.User}}
+\doxysubsubsection{\texorpdfstring{GetRatingsList()}{GetRatingsList()}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}}$>$ fxsrc.\+propyecto.\+domain.\+User.\+Get\+Ratings\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter de la lista de valoraciones de un Usuario. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+retorna la lista de valoraciones del objeto implícito 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_user_a37e995116ed4709e966b5eaa0f268d15}\label{classfxsrc_1_1propyecto_1_1domain_1_1_user_a37e995116ed4709e966b5eaa0f268d15}} 
+\index{fxsrc.propyecto.domain.User@{fxsrc.propyecto.domain.User}!GetUserID@{GetUserID}}
+\index{GetUserID@{GetUserID}!fxsrc.propyecto.domain.User@{fxsrc.propyecto.domain.User}}
+\doxysubsubsection{\texorpdfstring{GetUserID()}{GetUserID()}}
+{\footnotesize\ttfamily int fxsrc.\+propyecto.\+domain.\+User.\+Get\+User\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter del User\+ID de un Usuario. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+retorna el User\+ID del objeto implícito 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_user_a9d1daec70127daf8536250a4ca55a6c0}\label{classfxsrc_1_1propyecto_1_1domain_1_1_user_a9d1daec70127daf8536250a4ca55a6c0}} 
+\index{fxsrc.propyecto.domain.User@{fxsrc.propyecto.domain.User}!ModifyItemRating@{ModifyItemRating}}
+\index{ModifyItemRating@{ModifyItemRating}!fxsrc.propyecto.domain.User@{fxsrc.propyecto.domain.User}}
+\doxysubsubsection{\texorpdfstring{ModifyItemRating()}{ModifyItemRating()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+domain.\+User.\+Modify\+Item\+Rating (\begin{DoxyParamCaption}\item[{int}]{item\+ID,  }\item[{float}]{new\+Rating }\end{DoxyParamCaption})}
+
+
+
+Para modificar la nota de un cierto item de la ratings\+List del user. 
+
+\begin{DoxyPrecond}{Precondition}
+el item existe en la ratings list 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em item\+ID} & es el item\+ID en cuestion \\
+\hline
+{\em new\+Rating} & es la nueva nota a ese item \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+se modifica la nota que el usuario le ha dado a ese item\+ID 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_user_a7537afa446ef6eab0a90ca0cd0b8131c}\label{classfxsrc_1_1propyecto_1_1domain_1_1_user_a7537afa446ef6eab0a90ca0cd0b8131c}} 
+\index{fxsrc.propyecto.domain.User@{fxsrc.propyecto.domain.User}!RemoveFromRatingsList@{RemoveFromRatingsList}}
+\index{RemoveFromRatingsList@{RemoveFromRatingsList}!fxsrc.propyecto.domain.User@{fxsrc.propyecto.domain.User}}
+\doxysubsubsection{\texorpdfstring{RemoveFromRatingsList()}{RemoveFromRatingsList()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+domain.\+User.\+Remove\+From\+Ratings\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}}}]{r }\end{DoxyParamCaption})}
+
+Elimina un rating al vector ratings\+List, si existe
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape r} es un rating válido 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em r} & es el rating a añadir \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+{\itshape r} es borrado a la rating\+List del user. Si no existe, no hace nada. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_user_a99705bca84a9b9178d934dc22f4fa528}\label{classfxsrc_1_1propyecto_1_1domain_1_1_user_a99705bca84a9b9178d934dc22f4fa528}} 
+\index{fxsrc.propyecto.domain.User@{fxsrc.propyecto.domain.User}!SetRatingsList@{SetRatingsList}}
+\index{SetRatingsList@{SetRatingsList}!fxsrc.propyecto.domain.User@{fxsrc.propyecto.domain.User}}
+\doxysubsubsection{\texorpdfstring{SetRatingsList()}{SetRatingsList()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+domain.\+User.\+Set\+Ratings\+List (\begin{DoxyParamCaption}\item[{Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} $>$}]{ratings\+List }\end{DoxyParamCaption})}
+
+
+
+Setter de la lista de valoraciones de un Usuario. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape la} lista de valoraciones es correcta y representa las valoraciones del objeto implícito 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em ratings\+List} & es la nueva lista de valoraciones que le queremos dar a una instancia del usuario \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+se cambia el {\itshape ratings\+List} del objeto implícito por el nuevo ratings\+List 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_user_af11f78459b8604c6b1ca5c3b6eb80224}\label{classfxsrc_1_1propyecto_1_1domain_1_1_user_af11f78459b8604c6b1ca5c3b6eb80224}} 
+\index{fxsrc.propyecto.domain.User@{fxsrc.propyecto.domain.User}!SetUserID@{SetUserID}}
+\index{SetUserID@{SetUserID}!fxsrc.propyecto.domain.User@{fxsrc.propyecto.domain.User}}
+\doxysubsubsection{\texorpdfstring{SetUserID()}{SetUserID()}}
+{\footnotesize\ttfamily void fxsrc.\+propyecto.\+domain.\+User.\+Set\+User\+ID (\begin{DoxyParamCaption}\item[{int}]{user\+ID }\end{DoxyParamCaption})}
+
+
+
+Setter del User\+ID de un Usuario. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape user\+ID} es válido y representa de forma única al objeto implícito y es existente en el sistema 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em user\+ID} & es el nuevo ID que le queremos dar a una instancia del usuario \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+se cambia el {\itshape user\+ID} del objeto implícito por el nuevo user\+ID 
+\end{DoxyPostcond}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_user_a725228074d4556c8a4c2d1fa0e1e1ee8}\label{classfxsrc_1_1propyecto_1_1domain_1_1_user_a725228074d4556c8a4c2d1fa0e1e1ee8}} 
+\index{fxsrc.propyecto.domain.User@{fxsrc.propyecto.domain.User}!ratingsList@{ratingsList}}
+\index{ratingsList@{ratingsList}!fxsrc.propyecto.domain.User@{fxsrc.propyecto.domain.User}}
+\doxysubsubsection{\texorpdfstring{ratingsList}{ratingsList}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}}$>$ fxsrc.\+propyecto.\+domain.\+User.\+ratings\+List\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+{\itshape ratings\+List} contiene toda la lista de valoraciones de ese usuario a items del sistema que haya llegado a valorar. 
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_user_ac706907096bc624716b097cf66de0949}\label{classfxsrc_1_1propyecto_1_1domain_1_1_user_ac706907096bc624716b097cf66de0949}} 
+\index{fxsrc.propyecto.domain.User@{fxsrc.propyecto.domain.User}!userID@{userID}}
+\index{userID@{userID}!fxsrc.propyecto.domain.User@{fxsrc.propyecto.domain.User}}
+\doxysubsubsection{\texorpdfstring{userID}{userID}}
+{\footnotesize\ttfamily int fxsrc.\+propyecto.\+domain.\+User.\+user\+ID\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+{\itshape user\+ID} representa de forma única a un usuario. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/fxsrc/propyecto/domain/\mbox{\hyperlink{_user_8java}{User.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,230 @@
+\hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_hybrid_approach_filtering}{}\doxysection{fxsrc.\+propyecto.\+domain.\+Hybrid\+Approach\+Filtering Class Reference}
+\label{classfxsrc_1_1propyecto_1_1domain_1_1_hybrid_approach_filtering}\index{fxsrc.propyecto.domain.HybridApproachFiltering@{fxsrc.propyecto.domain.HybridApproachFiltering}}
+
+
+Clase encargada de recibir peticiones de recomendación basándose en el \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering}{Collaborative\+Filtering}} compbinado con Content Based\+Filtering. Hereda de la clase {\itshape \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_recommender}{Recommender}}}.  
+
+
+Inheritance diagram for fxsrc.\+propyecto.\+domain.\+Hybrid\+Approach\+Filtering\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classfxsrc_1_1propyecto_1_1domain_1_1_hybrid_approach_filtering}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_hybrid_approach_filtering_a625a56cc35f6f1b5fa62496fbb1eb334}{Hybrid\+Approach\+Filtering}} (int \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_hybrid_approach_filtering_a829fb04ae93085e021d6e1fbe940b3fb}{user\+Groups}})
+\begin{DoxyCompactList}\small\item\em Constructora de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_hybrid_approach_filtering}{Hybrid\+Approach\+Filtering}}. \end{DoxyCompactList}\item 
+Array\+List$<$ Integer $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_hybrid_approach_filtering_a7a73028d902f6f1e95b4b2bd07859884}{Recommend}} (Integer new\+User\+ID, Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} $>$ ratings\+Of\+That\+User, int number\+Of\+Recommendations)
+\begin{DoxyCompactList}\small\item\em Función recomendadora que hará la recomendación a un usuario nuevo en base al uso de combinar los otros dos metodos de recomendacion que tenemos. \end{DoxyCompactList}\item 
+Array\+List$<$ Integer $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_hybrid_approach_filtering_a1c93fafbc6207f45913b6f3c00fd15f4}{Recommend}} (Integer Existant\+User\+I\+D\+Recommend, int number\+Of\+Recommendations)  throws No\+Existing\+User\+I\+D\+Exception 
+\begin{DoxyCompactList}\small\item\em Función recomendadora que hará la recomendación a un usuario ya existente en el sistema en base al uso de combinar los otros dos metodos de recomendacion que tenemos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Array\+List$<$ Integer $>$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_hybrid_approach_filtering_a9bc6e09c110a29f45aa62ddbdd17b293}{Recommend\+Internal}} (Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} $>$ collab\+Filt\+Recommendations, Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} $>$ ratings\+Of\+That\+User, int number\+Of\+Recommendations)
+\begin{DoxyCompactList}\small\item\em Función recomendadora que hará el trabajo en común que tienen los otros métodos {\itshape Recommend} de esta clase. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering}{Collaborative\+Filtering}} \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_hybrid_approach_filtering_ac09a965a364d5d276ac52f2350f062cd}{collaborative\+Filtering}}
+\begin{DoxyCompactList}\small\item\em {\itshape collaborative\+Filtering} es la instancia de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering}{Collaborative\+Filtering}} que se utilizará para recomendar \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_content_based_filtering}{Content\+Based\+Filtering}} \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_hybrid_approach_filtering_a19bf02ce9f57f6cd029f1a30106013f9}{content\+Based\+Filtering}}
+\begin{DoxyCompactList}\small\item\em {\itshape content\+Based\+Filtering} es la instancia de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_content_based_filtering}{Content\+Based\+Filtering}} que se utilizará para recomendar \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_hybrid_approach_filtering_a829fb04ae93085e021d6e1fbe940b3fb}{user\+Groups}}
+\begin{DoxyCompactList}\small\item\em {\itshape user\+Groups} es la cantidad de agrupaciones que queremos en \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering}{Collaborative\+Filtering}}. Es lo mismo que la {\itshape K} del collaborative\+Filtering \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_hybrid_approach_filtering_ab7712eec87a9c985f5b680ef909fa11e}{content\+BasedK}} = 5
+\begin{DoxyCompactList}\small\item\em {\itshape content\+BasedK} es el valor de K que se utilizará para el collaborative filtering. \end{DoxyCompactList}\item 
+static final int \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_hybrid_approach_filtering_a15e0f8f076386b2dbf67ecfba75e7e73}{C\+O\+L\+L\+A\+B\+\_\+\+R\+E\+C\+O\+M\+M\+E\+N\+D\+A\+T\+I\+O\+N\+S\+\_\+\+T\+H\+R\+E\+S\+H\+O\+LD}} = Integer.\+M\+A\+X\+\_\+\+V\+A\+L\+UE
+\begin{DoxyCompactList}\small\item\em {\itshape C\+O\+L\+L\+A\+B\+\_\+\+R\+E\+C\+O\+M\+M\+E\+N\+D\+A\+T\+I\+O\+N\+S\+\_\+\+T\+H\+R\+E\+S\+H\+O\+LD} es la cantidad de recomendaciones maximas que se le pediran al collaborative filtering \end{DoxyCompactList}\item 
+static final float \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_hybrid_approach_filtering_a6579da47165eaa746e1736eeca328510}{C\+O\+N\+T\+E\+N\+T\+\_\+\+S\+I\+M\+I\+L\+A\+R\+I\+T\+Y\+\_\+\+T\+H\+R\+E\+S\+H\+O\+LD}} = 60.\+0f
+\begin{DoxyCompactList}\small\item\em {\itshape C\+O\+N\+T\+E\+N\+T\+\_\+\+S\+I\+M\+I\+L\+A\+R\+I\+T\+Y\+\_\+\+T\+H\+R\+E\+S\+H\+O\+LD} es la similitud (en tanto por cien) entre 2 items a partir del cual, si es menor, desecharemos. \end{DoxyCompactList}\item 
+static final float \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_hybrid_approach_filtering_af5de4506c184bfcffa0893d220b46d25}{P\+O\+S\+I\+T\+I\+V\+E\+\_\+\+R\+A\+T\+I\+N\+G\+\_\+\+T\+H\+R\+E\+S\+H\+O\+LD}} = \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a71c21d0bf791f6d993f20456d3b4dbf3}{Data\+Manager.\+Get\+Instance}}().Get\+Max\+Rating() $\ast$ 0.\+8f
+\begin{DoxyCompactList}\small\item\em {\itshape P\+O\+S\+I\+T\+I\+V\+E\+\_\+\+R\+A\+T\+I\+N\+G\+\_\+\+T\+H\+R\+E\+S\+H\+O\+LD} es la nota a partir de la cual consideraremos que la nota a un item indica que le ha gustado \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase encargada de recibir peticiones de recomendación basándose en el \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering}{Collaborative\+Filtering}} compbinado con Content Based\+Filtering. Hereda de la clase {\itshape \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_recommender}{Recommender}}}. 
+
+Ofrece operaciones de recomendación de items, basadas en los otros 2 métodos de recomendacion, recogiendo así las mejores particularidades de cada uno. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_hybrid_approach_filtering_a625a56cc35f6f1b5fa62496fbb1eb334}\label{classfxsrc_1_1propyecto_1_1domain_1_1_hybrid_approach_filtering_a625a56cc35f6f1b5fa62496fbb1eb334}} 
+\index{fxsrc.propyecto.domain.HybridApproachFiltering@{fxsrc.propyecto.domain.HybridApproachFiltering}!HybridApproachFiltering@{HybridApproachFiltering}}
+\index{HybridApproachFiltering@{HybridApproachFiltering}!fxsrc.propyecto.domain.HybridApproachFiltering@{fxsrc.propyecto.domain.HybridApproachFiltering}}
+\doxysubsubsection{\texorpdfstring{HybridApproachFiltering()}{HybridApproachFiltering()}}
+{\footnotesize\ttfamily fxsrc.\+propyecto.\+domain.\+Hybrid\+Approach\+Filtering.\+Hybrid\+Approach\+Filtering (\begin{DoxyParamCaption}\item[{int}]{user\+Groups }\end{DoxyParamCaption})}
+
+
+
+Constructora de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_hybrid_approach_filtering}{Hybrid\+Approach\+Filtering}}. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape user\+Groups} $>$= 1 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Groups} & es la K deseada para Kmeans \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Se crea una instancia de la clase \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_hybrid_approach_filtering}{Hybrid\+Approach\+Filtering}}, lista para dar recomendaciones utilizando {\itshape user\+Groups} grupos distintos para ello. 
+\end{DoxyPostcond}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_hybrid_approach_filtering_a1c93fafbc6207f45913b6f3c00fd15f4}\label{classfxsrc_1_1propyecto_1_1domain_1_1_hybrid_approach_filtering_a1c93fafbc6207f45913b6f3c00fd15f4}} 
+\index{fxsrc.propyecto.domain.HybridApproachFiltering@{fxsrc.propyecto.domain.HybridApproachFiltering}!Recommend@{Recommend}}
+\index{Recommend@{Recommend}!fxsrc.propyecto.domain.HybridApproachFiltering@{fxsrc.propyecto.domain.HybridApproachFiltering}}
+\doxysubsubsection{\texorpdfstring{Recommend()}{Recommend()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Array\+List$<$Integer$>$ fxsrc.\+propyecto.\+domain.\+Hybrid\+Approach\+Filtering.\+Recommend (\begin{DoxyParamCaption}\item[{Integer}]{Existant\+User\+I\+D\+Recommend,  }\item[{int}]{number\+Of\+Recommendations }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_no_existing_user_i_d_exception}{No\+Existing\+User\+I\+D\+Exception}}}
+
+
+
+Función recomendadora que hará la recomendación a un usuario ya existente en el sistema en base al uso de combinar los otros dos metodos de recomendacion que tenemos. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape Existant\+User\+I\+D\+Recommend} tiene que ser un usuario que O\+B\+L\+I\+G\+A\+T\+O\+R\+I\+A\+M\+E\+N\+TE se encuentre en la base de datos de ratings del sistema; aparte, debe ser un Integer, no un int. {\itshape number\+Of\+Recommendations} $>$ 0. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em Existant\+User\+I\+D\+Recommend} & es el ID del usuario al que queremos recomendar \\
+\hline
+{\em number\+Of\+Recommendations} & es el numero de recomendaciones que queremos hacer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Retorna {\itshape number\+Of\+Recommendations} recomendaciones ordenadas por valoracion decreciente. Si {\itshape number\+Of\+Recommendations} es mayor a un threshold interno, retornará la cantidad marcada por ese threshold. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_hybrid_approach_filtering_a7a73028d902f6f1e95b4b2bd07859884}\label{classfxsrc_1_1propyecto_1_1domain_1_1_hybrid_approach_filtering_a7a73028d902f6f1e95b4b2bd07859884}} 
+\index{fxsrc.propyecto.domain.HybridApproachFiltering@{fxsrc.propyecto.domain.HybridApproachFiltering}!Recommend@{Recommend}}
+\index{Recommend@{Recommend}!fxsrc.propyecto.domain.HybridApproachFiltering@{fxsrc.propyecto.domain.HybridApproachFiltering}}
+\doxysubsubsection{\texorpdfstring{Recommend()}{Recommend()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Array\+List$<$Integer$>$ fxsrc.\+propyecto.\+domain.\+Hybrid\+Approach\+Filtering.\+Recommend (\begin{DoxyParamCaption}\item[{Integer}]{new\+User\+ID,  }\item[{Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} $>$}]{ratings\+Of\+That\+User,  }\item[{int}]{number\+Of\+Recommendations }\end{DoxyParamCaption})}
+
+
+
+Función recomendadora que hará la recomendación a un usuario nuevo en base al uso de combinar los otros dos metodos de recomendacion que tenemos. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape new\+User\+ID} tiene que ser un usuario que NO se encuentre en la base de datos de ratings del sistema, es decir, debe ser un nuevo usuario para el sistema; aparte, debe ser un Integer, no un int. {\itshape number\+Of\+Recommendations} $>$ 0. {\itshape ratings\+Of\+That\+User} son los ratings de ese usuario nuevo. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em new\+User\+ID} & es el ID del usuario al que queremos recomendar \\
+\hline
+{\em ratings\+Of\+That\+User} & son las valoraciones conocidas de ese usuario \\
+\hline
+{\em number\+Of\+Recommendations} & es el numero de recomendaciones que queremos hacer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Retorna {\itshape number\+Of\+Recommendations} recomendaciones ordenadas por valoracion decreciente. Si {\itshape number\+Of\+Recommendations} es mayor a un threshold interno, retornará la cantidad marcada por ese threshold. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_hybrid_approach_filtering_a9bc6e09c110a29f45aa62ddbdd17b293}\label{classfxsrc_1_1propyecto_1_1domain_1_1_hybrid_approach_filtering_a9bc6e09c110a29f45aa62ddbdd17b293}} 
+\index{fxsrc.propyecto.domain.HybridApproachFiltering@{fxsrc.propyecto.domain.HybridApproachFiltering}!RecommendInternal@{RecommendInternal}}
+\index{RecommendInternal@{RecommendInternal}!fxsrc.propyecto.domain.HybridApproachFiltering@{fxsrc.propyecto.domain.HybridApproachFiltering}}
+\doxysubsubsection{\texorpdfstring{RecommendInternal()}{RecommendInternal()}}
+{\footnotesize\ttfamily Array\+List$<$Integer$>$ fxsrc.\+propyecto.\+domain.\+Hybrid\+Approach\+Filtering.\+Recommend\+Internal (\begin{DoxyParamCaption}\item[{Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} $>$}]{collab\+Filt\+Recommendations,  }\item[{Array\+List$<$ \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_rating}{Rating}} $>$}]{ratings\+Of\+That\+User,  }\item[{int}]{number\+Of\+Recommendations }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Función recomendadora que hará el trabajo en común que tienen los otros métodos {\itshape Recommend} de esta clase. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape ratingsofthatuser} tiene que estar O\+R\+D\+E\+N\+A\+DO decrecientemente por nota, {\itshape number\+Of\+Recommendations} $>$ 0 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em collab\+Filt\+Recommendations} & tiene que ser un vector que nos haya retornado la funcion de recomendar del \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering}{Collaborative\+Filtering}} para el mismo usuario al que estamos intentando recomendar \\
+\hline
+{\em ratings\+Of\+That\+User} & son los ratings conocidos del usuario al que estamos intentando recomendar \\
+\hline
+{\em number\+Of\+Recommendations} & es el numero de recomendaciones que queremos hacer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Retorna {\itshape number\+Of\+Recommendations} recomendaciones ordenadas por predicción de a cuáles le dará mas nota finalmente (las primeras posiciones seran a las que hemos predicho mayor nota). Si {\itshape number\+Of\+Recommendations} es mayor a un threshold interno, retornará la cantidad marcada por ese threshold. 
+\end{DoxyPostcond}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_hybrid_approach_filtering_a15e0f8f076386b2dbf67ecfba75e7e73}\label{classfxsrc_1_1propyecto_1_1domain_1_1_hybrid_approach_filtering_a15e0f8f076386b2dbf67ecfba75e7e73}} 
+\index{fxsrc.propyecto.domain.HybridApproachFiltering@{fxsrc.propyecto.domain.HybridApproachFiltering}!COLLAB\_RECOMMENDATIONS\_THRESHOLD@{COLLAB\_RECOMMENDATIONS\_THRESHOLD}}
+\index{COLLAB\_RECOMMENDATIONS\_THRESHOLD@{COLLAB\_RECOMMENDATIONS\_THRESHOLD}!fxsrc.propyecto.domain.HybridApproachFiltering@{fxsrc.propyecto.domain.HybridApproachFiltering}}
+\doxysubsubsection{\texorpdfstring{COLLAB\_RECOMMENDATIONS\_THRESHOLD}{COLLAB\_RECOMMENDATIONS\_THRESHOLD}}
+{\footnotesize\ttfamily final int fxsrc.\+propyecto.\+domain.\+Hybrid\+Approach\+Filtering.\+C\+O\+L\+L\+A\+B\+\_\+\+R\+E\+C\+O\+M\+M\+E\+N\+D\+A\+T\+I\+O\+N\+S\+\_\+\+T\+H\+R\+E\+S\+H\+O\+LD = Integer.\+M\+A\+X\+\_\+\+V\+A\+L\+UE\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+{\itshape C\+O\+L\+L\+A\+B\+\_\+\+R\+E\+C\+O\+M\+M\+E\+N\+D\+A\+T\+I\+O\+N\+S\+\_\+\+T\+H\+R\+E\+S\+H\+O\+LD} es la cantidad de recomendaciones maximas que se le pediran al collaborative filtering 
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_hybrid_approach_filtering_ac09a965a364d5d276ac52f2350f062cd}\label{classfxsrc_1_1propyecto_1_1domain_1_1_hybrid_approach_filtering_ac09a965a364d5d276ac52f2350f062cd}} 
+\index{fxsrc.propyecto.domain.HybridApproachFiltering@{fxsrc.propyecto.domain.HybridApproachFiltering}!collaborativeFiltering@{collaborativeFiltering}}
+\index{collaborativeFiltering@{collaborativeFiltering}!fxsrc.propyecto.domain.HybridApproachFiltering@{fxsrc.propyecto.domain.HybridApproachFiltering}}
+\doxysubsubsection{\texorpdfstring{collaborativeFiltering}{collaborativeFiltering}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering}{Collaborative\+Filtering}} fxsrc.\+propyecto.\+domain.\+Hybrid\+Approach\+Filtering.\+collaborative\+Filtering\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+{\itshape collaborative\+Filtering} es la instancia de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering}{Collaborative\+Filtering}} que se utilizará para recomendar 
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_hybrid_approach_filtering_a6579da47165eaa746e1736eeca328510}\label{classfxsrc_1_1propyecto_1_1domain_1_1_hybrid_approach_filtering_a6579da47165eaa746e1736eeca328510}} 
+\index{fxsrc.propyecto.domain.HybridApproachFiltering@{fxsrc.propyecto.domain.HybridApproachFiltering}!CONTENT\_SIMILARITY\_THRESHOLD@{CONTENT\_SIMILARITY\_THRESHOLD}}
+\index{CONTENT\_SIMILARITY\_THRESHOLD@{CONTENT\_SIMILARITY\_THRESHOLD}!fxsrc.propyecto.domain.HybridApproachFiltering@{fxsrc.propyecto.domain.HybridApproachFiltering}}
+\doxysubsubsection{\texorpdfstring{CONTENT\_SIMILARITY\_THRESHOLD}{CONTENT\_SIMILARITY\_THRESHOLD}}
+{\footnotesize\ttfamily final float fxsrc.\+propyecto.\+domain.\+Hybrid\+Approach\+Filtering.\+C\+O\+N\+T\+E\+N\+T\+\_\+\+S\+I\+M\+I\+L\+A\+R\+I\+T\+Y\+\_\+\+T\+H\+R\+E\+S\+H\+O\+LD = 60.\+0f\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+{\itshape C\+O\+N\+T\+E\+N\+T\+\_\+\+S\+I\+M\+I\+L\+A\+R\+I\+T\+Y\+\_\+\+T\+H\+R\+E\+S\+H\+O\+LD} es la similitud (en tanto por cien) entre 2 items a partir del cual, si es menor, desecharemos. 
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_hybrid_approach_filtering_a19bf02ce9f57f6cd029f1a30106013f9}\label{classfxsrc_1_1propyecto_1_1domain_1_1_hybrid_approach_filtering_a19bf02ce9f57f6cd029f1a30106013f9}} 
+\index{fxsrc.propyecto.domain.HybridApproachFiltering@{fxsrc.propyecto.domain.HybridApproachFiltering}!contentBasedFiltering@{contentBasedFiltering}}
+\index{contentBasedFiltering@{contentBasedFiltering}!fxsrc.propyecto.domain.HybridApproachFiltering@{fxsrc.propyecto.domain.HybridApproachFiltering}}
+\doxysubsubsection{\texorpdfstring{contentBasedFiltering}{contentBasedFiltering}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_content_based_filtering}{Content\+Based\+Filtering}} fxsrc.\+propyecto.\+domain.\+Hybrid\+Approach\+Filtering.\+content\+Based\+Filtering\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+{\itshape content\+Based\+Filtering} es la instancia de \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_content_based_filtering}{Content\+Based\+Filtering}} que se utilizará para recomendar 
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_hybrid_approach_filtering_ab7712eec87a9c985f5b680ef909fa11e}\label{classfxsrc_1_1propyecto_1_1domain_1_1_hybrid_approach_filtering_ab7712eec87a9c985f5b680ef909fa11e}} 
+\index{fxsrc.propyecto.domain.HybridApproachFiltering@{fxsrc.propyecto.domain.HybridApproachFiltering}!contentBasedK@{contentBasedK}}
+\index{contentBasedK@{contentBasedK}!fxsrc.propyecto.domain.HybridApproachFiltering@{fxsrc.propyecto.domain.HybridApproachFiltering}}
+\doxysubsubsection{\texorpdfstring{contentBasedK}{contentBasedK}}
+{\footnotesize\ttfamily final int fxsrc.\+propyecto.\+domain.\+Hybrid\+Approach\+Filtering.\+content\+BasedK = 5\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+{\itshape content\+BasedK} es el valor de K que se utilizará para el collaborative filtering. 
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_hybrid_approach_filtering_af5de4506c184bfcffa0893d220b46d25}\label{classfxsrc_1_1propyecto_1_1domain_1_1_hybrid_approach_filtering_af5de4506c184bfcffa0893d220b46d25}} 
+\index{fxsrc.propyecto.domain.HybridApproachFiltering@{fxsrc.propyecto.domain.HybridApproachFiltering}!POSITIVE\_RATING\_THRESHOLD@{POSITIVE\_RATING\_THRESHOLD}}
+\index{POSITIVE\_RATING\_THRESHOLD@{POSITIVE\_RATING\_THRESHOLD}!fxsrc.propyecto.domain.HybridApproachFiltering@{fxsrc.propyecto.domain.HybridApproachFiltering}}
+\doxysubsubsection{\texorpdfstring{POSITIVE\_RATING\_THRESHOLD}{POSITIVE\_RATING\_THRESHOLD}}
+{\footnotesize\ttfamily final float fxsrc.\+propyecto.\+domain.\+Hybrid\+Approach\+Filtering.\+P\+O\+S\+I\+T\+I\+V\+E\+\_\+\+R\+A\+T\+I\+N\+G\+\_\+\+T\+H\+R\+E\+S\+H\+O\+LD = \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_data_manager_a71c21d0bf791f6d993f20456d3b4dbf3}{Data\+Manager.\+Get\+Instance}}().Get\+Max\+Rating() $\ast$ 0.\+8f\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+{\itshape P\+O\+S\+I\+T\+I\+V\+E\+\_\+\+R\+A\+T\+I\+N\+G\+\_\+\+T\+H\+R\+E\+S\+H\+O\+LD} es la nota a partir de la cual consideraremos que la nota a un item indica que le ha gustado 
+
+\mbox{\Hypertarget{classfxsrc_1_1propyecto_1_1domain_1_1_hybrid_approach_filtering_a829fb04ae93085e021d6e1fbe940b3fb}\label{classfxsrc_1_1propyecto_1_1domain_1_1_hybrid_approach_filtering_a829fb04ae93085e021d6e1fbe940b3fb}} 
+\index{fxsrc.propyecto.domain.HybridApproachFiltering@{fxsrc.propyecto.domain.HybridApproachFiltering}!userGroups@{userGroups}}
+\index{userGroups@{userGroups}!fxsrc.propyecto.domain.HybridApproachFiltering@{fxsrc.propyecto.domain.HybridApproachFiltering}}
+\doxysubsubsection{\texorpdfstring{userGroups}{userGroups}}
+{\footnotesize\ttfamily int fxsrc.\+propyecto.\+domain.\+Hybrid\+Approach\+Filtering.\+user\+Groups\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+{\itshape user\+Groups} es la cantidad de agrupaciones que queremos en \mbox{\hyperlink{classfxsrc_1_1propyecto_1_1domain_1_1_collaborative_filtering}{Collaborative\+Filtering}}. Es lo mismo que la {\itshape K} del collaborative\+Filtering 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/fxsrc/propyecto/domain/\mbox{\hyperlink{_hybrid_approach_filtering_8java}{Hybrid\+Approach\+Filtering.\+java}}\end{DoxyCompactItemize}
